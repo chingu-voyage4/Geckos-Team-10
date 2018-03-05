@@ -9,3 +9,13 @@ In this voyage we are aiming to create a version of GrillBer as explained in [th
 We are the **Geckos-Team-10** from [Chingu Voyage-4](https://github.com/chingu-voyage4).
 
 [Chingu](https://chingu.io/) cohorts is the best place for self learning web enthusiasts – to learn together, collaborate and work on real projects in remote teams.
+
+#### Our team
+
+[Andrew Salcedo](https://github.com/andrwsalcdo) – project manager / team member
+
+[Yordan Zhelev](https://github.com/yordanzhelevdev) – team member
+
+[Igor Katselenbogen](https://github.com/underwoodkats) – team member
+
+[Fouad Tabbara](https://github.com/fmtabbara) - team member
