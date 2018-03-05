@@ -1,8 +1,8 @@
 [![Waffle.io - Columns and their card count](https://badge.waffle.io/chingu-voyage4/Geckos-Team-10.png?columns=all)](https://waffle.io/chingu-voyage4/Geckos-Team-10?utm_source=badge)
 
-# Geckos-Team-10
+### Our project
 
-Voyage-4
+In this voyage we are aiming to create a version of GrillBer as explained in [this article](https://medium.freecodecamp.org/6-absurd-ideas-for-building-your-first-web-application-24afca35e519)
 
 ### About us
 
