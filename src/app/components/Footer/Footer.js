@@ -37,7 +37,8 @@ class Footer extends Component {
             display:'flex',
             justifyContent:'space-around',
             fontFamily:'Nanum Pen Script',
-            fontSize:'25px'
+            fontSize:'25px',
+            color:'#DCE0D9'
         }
 
         const trigger = function(){
