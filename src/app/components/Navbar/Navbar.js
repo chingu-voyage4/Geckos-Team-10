@@ -16,6 +16,11 @@ const Navbar = () => (
       </li>
     </Menu>
     <ul className="nav-item-list">
+      <ul className="nav-link-list">
+          <li className="nav-link"><a href="">How to Grill</a></li>
+          <li className="nav-link"><a href="">Pricing</a></li>
+          <li className="nav-link"><a href="">Book a Grill</a></li>
+      </ul>
       <li className="nav-brand">
         <a href="">GrillBer</a>
       </li>
