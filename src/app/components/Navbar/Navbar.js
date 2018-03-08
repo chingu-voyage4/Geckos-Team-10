@@ -11,12 +11,10 @@ const Navbar = () => (
     </Menu>
     <ul className="nav-item-list">
         <li className="nav-brand">
-            <a>GrillBer</a>
+          <a href="">GrillBer</a>
         </li>
-        <li>
-            <button className="btn-cta">
-            <a>Sign Up</a>
-            </button>
+        <li className="btn-cta">
+          <a href="">Sign Up</a>
         </li>
     </ul>
   </header>
