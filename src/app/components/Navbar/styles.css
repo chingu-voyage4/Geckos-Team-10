@@ -71,7 +71,6 @@
 }
 /* Wrapper for item list */
 .bm-item-list {
-  color: var(--green);
   padding: 0.8em;
   font-size: 1.3em;
 }
@@ -81,6 +80,7 @@
 /* Styling for text links */
 .bm-item-list > li > a {
   text-decoration: none;
+  color: var(--green);
 }
 /* Styling of overlay */
 .bm-overlay {
