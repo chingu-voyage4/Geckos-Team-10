@@ -1,5 +1,6 @@
 import React from 'react'
 import { slide as Menu } from "react-burger-menu"; 
+import './styles.css'; 
 
 const Navbar = () => (
   <header className="nav">
