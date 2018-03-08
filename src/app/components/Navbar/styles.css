@@ -49,7 +49,7 @@
 }
 /* Color/shape of burger icon bars */
 .bm-burger-bars {
-  background: #373a47;
+  background: var(--darkSienna);
 }
 /* Position and sizing of clickable cross button */
 .bm-cross-button {
@@ -59,11 +59,11 @@
 }
 /* Color/shape of close button cross */
 .bm-cross {
-  background: #bdc3c7;
+  background: var(--darkSienna);
 }
 /* General sidebar styles */
 .bm-menu {
-  background: #373a47;
+  background: white;
   padding: 2.5em 1.5em 0;
   font-size: 1.15em;
   overflow: hidden !important;
