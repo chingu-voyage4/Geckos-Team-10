@@ -23,6 +23,10 @@
 .nav-item-list a:hover {
   opacity: 0.7;
 }
+/* hide this in mobile*/
+.nav-link {
+  display: none;
+}
 .nav-brand {
   margin-left: auto;
   margin-right: auto;
@@ -89,4 +93,37 @@
 .bm-menu-wrap {
   bottom: 0;
   left: 0;
+}
+
+/* 
+  ##Device = Laptops, Desktops
+*/
+@media (min-width: 1025px) {
+  /* hide the burger menu */
+  .bm-burger-button {
+    display: none;
+  }
+  .nav-item-list {
+    align-items: center;
+    justify-content: space-around;
+  }
+  /* display this menu, because burger menu is gone */
+  .nav-link-list {
+    display: flex;
+    padding: 5px;
+    order: -1;
+  }
+  .nav-link {
+    display: flex;
+    padding: 5px 15px;
+    font-weight: bold;
+  }
+  .nav-link-list .nav-link a {
+    text-decoration: none;
+    color: var(--trolleyGrey);
+  }
+  .nav-brand {
+    margin: 0;
+    order: -2;
+  }
 }
