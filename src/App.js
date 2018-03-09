@@ -1,13 +1,3 @@
-import React, { Component } from 'react';
-import Footer from './app/components/Footer/Footer'
+import App from './app/index'; 
 
-class App extends Component {
-  render() {
-    return (
-      <div className="App">
-      </div>
-    );
-  }
-}
-
-export default App;
+export default App; 
