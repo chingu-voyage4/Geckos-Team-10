@@ -78,15 +78,14 @@
 /* Wrapper for item list */
 .bm-item-list {
   padding: 0.8em;
-  font-size: 1.3em;
 }
 .bm-item-list > li {
   padding: 0.7em 0.7em 1.3em;
 }
-/* Styling for text links */
-.bm-item-list > li > a {
-  text-decoration: none;
+.bm-item-list a {
   color: var(--green);
+  font-size: 2em;
+  text-decoration: none;
 }
 /* Styling of overlay */
 .bm-overlay {
