@@ -119,6 +119,8 @@
     display: flex;
     padding: 5px 15px;
     font-weight: bold;
+    font-size: 1.6em;
+    line-height: 0.8;
   }
   .nav-link-list .nav-link a {
     text-decoration: none;
@@ -127,5 +129,9 @@
   .nav-brand {
     margin: 0;
     order: -2;
+    font-size: 1.8em;
+  }
+  .btn-cta {
+    font-size: 2em;
   }
 }
