@@ -1,0 +1,18 @@
+#social-icons div{
+    color:#DCE0D9;
+}
+
+#social-icons div:hover, #footer-items div:hover, #download-stores div:hover{
+    cursor: pointer;
+    color:#31081F;
+}
+
+@media screen and (max-width: 600px) {
+    #footer-items{
+        flex-direction: column;
+        align-items:  center;
+    }
+    #footer-items div{
+        padding:5px;
+    }
+}
