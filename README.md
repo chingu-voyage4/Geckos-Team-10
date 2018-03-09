@@ -12,10 +12,10 @@ We are the **Geckos-Team-10** from [Chingu Voyage-4](https://github.com/chingu-v
 
 #### Our team
 
-[Andrew Salcedo](https://github.com/andrwsalcdo) – project manager / team member
-
-[Yordan Zhelev](https://github.com/yordanzhelevdev) – team member
-
 [Igor Katselenbogen](https://github.com/underwoodkats) – team member
 
+[Andrew Salcedo](https://github.com/andrwsalcdo) – project manager / team member
+
 [Fouad Tabbara](https://github.com/fmtabbara) - team member
+
+[Yordan Zhelev](https://github.com/yordanzhelevdev) – team member
