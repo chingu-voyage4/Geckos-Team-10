@@ -15,7 +15,7 @@ const Navbar = () => (
         <a href="">Book a Grill</a>
       </li>
     </Menu>
-    <ul className="nav-item-list">
+    <nav className="nav-item-list">
       <ul className="nav-link-list">
           <li className="nav-link"><a href="">How to Grill</a></li>
           <li className="nav-link"><a href="">Pricing</a></li>
@@ -27,7 +27,7 @@ const Navbar = () => (
       <li className="btn-cta">
         <a href="">Sign Up</a>
       </li>
-    </ul>
+    </nav>
   </header>
 );
 
