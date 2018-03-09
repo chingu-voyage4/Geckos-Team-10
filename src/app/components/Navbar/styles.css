@@ -1,14 +1,15 @@
 /* variables */
-:root {
+/* :root {
   --green: #00a651;
   --trolleyGrey: #818285;
   --gainsboro: #dce0d9;
   --darkSienna: #31081f;
   --prune: #6b0f1a;
-}
+} */
 
 .nav {
   height: 60px;
+  border-bottom: 1px solid violet;
 }
 .nav-item-list {
   list-style: none;
@@ -28,6 +29,7 @@
   display: none;
 }
 .nav-brand {
+  font-size: 1.45em;
   margin-left: auto;
   margin-right: auto;
 }
@@ -37,9 +39,9 @@
 }
 .btn-cta {
   background: transparent;
-  border: none;
+  align-self: center;
   color: var(--green);
-  font-size: 16px;
+  font-size: 1.3em;
 }
 
 /* Hamburger Menu */
