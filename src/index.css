@@ -1,5 +1,19 @@
-body {
-  margin: 0;
-  padding: 0;
-  font-family: sans-serif;
+@import url('https://fonts.googleapis.com/css?family=Indie+Flower%7CNanum+Pen+Script');
+:root{
+	--green: #00A651;
+	--trolleyGrey: #818285;
+	--gainsboro: #DCE0D9;
+	--darkSiena: #31081F;
+	--prune: #6B0F1A;
 }
+
+* {
+  box-sizing: border-box; }
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0; }
+
+body {
+  overflow-x: hidden; }
