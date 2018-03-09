@@ -1,3 +1,11 @@
-import App from './app/index'; 
+import React, { Component } from 'react';
+import SlideHeader from './app/components/SlideHeader/SlideHeader';
 
-export default App; 
+
+class App extends Component {
+  render() {
+    return (<SlideHeader />)
+  }
+}
+
+export default App;
