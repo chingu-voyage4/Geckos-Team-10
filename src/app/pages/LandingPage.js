@@ -1,8 +1,9 @@
 import React from 'react'; 
+import SlideHeader from '../components/SlideHeader/SlideHeader'; 
 
 const LandingPage = () => (
     <div>
-        This is the landing page. 
+        <SlideHeader />
     </div>
 )
 
