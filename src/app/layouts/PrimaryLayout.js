@@ -13,6 +13,13 @@ import SignUp from '../pages/SignUp';
 const PrimaryLayout = () => (
   <div>
     <Navbar />
+    <Switch>
+      <Route exact path="/" component={LandingPage} />
+      <Route path="/how-to-grill" component={HowToGrill} />
+      <Route path="/pricing" component={Pricing} />
+      <Route path="/book-a-grill" component={BookGrill} />
+      <Route path="/sign-up" component={SignUp} />
+    </Switch>
     <Footer />
   </div>
 );
