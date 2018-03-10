@@ -41,10 +41,6 @@ class Footer extends Component {
             color:'#DCE0D9'
         }
 
-        const trigger = function(){
-                console.log(this)
-        }
-
 
         const applStr = 'https://www.talkhomeapp.com/images/apps/download_app_store.svg';
 
@@ -65,14 +61,14 @@ class Footer extends Component {
                         }
                     </div>
                     <div id="download-stores" style = {spaceItems}>
-                        <div><img src = {applStr} style = {imageStyle}/></div>
-                        <div><img src = {gPly} style = {imageStyle}/></div>
+                        <div><img src = {applStr} alt = "Apple Download Store Logo" style = {imageStyle}/></div>
+                        <div><img src = {gPly} alt = "Google Play Store Logo" style = {imageStyle}/></div>
                     </div>
                     <div id="social-icons" style = {spaceItems} >
                         <div>
                             <i className="fab fa-facebook-square" data-fa-transform="grow-15" ></i>
                         </div>
-                        <div onMouseEnter={trigger}>
+                        <div>
                             <i className="fab fa-twitter-square" data-fa-transform="grow-15"></i>
                         </div>
                         <div>
