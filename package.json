@@ -4,9 +4,10 @@
   "private": true,
   "dependencies": {
     "react": "^16.2.0",
+    "react-burger-menu": "^2.3.0",
     "react-dom": "^16.2.0",
-    "react-transition-group": "^1.2.1",
-    "react-burger-menu": "^2.3.0"
+    "react-router-dom": "^4.2.2",
+    "react-transition-group": "^1.2.1"
   },
   "devDependencies": {
     "react-scripts": "1.1.1"
