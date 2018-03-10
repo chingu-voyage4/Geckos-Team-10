@@ -1,9 +1,13 @@
-import React, { Component } from 'react';
+import React from 'react';
+import { BrowserRouter } from 'react-router-dom';
+import PrimaryLayout from './layouts/PrimaryLayout';
 
-class App extends Component {
-  render() {
-    return <div>Did this work? - Fouad. Yes, its working - Yordan</div>;
-  }
-}
+const App = () => (
+  <BrowserRouter>
+    <div>
+      <PrimaryLayout />
+    </div>
+  </BrowserRouter>
+);
 
 export default App;
