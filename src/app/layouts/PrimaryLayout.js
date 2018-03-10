@@ -1,8 +1,11 @@
 import React from 'react'; 
+import Navbar from '../components/Navbar/Navbar'; 
+import Footer from '../components/Footer/Footer'; 
 
 const PrimaryLayout = () => (
     <div>
-        This is the primary layout    
+        <Navbar />
+        <Footer />
     </div>
 )
 
