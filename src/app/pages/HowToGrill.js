@@ -8,7 +8,7 @@ const styles = {
 
 const HowToGrill = () => (
   <div style={styles}>
-    <h1>This is the Sign Up page</h1>
+    <h1>This is the How To Grill page</h1>
   </div>
 );
 
