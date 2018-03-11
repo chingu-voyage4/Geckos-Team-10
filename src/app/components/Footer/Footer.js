@@ -32,7 +32,7 @@ class Footer extends Component {
         }
 
         const spacePages = {
-            width:'75%',
+            width:'85%',
             padding:'25px',
             display:'flex',
             justifyContent:'space-around',
