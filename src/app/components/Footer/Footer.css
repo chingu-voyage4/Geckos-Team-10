@@ -7,7 +7,7 @@
     color:#31081F;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 700px) {
     #footer-items{
         flex-direction: column;
         align-items:  center;
