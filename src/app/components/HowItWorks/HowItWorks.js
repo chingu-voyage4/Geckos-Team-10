@@ -1,5 +1,6 @@
 import React from 'react';
 import Card from '../Card/Card';
+import Styles from './styles.css'; 
 
 // just for testing purposes
 import user from '../../images/user.svg';
