@@ -1,7 +1,10 @@
 import React from 'react';
 import Card from '../Card/Card';
 
-// class name variables 
+// just for testing purposes
+import user from '../../images/user.svg';
+
+// class name variables
 const card_wrap = 'card-wrap';
 const image_wrap = 'img-wrap';
 const text_wrap = 'text-wrap';
@@ -9,13 +12,37 @@ const text_wrap = 'text-wrap';
 const HowItWorks = () => (
   <section>
     <header>
-      <h2 />
-      <h2 />
+      <h2>How it Works</h2>
+      <h2>3 Simple Steps to Use GrillBer</h2>
     </header>
     <div>
-      <Card />
-      <Card />
-      <Card />
+      <Card
+        cardWrap={card_wrap}
+        imgWrap={image_wrap}
+        textWrap={text_wrap}
+        src={user}
+        alt="blank user"
+        title="Join"
+        text="Pellentesque in ipsum id orci porta dapibus. Proin eget tortor risus."
+      />
+      <Card
+        cardWrap={card_wrap}
+        imgWrap={image_wrap}
+        textWrap={text_wrap}
+        src={user}
+        alt="blank user"
+        title="Book"
+        text="Pellentesque in ipsum id orci porta dapibus. Proin eget tortor risus."
+      />
+      <Card
+        cardWrap={card_wrap}
+        imgWrap={image_wrap}
+        textWrap={text_wrap}
+        src={user}
+        alt="blank user"
+        title="Grill"
+        text="Pellentesque in ipsum id orci porta dapibus. Proin eget tortor risus."
+      />
     </div>
   </section>
 );
