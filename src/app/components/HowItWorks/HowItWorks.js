@@ -10,12 +10,12 @@ const image_wrap = 'img-wrap';
 const text_wrap = 'text-wrap';
 
 const HowItWorks = () => (
-  <section>
-    <header>
+  <section className="hiw-section">
+    <header className="hiw-header">
       <h2>How it Works</h2>
       <h2>3 Simple Steps to Use GrillBer</h2>
     </header>
-    <div>
+    <div className="hiw-card-container">
       <Card
         cardWrap={card_wrap}
         imgWrap={image_wrap}
