@@ -1,13 +1,21 @@
 import React from 'react'; 
 
-const Card = () => (
-    <div>
-       <div>
-           <img src="" alt=""/>
+const Card = ({ 
+    cardWrap, 
+    imgWrap, 
+    src, 
+    alt, 
+    textWrap, 
+    title, 
+    text 
+}) => (
+    <div className={cardWrap}>
+       <div className={imgWrap}>
+           <img src={src} alt={alt} />
         </div>
-       <div>
-           <h3></h3>
-           <p></p>
+       <div className={textWrap}>
+           <h3>{title}</h3>
+           <p>{text}</p>
        </div>        
     </div>
 )
