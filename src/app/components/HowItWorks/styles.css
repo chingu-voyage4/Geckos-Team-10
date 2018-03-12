@@ -54,6 +54,20 @@
   font-size: 1.2em;
   line-height: 17px;
 }
+.cta-join {
+  background: var(--green);
+  border: 1px solid rgba(0, 0, 0, 0.21);
+  border-bottom: 5px solid rgba(0, 0, 0, 0.21);
+  text-align: center;
+  border-radius: 7px;
+}
+.cta-join > a {
+  color: white;
+  display: block;
+  font-size: 1.7em;
+  padding: 0 48px;
+  text-decoration: none;
+}
 
 /* smartphones */
 @media screen and (min-width: 425px) {

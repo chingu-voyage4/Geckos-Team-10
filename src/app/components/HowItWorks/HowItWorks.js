@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom'; 
 import Card from '../Card/Card';
 import Styles from './styles.css'; 
 // Card images
@@ -45,6 +46,9 @@ const HowItWorks = () => (
         title="Grill"
         text="Pellentesque in ipsum id orci porta dapibus. Proin eget tortor risus."
       />
+    </div>
+    <div className="cta-join">
+      <Link to="/sign-up">Join</Link>
     </div>
   </section>
 );
