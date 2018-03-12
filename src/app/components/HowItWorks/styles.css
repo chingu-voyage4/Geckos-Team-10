@@ -50,6 +50,7 @@
   line-height: 25px;
 }
 .text-wrap > p {
+  color: var(--darkSienna);
   font-size: 1.2em;
   line-height: 17px;
 }
