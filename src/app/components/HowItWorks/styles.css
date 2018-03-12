@@ -64,6 +64,26 @@
 }
 /* tablets */
 @media screen and (min-width: 600px) {
+  .hiw-card-container {
+    flex-direction: row;
+  }
+  .hiw-header > h2 {
+    margin: 0;
+  }
+  .card-wrap {
+    flex-direction: column;
+    align-items: center;
+  }
+  .img-wrap {
+    max-width: none;
+  }
+  .text-wrap {
+    text-align: center;
+  }
+  .text-wrap > * {
+    margin: 15px 0;
+  }
+
   .hiw-header > h2:nth-child(1) {
     font-size: 2.7em;
   }
