@@ -1,5 +1,6 @@
 .nav {
   height: 60px;
+  position: relative;
 }
 .nav-item-list {
   list-style: none;
