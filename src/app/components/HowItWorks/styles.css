@@ -56,9 +56,10 @@
 }
 
 .cta-join > a {
-  /* align-self: center; */
-  font-size: 1.7em;
   color: white;
+  display: block;
+  font-size: 1.7em;
+  padding: 0 48px;
   text-decoration: none;
 }
 
