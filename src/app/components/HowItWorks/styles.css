@@ -10,6 +10,9 @@
   align-items: center;
   padding: 20px 20px;
 }
+.hiw-header > h2 {
+  margin: 0;
+}
 .hiw-header > h2:nth-child(1) {
   font-size: 2em;
 }
