@@ -3,6 +3,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  background: var(--gainsboro);
 }
 .hiw-header {
   display: flex;
@@ -44,11 +45,12 @@
   flex: 1;
 }
 .text-wrap > h3 {
-  color: var(--prune);
+  color: var(--green);
   font-size: 1.75em;
   line-height: 25px;
 }
 .text-wrap > p {
+  color: var(--darkSienna);
   font-size: 1.2em;
   line-height: 17px;
 }
