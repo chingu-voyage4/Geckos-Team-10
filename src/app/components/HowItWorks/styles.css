@@ -55,6 +55,13 @@
   line-height: 17px;
 }
 
+.cta-join > a {
+  /* align-self: center; */
+  font-size: 1.7em;
+  color: white;
+  text-decoration: none;
+}
+
 /* smartphones */
 @media screen and (min-width: 425px) {
   .hiw-header > h2:nth-child(1) {
