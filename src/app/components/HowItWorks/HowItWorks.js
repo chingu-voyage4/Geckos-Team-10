@@ -1,9 +1,10 @@
 import React from 'react';
 import Card from '../Card/Card';
 import Styles from './styles.css'; 
-
-// just for testing purposes
-import user from '../../images/user.svg';
+// Card images
+import agenda from '../../images/agenda.svg'; 
+import barbecue from '../../images/barbecue.svg'; 
+import screen from '../../images/screen.svg'; 
 
 // class name variables
 const card_wrap = 'card-wrap';
@@ -21,8 +22,8 @@ const HowItWorks = () => (
         cardWrap={card_wrap}
         imgWrap={image_wrap}
         textWrap={text_wrap}
-        src={user}
-        alt="blank user"
+        src={screen}
+        alt="desktop monitor and mobile device"
         title="Join"
         text="Pellentesque in ipsum id orci porta dapibus. Proin eget tortor risus."
       />
@@ -30,8 +31,8 @@ const HowItWorks = () => (
         cardWrap={card_wrap}
         imgWrap={image_wrap}
         textWrap={text_wrap}
-        src={user}
-        alt="blank user"
+        src={agenda}
+        alt="book with bookmark"
         title="Book"
         text="Pellentesque in ipsum id orci porta dapibus. Proin eget tortor risus."
       />
@@ -39,8 +40,8 @@ const HowItWorks = () => (
         cardWrap={card_wrap}
         imgWrap={image_wrap}
         textWrap={text_wrap}
-        src={user}
-        alt="blank user"
+        src={barbecue}
+        alt="animated grill outside on a sunny day"
         title="Grill"
         text="Pellentesque in ipsum id orci porta dapibus. Proin eget tortor risus."
       />
