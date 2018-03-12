@@ -76,9 +76,11 @@
   }
   .img-wrap {
     max-width: none;
+    margin-bottom: 20px;
   }
   .text-wrap {
     text-align: center;
+    margin: 10px;
   }
   .text-wrap > * {
     margin: 15px 0;
