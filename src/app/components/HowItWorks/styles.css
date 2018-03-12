@@ -78,7 +78,7 @@
     align-items: center;
   }
   .img-wrap {
-    max-width: none;
+    max-width: 40%;
     margin-bottom: 20px;
   }
   .text-wrap {
@@ -88,7 +88,6 @@
   .text-wrap > * {
     margin: 15px 0;
   }
-
   .hiw-header > h2:nth-child(1) {
     font-size: 2.7em;
   }
@@ -97,5 +96,15 @@
   }
   .text-wrap > h3 {
     font-size: 1.9em;
+  }
+}
+/* laptops, desktops */
+@media screen and (min-width: 1024px) {
+  .img-wrap {
+    max-width: 25%;
+    max-height: 300px;
+  }
+  .text-wrap > * {
+    margin: 20px 0;
   }
 }
