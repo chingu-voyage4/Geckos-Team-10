@@ -10,7 +10,7 @@ class Footer extends Component {
             backgroundColor: '#818285',
             width:'100%',
             bottom: '0',
-            position:'absolute',
+            position:'fixed',
             borderTop:'2px solid #bbb',
         }
 
