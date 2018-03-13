@@ -67,6 +67,6 @@ SlideHeader.defaultProps = {
   loop: true
 };
 
-export default SlideHeader;
+                                    export default SlideHeader;
 
 //Why does the text blink when the image changes? - ReactJS, CSS Transition
