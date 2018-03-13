@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import Card from "../Card/Card";
-import Styles from "./styles.css";
+import "./styles.css";
 // Card images
 import agenda from "../../images/agenda.svg";
 import barbecue from "../../images/barbecue.svg";
