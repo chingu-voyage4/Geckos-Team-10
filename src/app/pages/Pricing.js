@@ -1,9 +1,9 @@
-import React from 'react';
+import React from "react";
 
 const styles = {
-  display: 'flex',
-  justifyContent: 'center',
-  marginTop: '25vh'
+  display: "flex",
+  justifyContent: "center",
+  marginTop: "25vh"
 };
 
 const Pricing = () => (
