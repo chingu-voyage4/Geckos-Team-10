@@ -1,16 +1,16 @@
-import React from 'react';
-import { Link } from 'react-router-dom'; 
-import Card from '../Card/Card';
-import Styles from './styles.css'; 
+import React from "react";
+import { Link } from "react-router-dom";
+import Card from "../Card/Card";
+import Styles from "./styles.css";
 // Card images
-import agenda from '../../images/agenda.svg'; 
-import barbecue from '../../images/barbecue.svg'; 
-import screen from '../../images/screen.svg'; 
+import agenda from "../../images/agenda.svg";
+import barbecue from "../../images/barbecue.svg";
+import screen from "../../images/screen.svg";
 
 // class name variables
-const card_wrap = 'card-wrap';
-const image_wrap = 'img-wrap';
-const text_wrap = 'text-wrap';
+const card_wrap = "card-wrap";
+const image_wrap = "img-wrap";
+const text_wrap = "text-wrap";
 
 const HowItWorks = () => (
   <section className="hiw-section">

@@ -1,19 +1,25 @@
 .whatIs-header {
-  text-align: center; }
-  .whatIs-header h1 {
-    margin-bottom: 0; }
-  .whatIs-header h2 {
-    margin: 0; }
+  text-align: center;
+}
+.whatIs-header h1 {
+  margin-bottom: 0;
+}
+.whatIs-header h2 {
+  margin: 0;
+}
 
 .whatIs-information {
   display: flex;
   justify-content: center;
-  flex-wrap: wrap; }
-  .whatIs-information ul {
-    list-style-image: url(../../images/lists.svg);
-    margin-left: 10px; }
-  .whatIs-information img {
-    max-width: 100%;
-    height: auto; }
+  flex-wrap: wrap;
+}
+.whatIs-information ul {
+  list-style-image: url(../../images/lists.svg);
+  margin-left: 10px;
+}
+.whatIs-information img {
+  max-width: 100%;
+  height: auto;
+}
 
 /*# sourceMappingURL=styles.css.map */

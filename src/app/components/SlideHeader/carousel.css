@@ -1,76 +1,75 @@
 .slide-header {
-    width: 100%;
-    height: 420px;
+  width: 100%;
+  height: 420px;
 }
 
 .slide-header .overlay-header {
-    position: absolute;
-    width: inherit;
-    text-align: center;
-    margin-top: 10px;
-    color: white;
-    z-index: 10;
+  position: absolute;
+  width: inherit;
+  text-align: center;
+  margin-top: 10px;
+  color: white;
+  z-index: 10;
 }
 
 .slide-header .overlay-header h1 {
-    margin: 0;
-    font-family: 'Mukta Malar', sans-serif;
-    text-transform: uppercase;
+  margin: 0;
+  font-family: "Mukta Malar", sans-serif;
+  text-transform: uppercase;
 }
 
 .slide-header .overlay-header span {
-    display: block;
-    font-family: 'Poppins', sans-serif;
+  display: block;
+  font-family: "Poppins", sans-serif;
 }
 
 .slide-header .overlay-header button {
-    margin-top: 10px;
-    background-color: #FFA042;
-    font-size: 16px;
-    padding: 12px 24px;
-    color: white;
-    border-radius: 7px;
-    font-weight: 600;
-    border: 1px solid rgba(0, 0, 0, 0.21);
-    border-bottom: 3px solid rgba(0, 0, 0, 0.21);
-    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.15);
-    cursor: pointer;
-    outline: none;
+  margin-top: 10px;
+  background-color: #ffa042;
+  font-size: 16px;
+  padding: 12px 24px;
+  color: white;
+  border-radius: 7px;
+  font-weight: 600;
+  border: 1px solid rgba(0, 0, 0, 0.21);
+  border-bottom: 3px solid rgba(0, 0, 0, 0.21);
+  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+  outline: none;
 }
 
 .slide-header .overlay-header button:hover {
-    background-color: #ff9022;
+  background-color: #ff9022;
 }
 
 .slide-header img {
-    width: 100%;
-    height: 100%;
-    object-fit: fill;
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
 }
 
 .swap-enter {
-    transform: translateX(100vw);
+  transform: translateX(100vw);
 }
 
 .swap-enter.swap-enter-active {
-    transform: translateX(0);
-    transition: all 500ms ease-in-out;
+  transform: translateX(0);
+  transition: all 500ms ease-in-out;
 }
 
 .swap-leave {
-    transform: translateX(0);
+  transform: translateX(0);
 }
 
 .swap-leave.swap-leave-active {
-    transform: translateX(-100vw);
-    transition: all 500ms ease-in-out;
+  transform: translateX(-100vw);
+  transition: all 500ms ease-in-out;
 }
 
 @media screen and (max-width: 720px) {
-    .slide-header {
-        height: 100%;
-    }
+  .slide-header {
+    height: 100%;
+  }
 }
-
 
 /*# sourceMappingURL=carousel.css.map */
