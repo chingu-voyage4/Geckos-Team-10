@@ -23,8 +23,6 @@
     "eject": "react-scripts eject"
   },
   "lint-staged": {
-    "*.{js,json,css,md}": ["prettier --write", "git add"],
-    "*.css": "stylelint",
-    "*.scss": "stylelint --syntax=scss"
+    "*.{js,json,css,md}": ["prettier --write", "git add"]
   }
 }
