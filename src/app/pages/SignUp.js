@@ -7,9 +7,9 @@ const styles = {
 };
 
 const SignUp = () => (
-  <div style={styles}>
+  <main style={styles}>
     <h1>This is the Sign Up page</h1>
-  </div>
+  </main>
 );
 
 export default SignUp;

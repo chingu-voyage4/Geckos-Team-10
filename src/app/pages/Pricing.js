@@ -7,9 +7,9 @@ const styles = {
 };
 
 const Pricing = () => (
-  <div style={styles}>
+  <main style={styles}>
     <h1>This is the Pricing page</h1>
-  </div>
+  </main>
 );
 
 export default Pricing;

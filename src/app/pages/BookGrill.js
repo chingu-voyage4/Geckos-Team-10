@@ -7,9 +7,9 @@ const styles = {
 };
 
 const BookGrill = () => (
-  <div style={styles}>
+  <main style={styles}>
     <h1>This is the Book a Grill page</h1>
-  </div>
+  </main>
 );
 
 export default BookGrill;
