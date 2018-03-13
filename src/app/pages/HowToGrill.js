@@ -7,9 +7,9 @@ const styles = {
 };
 
 const HowToGrill = () => (
-  <div style={styles}>
+  <main style={styles}>
     <h1>This is the How To Grill page</h1>
-  </div>
+  </main>
 );
 
 export default HowToGrill;

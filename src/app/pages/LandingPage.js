@@ -2,9 +2,9 @@ import React from 'react';
 import SlideHeader from '../components/SlideHeader/SlideHeader'; 
 
 const LandingPage = () => (
-    <div>
+    <main>
         <SlideHeader />
-    </div>
+    </main>
 )
 
 
