@@ -15,7 +15,7 @@ const text_wrap = "text-wrap";
 const HowItWorks = () => (
   <section className="hiw-section">
     <header className="hiw-header">
-      <h2>How it Works</h2>
+      <h1>How it Works</h1>
       <h2>3 Simple Steps to Use GrillBer</h2>
     </header>
     <div className="hiw-card-container">
