@@ -1,28 +1,26 @@
 .whatIs-header {
-	text-align: center;
+  text-align: center;
 
-	h1{
-		margin-bottom: 0;
-	}
+  h1 {
+    margin-bottom: 0;
+  }
 
-	h2{
-		margin: 0;
-	}
+  h2 {
+    margin: 0;
+  }
 }
 
-.whatIs-information{
-	display:flex;
-	justify-content: center;
-	flex-wrap: wrap;
-	
-	ul{
-		list-style-image: url(../../images/lists.svg);
-		margin-left:10px;
-	}
+.whatIs-information {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  ul {
+    list-style-image: url(../../images/lists.svg);
+    margin-left: 10px;
+  }
 
-	img{
-		max-width:100%;
-		height: auto;
-	}
+  img {
+    max-width: 100%;
+    height: auto;
+  }
 }
-

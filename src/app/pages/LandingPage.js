@@ -1,11 +1,10 @@
-import React from 'react'; 
-import SlideHeader from '../components/SlideHeader/SlideHeader'; 
+import React from "react";
+import SlideHeader from "../components/SlideHeader/SlideHeader";
 
 const LandingPage = () => (
-    <main>
-        <SlideHeader />
-    </main>
-)
+  <main>
+    <SlideHeader />
+  </main>
+);
 
-
-export default LandingPage; 
+export default LandingPage;
