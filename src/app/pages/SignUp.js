@@ -1,15 +1,15 @@
-import React from 'react';
+import React from "react";
 
 const styles = {
-  display: 'flex',
-  justifyContent: 'center',
-  marginTop: '25vh'
+  display: "flex",
+  justifyContent: "center",
+  marginTop: "25vh"
 };
 
 const SignUp = () => (
-  <div style={styles}>
+  <main style={styles}>
     <h1>This is the Sign Up page</h1>
-  </div>
+  </main>
 );
 
 export default SignUp;

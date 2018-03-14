@@ -1,6 +1,6 @@
-import React from 'react';
-import { BrowserRouter } from 'react-router-dom';
-import PrimaryLayout from './layouts/PrimaryLayout';
+import React from "react";
+import { BrowserRouter } from "react-router-dom";
+import PrimaryLayout from "./layouts/PrimaryLayout";
 
 const App = () => (
   <BrowserRouter>
