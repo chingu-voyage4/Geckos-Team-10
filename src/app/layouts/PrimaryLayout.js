@@ -2,7 +2,6 @@ import React from "react";
 import { Switch, Route } from "react-router-dom";
 
 import Navbar from "../components/Navbar/Navbar";
-import Reviews from "../components/Reviews/Reviews";
 import Footer from "../components/Footer/Footer";
 
 import LandingPage from "../pages/LandingPage";
