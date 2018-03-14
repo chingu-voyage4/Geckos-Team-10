@@ -1,8 +1,3 @@
-@import url("https://fonts.googleapis.com/css?family=Mukta+Malar:700|Poppins");
-* {
-  box-sizing: border-box;
-}
-
 .slide-header {
   width: 100%;
   height: 420px;
@@ -19,19 +14,14 @@
   z-index: 10;
 }
 .slide-header .overlay-header h1 {
+  font-size: 40px;
   margin: 0;
-  font-family: "Mukta Malar", sans-serif;
   text-transform: uppercase;
 }
 .slide-header .overlay-header span {
   display: block;
-  font-family: "Poppins", sans-serif;
+  font-size: 30px;
 }
-
-span {
-  width: 100%;
-}
-
 .slide-header .overlay-header button {
   margin-top: 10px;
   background-color: #ffa042;
@@ -52,7 +42,7 @@ span {
 .slide-header img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: fill;
 }
 
 .swap-enter {
