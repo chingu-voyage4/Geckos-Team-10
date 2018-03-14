@@ -4,6 +4,7 @@
   align-items: center;
   justify-content: center;
   background: var(--gainsboro);
+  padding: 50px;
 }
 .hiw-header {
   display: flex;
