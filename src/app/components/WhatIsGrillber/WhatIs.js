@@ -13,7 +13,7 @@ const grillberList = [
 class WhatIsGrillber extends Component {
   render() {
     return (
-      <div>
+      <section className="whatIs-section">
         <div className="whatIs-header">
           <h1>What's Grillber?</h1>
           <h2>Lorem ipsum dolor sit amet, consectetur adipiscing</h2>
@@ -27,7 +27,7 @@ class WhatIsGrillber extends Component {
             })}
           </ul>
         </div>
-      </div>
+      </section>
     );
   }
 }
