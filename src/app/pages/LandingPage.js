@@ -1,4 +1,6 @@
 import React from "react";
+import "../styles/cta-buttons.css";
+
 import SlideHeader from "../components/SlideHeader/SlideHeader";
 import WhatIsGrillber from "../components/WhatIsGrillber/WhatIs";
 import HowItWorks from "../components/HowItWorks/HowItWorks";
