@@ -71,6 +71,15 @@ span {
   transition: all 500ms ease-in-out;
 }
 
+@media screen and (min-width: 1024px){ 
+  h1 {
+    font-size:45px;
+  }
+  .sub-heading{
+    font-size: 30px;
+  }
+}
+
 @media screen and (max-width: 720px) {
   .slide-header {
     height: 100%;
