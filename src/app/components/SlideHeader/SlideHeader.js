@@ -47,7 +47,9 @@ class SlideHeader extends Component {
       <div className="slide-header">
         <div className="overlay-header">
           <h1>Grillber lorem ipsum</h1>
-          <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
+          <span className="sub-heading">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          </span>
           <button>Order Now</button>
         </div>
         <CSSTransitionGroup

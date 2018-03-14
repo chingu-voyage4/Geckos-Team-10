@@ -1,7 +1,3 @@
-@import url('https://fonts.googleapis.com/css?family=Mukta+Malar:700|Poppins');
-* {
-  box-sizing: border-box;
-}
 
 .slide-header {
   width: 100%;
@@ -19,13 +15,11 @@
     z-index: 10;
     h1 {
       margin: 0;
-      font-family: 'Mukta Malar', sans-serif;
       text-transform: uppercase;
     }
 
-    span {
+    .sub-heading {
       display: block;
-      font-family: 'Poppins', sans-serif;
     }
 
     button {
