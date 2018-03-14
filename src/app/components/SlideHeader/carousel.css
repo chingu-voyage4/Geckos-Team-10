@@ -27,11 +27,6 @@
   display: block;
   font-family: "Poppins", sans-serif;
 }
-
-span {
-  width: 100%;
-}
-
 .slide-header .overlay-header button {
   margin-top: 10px;
   background-color: #ffa042;
@@ -53,6 +48,10 @@ span {
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+
+span {
+  width: 100%;
 }
 
 .swap-enter {
