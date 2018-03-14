@@ -14,14 +14,11 @@ class Footer extends Component {
     const footerStyle = {
       backgroundColor: "#818285",
       width: "100%",
-      bottom: "0",
-      position: "absolute",
       borderTop: "2px solid #bbb"
     };
 
     const alignColumn = {
       width: "100%",
-      margin: "5px 0 5px 0",
       padding: "10px 0 10px 0",
       display: "flex",
       flexDirection: "column",
