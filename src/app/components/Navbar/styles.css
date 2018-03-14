@@ -1,5 +1,6 @@
 .nav {
   height: 60px;
+  position: relative;
 }
 .nav-item-list {
   list-style: none;
@@ -9,7 +10,6 @@
 }
 .nav-item-list a {
   color: var(--green);
-  text-decoration: none;
 }
 .nav-item-list a:hover {
   opacity: 0.7;
@@ -75,7 +75,6 @@
 .bm-item-list a {
   color: var(--green);
   font-size: 2em;
-  text-decoration: none;
 }
 .bm-item-list a:hover {
   opacity: 0.6;
@@ -115,7 +114,6 @@
     line-height: 0.8;
   }
   .nav-link-list .nav-link a {
-    text-decoration: none;
     color: var(--trolleyGrey);
   }
   .nav-brand {

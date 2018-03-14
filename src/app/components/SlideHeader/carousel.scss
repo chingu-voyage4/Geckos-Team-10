@@ -1,100 +1,88 @@
 @import url('https://fonts.googleapis.com/css?family=Mukta+Malar:700|Poppins');
+
 * {
-	box-sizing: border-box;
+  box-sizing: border-box;
 }
 
-html,body{
-	height:100%;
-	margin:0;
-	padding:0;
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
 }
 
-body{
-	background-color: black;   
-    overflow-x:hidden;  
+body {
+  background-color: black;
+  overflow-x: hidden;
 }
 .slide-header {
+  width: 100%;
+  height: 420px;
+  .overlay-header {
+    position: absolute;
+    width: inherit;
+    text-align: center;
+    margin-top: 10px;
+    color: white;
+    z-index: 10;
+    h1 {
+      margin: 0;
+      font-family: 'Mukta Malar', sans-serif;
+      text-transform: uppercase;
+    }
+
+    span {
+      display: block;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    button {
+      margin-top: 10px;
+      background-color: #ffa042;
+      font-size: 16px;
+      padding: 12px 24px;
+      color: white;
+      border-radius: 7px;
+      font-weight: 600;
+      border: 1px solid rgba(0, 0, 0, 0.21);
+      border-bottom: 3px solid rgba(0, 0, 0, 0.21);
+      text-shadow: 0 1px 0 rgba(0, 0, 0, 0.15);
+      cursor: pointer;
+      outline: none;
+
+      &:hover {
+        background-color: #ff9022;
+      }
+    }
+  }
+
+  img {
     width: 100%;
-    height:420px;
-    // margin: 10px auto 0 auto;
-    .overlay-header {
-        position: absolute;
-        width: inherit;
-        text-align: center;
-        margin-top: 10px;
-        color: white;
-        z-index: 10;
-        h1 {
-            margin: 0;
-            font-family: 'Mukta Malar', sans-serif;
-            text-transform: uppercase;
-        }
-
-        span {
-            display: block;
-            font-family: 'Poppins', sans-serif;
-        }
-
-        button {
-            margin-top: 10px;
-            background-color: #FFA042;
-            font-size: 16px;
-            padding: 12px 24px;
-            color: white;
-            border-radius: 7px;
-            font-weight: 600;
-            border: 1px solid rgba(0, 0, 0, 0.21);
-            border-bottom: 3px solid rgba(0, 0, 0, 0.21);
-            text-shadow: 0 1px 0 rgba(0, 0, 0, 0.15);
-            cursor: pointer;
-            outline: none;
-
-            &:hover {
-                background-color: #ff9022;
-            }
-        }
-    }
-
-
-    img {
-        width: 100%;
-        height:100%;
-        object-fit: fill;
-    }
+    height: 100%;
+    object-fit: fill;
+  }
 }
 
-
 .swap-enter {
-    transform: translateX(100vw);
+  transform: translateX(100vw);
 }
 
 .swap-enter.swap-enter-active {
-    transform: translateX(0);
-  	transition: all 500ms ease-in-out;
-}
-
-.swap-leave {
-    transform: translateX(0);
-}
-
-.swap-leave.swap-leave-active {
-    transform: translateX(-100vw);
+  transform: translateX(0);
   transition: all 500ms ease-in-out;
 }
 
-
-
-@media screen and (max-width: 720px) {
-	.slide-header{
-		height: 100%;
-	}
+.swap-leave {
+  transform: translateX(0);
 }
 
+.swap-leave.swap-leave-active {
+  transform: translateX(-100vw);
+  transition: all 500ms ease-in-out;
+}
 
- // .swap-appear {
- //   transform: translateX(0);
- // }
- // .swap-appear.swap-appear-active {
- //    transform: translateX(-100vw);
- //  	transition: all 500ms ease-in-out;
- // }
+@media screen and (max-width: 720px) {
+  .slide-header {
+    height: 100%;
+  }
+}

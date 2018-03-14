@@ -1,18 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Indie+Flower%7CNanum+Pen+Script');
-
-* {
-  box-sizing: border-box;
-}
-
-html,
-body {
-  margin: 0;
-  padding: 0;
-  height: 100%;
-  width: 100%;
-  font-family: 'Nanum Pen Script', 'Indie Flower', Arial, sans-serif;
-  overflow-x: hidden;
-}
+@import url("https://fonts.googleapis.com/css?family=Indie+Flower%7CNanum+Pen+Script");
 
 /* add css variables here.  */
 :root {
@@ -21,4 +7,20 @@ body {
   --gainsboro: #dce0d9;
   --darkSienna: #31081f;
   --prune: #6b0f1a;
+}
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  font-family: "Nanum Pen Script", "Indie Flower", Arial, sans-serif;
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
 }
