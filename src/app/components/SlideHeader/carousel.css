@@ -6,9 +6,15 @@
   justify-content: center;
   align-items: center;
 }
+
+.overlay-header {
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius: 25px;
+  padding: 25px;
+}
+
 .slide-header .overlay-header {
   position: absolute;
-  width: inherit;
   text-align: center;
   color: white;
   z-index: 10;
@@ -22,7 +28,7 @@
 }
 .slide-header .overlay-header button {
   margin-top: 10px;
-  background-color: #ffa042;
+  background-color: #00a651;
   font-size: 16px;
   padding: 12px 24px;
   color: white;
@@ -77,6 +83,9 @@ span {
 @media screen and (max-width: 720px) {
   .slide-header {
     height: 100%;
+  }
+  .overlay-header {
+    padding: 0;
   }
 }
 
