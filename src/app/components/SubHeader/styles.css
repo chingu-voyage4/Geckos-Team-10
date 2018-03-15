@@ -3,7 +3,8 @@
   flex-direction: column;
   align-items: center;
   padding: 20px 20px;
-  font-family: "Indie Flower", "Nanum Pen Script", Arial, Helvetica, sans-serif;
+  font-family: "Indie Flower", Arial, Helvetica, sans-serif;
+  text-align: center;
 }
 .sub-header > * {
   margin: 0;
