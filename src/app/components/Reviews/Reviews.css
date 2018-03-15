@@ -8,16 +8,6 @@
   align-items: center;
 }
 
-#title {
-  padding-bottom: 25px;
-  margin: 10px;
-  font-size: 2.7em;
-  color: black;
-  font-weight: bold;
-  font-family: "Nanum Pen Script";
-  text-align: center;
-}
-
 #reviews-container {
   width: 100%;
   height: 100%;
@@ -139,12 +129,6 @@ blockquote {
   /* remove webkit p margins */
   -webkit-margin-before: 0em;
   -webkit-margin-after: 0em;
-}
-
-@media screen and (max-width: 500px) {
-  #title {
-    font-size: 35px;
-  }
 }
 
 @media screen and (max-width: 940px) {
