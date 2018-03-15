@@ -29,7 +29,7 @@ const Navbar = () => (
         </li>
       </ul>
       <li className="nav-brand">
-        <Link to="/">GrillBer</Link>
+        <Link to="/">Grillber</Link>
       </li>
       <li className="btn-cta">
         <Link to="/sign-up">Sign Up</Link>
