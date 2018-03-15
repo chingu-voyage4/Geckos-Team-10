@@ -16,3 +16,19 @@
     height: auto;
   }
 }
+
+@media screen and (min-width: 600px) {
+  .whatIs-information {
+    ul {
+      font-size: 1.5em;
+    }
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .whatIs-information {
+    ul {
+      font-size: 1.7em;
+    }
+  }
+}
