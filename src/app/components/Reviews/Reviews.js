@@ -1,11 +1,12 @@
 import React, { Component } from "react";
+import SubHeader from "../SubHeader/SubHeader";
 import "./Reviews.css";
 
 class Reviews extends Component {
   render() {
     return (
       <section id="reviews-component">
-        <h2 id="title">What Our Customers Say</h2>
+        <SubHeader h1="Join the BBQ" h2="What our customers are saying" />
         <div id="reviews-container">
           <div className="review-column">
             <div className="review-image-1" />

@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import SubHeader from "../SubHeader/SubHeader";
 import Card from "../Card/Card";
 import "./styles.css";
 // Card images
@@ -14,10 +15,7 @@ const text_wrap = "text-wrap";
 
 const HowItWorks = () => (
   <section className="hiw-section">
-    <header className="hiw-header">
-      <h1>How it Works</h1>
-      <h2>3 Simple Steps to Use GrillBer</h2>
-    </header>
+    <SubHeader h1="How it Works" h2="3 simple steps to use Grillber" />
     <div className="hiw-card-container">
       <Card
         cardWrap={card_wrap}
