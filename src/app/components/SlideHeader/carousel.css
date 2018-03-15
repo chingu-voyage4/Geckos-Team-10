@@ -43,6 +43,10 @@
   object-fit: cover;
 }
 
+.btn-width {
+  display: inline-block;
+}
+
 span {
   width: 100%;
 }

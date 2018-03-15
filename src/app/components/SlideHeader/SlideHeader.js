@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { Link } from "react-router-dom";
 import { CSSTransitionGroup } from "react-transition-group";
 import "./carousel.css";
 import grill from "../../images/grill.jpg";
@@ -50,7 +51,9 @@ class SlideHeader extends Component {
           <span className="sub-heading">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit.
           </span>
-          <button>Order Now</button>
+          <div className="cta-join btn-width">
+            <Link to="/sign-up">Join</Link>
+          </div>
         </div>
         <CSSTransitionGroup
           transitionName="swap"
