@@ -4,11 +4,12 @@ import "./Reviews.css";
 class Reviews extends Component {
   render() {
     return (
-      <div id="reviews-component">
-        <div id="title">What our customers say</div>
+      <section id="reviews-component">
+        <h2 id="title">What Our Customers Say</h2>
         <div id="reviews-container">
           <div className="review-column">
             <div className="review-image-1" />
+            <div className="reviewPerson">Jim</div>
             <blockquote className="talk-bubble tri-right round right-in">
               Lorem ipsum dolar Lorem ipsum dolar Lorem ipsum dolar Lorem ipsum
               dolar Lorem ipsum dolar Lorem ipsum dolar Lorem ipsum dolar
@@ -23,6 +24,7 @@ class Reviews extends Component {
           </div>
           <div className="review-column">
             <div className="review-image-2" />
+            <div className="reviewPerson">George</div>
             <blockquote className="talk-bubble tri-right round right-in">
               Lorem ipsum dolar Lorem ipsum dolar Lorem ipsum dolar Lorem ipsum
               dolar Lorem ipsum dolar Lorem ipsum dolar Lorem ipsum dolar
@@ -37,6 +39,7 @@ class Reviews extends Component {
           </div>
           <div className="review-column">
             <div className="review-image-3" />
+            <div className="reviewPerson">Bear</div>
             <blockquote className="talk-bubble tri-right round right-in">
               Lorem ipsum dolar Lorem ipsum dolar Lorem ipsum dolar Lorem ipsum
               dolar Lorem ipsum dolar Lorem ipsum dolar Lorem ipsum dolar
@@ -50,7 +53,7 @@ class Reviews extends Component {
             </blockquote>
           </div>
         </div>
-      </div>
+      </section>
     );
   }
 }

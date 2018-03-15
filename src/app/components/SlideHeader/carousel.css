@@ -6,6 +6,13 @@
   justify-content: center;
   align-items: center;
 }
+
+.overlay-header {
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius: 25px;
+  padding: 25px;
+}
+
 .slide-header .overlay-header {
   position: absolute;
   text-align: center;
@@ -56,6 +63,9 @@ span {
 @media screen and (max-width: 720px) {
   .slide-header {
     height: 100%;
+  }
+  .overlay-header {
+    padding: 0;
   }
 }
 
