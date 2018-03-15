@@ -1,0 +1,35 @@
+.sub-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 20px;
+  font-family: "Indie Flower", Arial, Helvetica, sans-serif;
+  text-align: center;
+}
+.sub-header > * {
+  margin: 0;
+}
+.sub-header > h1 {
+  font-size: 2em;
+}
+.sub-header > h2 {
+  font-size: 1.6em;
+}
+/* smartphones */
+@media screen and (min-width: 425px) {
+  .sub-header > h1 {
+    font-size: 2.3em;
+  }
+  .sub-header > h2 {
+    font-size: 1.9em;
+  }
+}
+/* tablets */
+@media screen and (min-width: 600px) {
+  .sub-header > h1 {
+    font-size: 2.7em;
+  }
+  .sub-header > h2 {
+    font-size: 2.3em;
+  }
+}

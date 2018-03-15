@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import SubHeader from "../SubHeader/SubHeader";
 import steak from "../../images/steak-grill.gif";
 import "./styles.css";
 
@@ -14,11 +15,10 @@ class WhatIsGrillber extends Component {
   render() {
     return (
       <section className="whatIs-section">
-        <div className="whatIs-header">
-          <h1>What's Grillber?</h1>
-          <h2>Lorem ipsum dolor sit amet, consectetur adipiscing</h2>
-        </div>
-
+        <SubHeader
+          h1="What is Grillber"
+          h2="Lorem ipsum dolor sit amet, consectetur adipiscing"
+        />
         <div className="whatIs-information">
           <img src={steak} alt="steak grill" />
           <ul>

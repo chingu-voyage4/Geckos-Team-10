@@ -6,21 +6,6 @@
   background: var(--gainsboro);
   padding: 50px;
 }
-.hiw-header {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 20px 20px;
-}
-.hiw-header > * {
-  margin: 0;
-}
-.hiw-header > h1 {
-  font-size: 2em;
-}
-.hiw-header > h2 {
-  font-size: 1.6em;
-}
 .hiw-card-container {
   display: flex;
   flex-direction: column;
@@ -59,12 +44,6 @@
 
 /* smartphones */
 @media screen and (min-width: 425px) {
-  .hiw-header > h1 {
-    font-size: 2.3em;
-  }
-  .hiw-header > h2 {
-    font-size: 1.9em;
-  }
   .text-wrap > p {
     font-size: 1.5em;
   }
@@ -73,9 +52,6 @@
 @media screen and (min-width: 600px) {
   .hiw-card-container {
     flex-direction: row;
-  }
-  .hiw-header > * {
-    margin: 0;
   }
   .card-wrap {
     flex-direction: column;
@@ -91,12 +67,6 @@
   }
   .text-wrap > * {
     margin: 15px 0;
-  }
-  .hiw-header > h1 {
-    font-size: 2.7em;
-  }
-  .hiw-header > h2 {
-    font-size: 2.3em;
   }
   .text-wrap > h3 {
     font-size: 1.9em;
