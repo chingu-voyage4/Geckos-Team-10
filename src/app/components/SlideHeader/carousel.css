@@ -8,7 +8,6 @@
 }
 .slide-header .overlay-header {
   position: absolute;
-  width: inherit;
   text-align: center;
   color: white;
   z-index: 10;
@@ -20,50 +19,27 @@
 .slide-header .overlay-header .sub-heading {
   display: block;
 }
-.slide-header .overlay-header button {
-  margin-top: 10px;
-  background-color: #ffa042;
-  font-size: 16px;
-  padding: 12px 24px;
-  color: white;
-  border-radius: 7px;
-  font-weight: 600;
-  border: 1px solid rgba(0, 0, 0, 0.21);
-  border-bottom: 3px solid rgba(0, 0, 0, 0.21);
-  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.15);
-  cursor: pointer;
-  outline: none;
-}
-.slide-header .overlay-header button:hover {
-  background-color: #ff9022;
-}
 .slide-header img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
-
 .btn-width {
   display: inline-block;
 }
-
 span {
   width: 100%;
 }
-
 .swap-enter {
   transform: translateX(100vw);
 }
-
 .swap-enter.swap-enter-active {
   transform: translateX(0);
   transition: all 500ms ease-in-out;
 }
-
 .swap-leave {
   transform: translateX(0);
 }
-
 .swap-leave.swap-leave-active {
   transform: translateX(-100vw);
   transition: all 500ms ease-in-out;
@@ -73,7 +49,6 @@ span {
   h1 {
     font-size: 45px;
   }
-
   .sub-heading {
     font-size: 30px;
   }
