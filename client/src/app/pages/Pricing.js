@@ -33,6 +33,7 @@ class Pricing extends Component {
 const styles = {
   display: 'flex',
   flexDirection: 'column',
+  alignItems: 'center',
   justifyContent: 'center',
   marginTop: '120px'
 };
