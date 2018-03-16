@@ -23,9 +23,7 @@
     "eject": "react-scripts eject"
   },
   "lint-staged": {
-    "*.{js,json,css,md}": [
-      "prettier --write",
-      "git add"
-    ]
-  }
+    "*.{js,json,css,md}": ["prettier --write", "git add"]
+  },
+  "proxy": "http://localhost:3001/"
 }
