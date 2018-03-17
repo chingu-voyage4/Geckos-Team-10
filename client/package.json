@@ -10,6 +10,7 @@
     "react-transition-group": "^1.2.1"
   },
   "devDependencies": {
+    "cross-env": "^5.1.4",
     "react-scripts": "1.1.1"
   },
   "scripts": {
