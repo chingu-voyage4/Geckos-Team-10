@@ -1,5 +1,5 @@
 import React from "react";
-import './styles.css'; 
+import "./styles.css";
 
 const Card = ({ cardWrap, imgWrap, src, alt, textWrap, title, text }) => (
   <div className={`card-wrap ${cardWrap}`}>
