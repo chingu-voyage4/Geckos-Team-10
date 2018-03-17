@@ -4,10 +4,10 @@
   "description": "an uber for grilling. Chingu Voyage 4 team app. ",
   "main": "server.js",
   "scripts": {
+    "precommit": "lint-staged",
     "start": "concurrently \"npm run server\" \"npm run client\"",
     "server": "nodemon server.js",
-    "client": "node start-client.js",
-    "precommit": "lint-staged"
+    "client": "node start-client.js"
   },
   "dependencies": {
     "express": "^4.16.3"
