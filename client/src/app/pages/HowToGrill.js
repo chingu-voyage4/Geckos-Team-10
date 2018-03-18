@@ -1,15 +1,26 @@
 import React from "react";
+import SlideHeader from "../components/SlideHeader/SlideHeader";
 
-const styles = {
-  display: "flex",
-  justifyContent: "center",
-  marginTop: "25vh"
-};
+//Images for the slider
+import hgrill from "../images/hgrill.jpg";
+import hgrill1 from "../images/hgrill1.jpg";
+import hgrill2 from "../images/hgrill2.jpg";
+
+const images = [hgrill, hgrill1, hgrill2];
+const subheading = `
+	Proin porttitor ultricies odio sed convallis. 
+	Duis ligula dolor, auctor vitae lobortis at, consectetur quis sapien. 
+	Suspendisse mollis lorem quis justo dictum mattis. 
+	Donec at tincidunt arcu, eu mollis nisi. Sed mollis accumsan sapien, gravida pretium sapien scelerisque eu.
+`;
 
 const HowToGrill = () => (
-  <main style={styles}>
-    <h1>This is the How To Grill page</h1>
-      <h2>First you need to buy a pork or a beef in case if you dont like to eat a pork</h2>
+  <main>
+    <SlideHeader
+      images={images}
+      heading="How does GrillBer work?"
+      subheading={subheading}
+    />
   </main>
 );
 
