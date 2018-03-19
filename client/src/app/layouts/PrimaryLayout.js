@@ -6,7 +6,7 @@ import Footer from "../components/Footer/Footer";
 
 import LandingPage from "../pages/LandingPage";
 import BookGrill from "../pages/BookGrill";
-import HowToGrill from "../pages/HowToGrill";
+import HowToGrill from "../pages/HowToGrill/HowToGrill";
 import Pricing from "../pages/Pricing";
 import SignUp from "../pages/SignUp";
 

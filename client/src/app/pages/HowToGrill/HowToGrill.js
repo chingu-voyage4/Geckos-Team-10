@@ -1,21 +1,21 @@
 import React from "react";
-import SlideHeader from "../components/SlideHeader/SlideHeader";
-import Card from "../components/Card/Card";
-import SubHeader from "../components/SubHeader/SubHeader";
+import SlideHeader from "../../components/SlideHeader/SlideHeader";
+import Card from "../../components/Card/Card";
+import SubHeader from "../../components/SubHeader/SubHeader";
 import "./HowToGrill.css";
 
 //Images for the slider
-import hgrill from "../images/hgrill.jpg";
-import hgrill1 from "../images/hgrill1.jpg";
-import hgrill2 from "../images/hgrill2.jpg";
+import hgrill from "../../images/hgrill.jpg";
+import hgrill1 from "../../images/hgrill1.jpg";
+import hgrill2 from "../../images/hgrill2.jpg";
 
 //Images for the cards
-import agenda from "../images/agenda.svg";
-import barbecue from "../images/barbecue.svg";
-import receive from "../images/receive.svg";
-import returnT from "../images/returnT.svg";
-import screen from "../images/screen.svg";
-import reload from "../images/reload.svg";
+import agenda from "../../images/agenda.svg";
+import barbecue from "../../images/barbecue.svg";
+import receive from "../../images/receive.svg";
+import returnT from "../../images/returnT.svg";
+import screen from "../../images/screen.svg";
+import reload from "../../images/reload.svg";
 
 const images = [hgrill, hgrill1, hgrill2];
 const subheading = `
