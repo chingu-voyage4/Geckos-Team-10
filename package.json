@@ -6,7 +6,7 @@
   "scripts": {
     "precommit": "lint-staged",
     "start": "concurrently \"npm run server\" \"npm run client\"",
-    "server": "nodemon server.js",
+    "server": "babel-watch server.js",
     "client": "node start-client.js"
   },
   "dependencies": {
