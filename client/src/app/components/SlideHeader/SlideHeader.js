@@ -2,6 +2,8 @@ import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import { CSSTransitionGroup } from "react-transition-group";
 import "./carousel.css";
+
+//Images for the slider
 import grill from "../../images/grill.jpg";
 import grill2 from "../../images/grill2.jpg";
 import grill3 from "../../images/grill3.jpg";
@@ -47,10 +49,8 @@ class SlideHeader extends Component {
     return (
       <div className="slide-header">
         <div className="overlay-header">
-          <h1>Grillber lorem ipsum</h1>
-          <span className="sub-heading">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-          </span>
+          <h1>{this.props.heading}</h1>
+          <span className="sub-heading">{this.props.subheading}</span>
           <div className="cta-join btn-width">
             <Link to="/sign-up">Join</Link>
           </div>
@@ -69,7 +69,9 @@ class SlideHeader extends Component {
 
 SlideHeader.defaultProps = {
   images: images,
-  loop: true
+  loop: true,
+  heading: "Grillber lorem ipsum",
+  subheading: "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
 };
 
 export default SlideHeader;

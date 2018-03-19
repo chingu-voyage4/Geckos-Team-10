@@ -19,7 +19,7 @@
 }
 .card-text-wrap > h3 {
   color: var(--green);
-  font-family: 'Indie Flower', 'Nanun Pen Script', Arial, Helvetica, sans-serif;
+  font-family: "Indie Flower", "Nanun Pen Script", Arial, Helvetica, sans-serif;
   font-size: 1.75em;
   line-height: 25px;
 }
@@ -55,7 +55,7 @@
 }
 @media screen and (min-width: 1024px) {
   .card-img-wrap {
-    max-width: 25%;
+    max-width: 50%; /*last value was:  25%; */
     max-height: 300px;
   }
   .card-text-wrap > * {
