@@ -58,7 +58,7 @@ class Footer extends Component {
         <div id="footer-container" style={alignColumn}>
           <div id="footer-items" style={spacePages}>
             {footerPages.map(function(item, i) {
-              return <div>{item}</div>;
+              return <div key={i}>{item}</div>;
             })}
           </div>
           <div id="download-stores" style={spaceItems}>
