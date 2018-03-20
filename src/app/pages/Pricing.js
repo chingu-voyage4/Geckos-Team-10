@@ -1,15 +1,17 @@
 import React from "react";
+import Price from "../components/Price/Price";
 
 const styles = {
-  display: "flex",
-  justifyContent: "center",
-  marginTop: "25vh"
+    display: "flex",
+    justifyContent: "center",
+    marginTop: "25vh"
 };
 
 const Pricing = () => (
-  <main style={styles}>
+<main style={styles}>
     <h1>This is the Pricing page</h1>
-  </main>
+<Price />
+</main>
 );
 
 export default Pricing;

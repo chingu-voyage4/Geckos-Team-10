@@ -1,0 +1,13 @@
+button {
+  background-color: #63c9ff; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  font-family: "Indie Flower", "Nanun Pen Script", Arial, Helvetica, sans-serif;
+  font-size: 1.75em;
+  line-height: 25px;
+}
