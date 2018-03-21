@@ -15,3 +15,23 @@
   font-size: 1.7em;
   padding: 0 48px;
 }
+
+/* submit button on form on sign up page */
+.cta-sign-up {
+  color: white;
+  display: flex;
+  height: 40px;
+  justify-content: space-between;
+  margin: 20px 0;
+  padding: 0 6px;
+  position: relative;
+}
+.cta-sign-up span {
+  width: 40%;
+}
+.cta-sign-up svg {
+  font-size: 25px;
+  top: 6px;
+  right: 15px;
+  position: absolute;
+}
