@@ -5,23 +5,32 @@ const Input = ({
   inputWrap,
   label,
   inputType,
+  name,
   placeholder,
+  onChange,
+  value,
   icon = null //font-awesome icons
-  // value
-  // onChange
-}) => (
-  <div className={`input-container ${inputWrap}`}>
-    <label htmlFor={label}>{label}</label>
-    <input
-      type={inputType}
-      id={label}
-      placeholder={placeholder}
-      /*onChange, value */
+}) => {
+  let label_on = "";
+  if (value !== "") label_on = "show-label";
 
-      required
-    />
-    {icon === null ? null : <i className={icon} />}
-  </div>
-);
+  return (
+    <div className={`input-container ${inputWrap}`}>
+      <label htmlFor={label} className={label_on}>
+        {label}
+      </label>
+      <input
+        type={inputType}
+        id={label}
+        name={name}
+        placeholder={placeholder}
+        onChange={onChange}
+        value={value}
+        required
+      />
+      {icon === null ? null : <i className={icon} />}
+    </div>
+  );
+};
 
 export default Input;
