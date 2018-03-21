@@ -5,7 +5,7 @@ const Input = ({
   label,
   inputType,
   placeholder,
-  icon = null
+  icon = null //font-awesome icons
   // value
   // onChange
 }) => (
@@ -15,7 +15,9 @@ const Input = ({
       type={inputType}
       id={label}
       placeholder={placeholder}
-      /*onChange, value */ required
+      /*onChange, value */
+
+      required
     />
     {icon === null ? null : <i className={icon} />}
   </div>
