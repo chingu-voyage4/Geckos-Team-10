@@ -1,4 +1,5 @@
 import React from "react";
+import "./styles.css";
 
 const Input = ({
   inputWrap,
@@ -10,7 +11,7 @@ const Input = ({
   // onChange
 }) => (
   <div className={`input-container ${inputWrap}`}>
-    <label for={label}>{label}</label>
+    <label htmlFor={label}>{label}</label>
     <input
       type={inputType}
       id={label}
