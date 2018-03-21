@@ -53,6 +53,11 @@
   width: 24px;
   margin-right: 18px;
 }
+
+div.bm-cross-button > span {
+  right: -10px !important;
+}
+
 /* Color/shape of close button cross */
 .bm-cross {
   background: var(--darkSienna);
