@@ -85,13 +85,14 @@ class SignUp extends Component {
   }
 }
 
+// transfer to own css file
 const styles = {
   main: {
     display: "flex",
     flexDirection: "column",
     alignItems: "center",
     justifyContent: "center",
-    marginTop: "30vh",
+    marginTop: "30vh", //delete when the logo is set above form
     marginBottom: "50px"
   },
   form: {
