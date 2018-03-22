@@ -1,0 +1,24 @@
+#gb-rules-comp {
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#grid-container {
+  display: grid;
+  grid-template-columns: 300px 300px 300px;
+}
+
+@media screen and (max-width: 920px) {
+  #grid-container {
+    grid-template-columns: 300px 300px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #grid-container {
+    grid-template-columns: 300px;
+  }
+}

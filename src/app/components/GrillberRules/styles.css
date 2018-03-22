@@ -1,0 +1,42 @@
+#gb-rules-comp {
+  padding: 50px;
+  display: flex;
+  justify-content: center;
+}
+
+#grid-container {
+  display: grid;
+  grid-template-columns: 300px 300px 300px;
+}
+
+.cardWrap {
+  display: flex;
+  flex-direction: column;
+  padding: 25px;
+  width: 200px;
+  width: 200px;
+  height: 200px;
+  border: 1px solid grey;
+  border-radius: 5px;
+  margin: 12px;
+  box-shadow: 0 5px 10px #bbb;
+}
+
+.textWrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.tetWrap img {
+  min-width: 100px;
+}
+
+.textWrap > h3 {
+  font-size: 2em;
+}
+
+.textWrap > p {
+  color: var(--darkSienna);
+  font-size: 1em;
+}
