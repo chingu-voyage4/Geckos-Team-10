@@ -2,7 +2,6 @@ import React from "react";
 import Card from "../Card/Card";
 import "./styles.css";
 import SubHeader from "../../components/SubHeader/SubHeader";
-import screen from "../../images/screen.svg";
 
 //Images for the cards
 import checked from "../../images/checked.svg";
@@ -52,6 +51,7 @@ const GrillberRules = () => (
           cardWrap="cardWrap"
           textWrap="textWrap"
           imgWrap="imgWrap"
+          key={"item-" + item.number}
         />
       ))}
     </div>
