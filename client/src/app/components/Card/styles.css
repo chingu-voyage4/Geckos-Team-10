@@ -1,6 +1,7 @@
 .card-wrap {
   display: flex;
   padding: 10px;
+  background: white;
 }
 
 .card-img-wrap img {
