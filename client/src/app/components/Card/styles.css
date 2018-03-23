@@ -1,7 +1,6 @@
 .card-wrap {
   display: flex;
   padding: 10px;
-  background: white;
 }
 
 .card-img-wrap img {
@@ -78,6 +77,7 @@
   border-radius: 5px;
   margin: 12px;
   box-shadow: 0 5px 10px #bbb;
+  background: white;
 }
 
 .cardWrap,
