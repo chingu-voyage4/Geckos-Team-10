@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import Input from "../components/Input/Input";
+import signupLogo from "../images/signup_logo.svg";
 
 class SignUp extends Component {
   state = {
@@ -25,6 +26,11 @@ class SignUp extends Component {
   render() {
     return (
       <main style={styles.main}>
+        <img
+          src={signupLogo}
+          style={styles.logo}
+          alt="grill with vegetables and pork"
+        />
         <form style={styles.form} onSubmit={this.onSubmit}>
           <div style={styles.full_name_wrap}>
             <Input
@@ -92,7 +98,6 @@ const styles = {
     flexDirection: "column",
     alignItems: "center",
     justifyContent: "center",
-    marginTop: "30vh", //delete when the logo is set above form
     marginBottom: "50px"
   },
   form: {
@@ -107,6 +112,10 @@ const styles = {
   terms: {
     fontSize: "13px",
     color: "black"
+  },
+  logo: {
+    margin: "40px 0 20px 0",
+    maxWidth: "100%"
   }
 };
 
