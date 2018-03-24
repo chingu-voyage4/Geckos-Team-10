@@ -4,8 +4,6 @@
   align-items: center;
   justify-content: center;
   background: white;
-  padding: 50px;
-  border: 1px solid red;
 }
 .div-card-button-container {
   margin-right: 20px;
@@ -15,20 +13,19 @@
   display: flex;
   flex-direction: column;
   padding: 25px;
-  border: 1px solid yellow;
 }
 .card-wrap {
   margin: 20px;
   display: flex;
   padding: 10px;
-  border: 1px solid red;
+  max-width: 30%;
+  border-radius: 30px;
   background: #f0fcff;
 }
 .img-wrap {
   margin-right: 10px;
   max-width: 33%;
   max-height: 300px;
-  border-radius: 50%;
 }
 .img-wrap img {
   object-fit: fill;

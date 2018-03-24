@@ -4,9 +4,9 @@ import SubHeader from "../SubHeader/SubHeader";
 import Card from "../PriceCard/PriceCard";
 import "./styles.css";
 // Card images
-import student from "../../images/student.png";
-import personal from "../../images/personal.jpg";
-import office from "../../images/office.png";
+import student from "../../images/student.svg";
+import personal from "../../images/personal.svg";
+import office from "../../images/office.svg";
 
 // class name variables
 const card_wrap = "card-wrap";
