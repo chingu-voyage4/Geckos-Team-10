@@ -23,4 +23,11 @@ describe("Finding records", function() {
       done();
     });
   });
+
+  it("Finds a record by unique id", function(done) {
+    UserModel.findOne({ _id: user._id }).then(function(result) {
+      assert(result._id.toString() === user._id.toString());
+      done();
+    });
+  });
 });
