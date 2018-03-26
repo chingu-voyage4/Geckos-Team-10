@@ -28,6 +28,7 @@
   max-height: 300px;
 }
 .img-wrap img {
+  margin-top: 20px;
   object-fit: fill;
   height: 100%;
   width: 100%;
