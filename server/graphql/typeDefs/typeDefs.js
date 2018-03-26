@@ -4,7 +4,7 @@ const typeDefs = [
         _id: String, 
         first_name: String, 
         last_name: String, 
-        mobile_number: Number, 
+        mobile_number: Int, 
         email: String, 
         password: String
     }
