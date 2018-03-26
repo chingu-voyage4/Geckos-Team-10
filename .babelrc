@@ -1,3 +1,13 @@
 {
-  "presets": ["env", "stage-3", "transform-regenerator"]
+  "presets": [
+    [
+      "env",
+      {
+        "targets": {
+          "node": "current"
+        }
+      }
+    ],
+    "stage-3"
+  ]
 }
