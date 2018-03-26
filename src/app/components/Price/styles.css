@@ -20,7 +20,7 @@
   padding: 10px;
   max-width: 30%;
   border-radius: 30px;
-  background: #f0fcff;
+  background: #dce0d9;
 }
 .img-wrap {
   margin-right: 10px;
@@ -38,7 +38,7 @@
   flex: 1;
 }
 .text-wrap > h3 {
-  color: #63c9ff;
+  color: #00a651;
   font-family: "Indie Flower", "Nanun Pen Script", Arial, Helvetica, sans-serif;
   font-size: 1.75em;
   line-height: 25px;
