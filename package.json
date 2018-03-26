@@ -7,7 +7,8 @@
     "precommit": "lint-staged",
     "start": "concurrently \"npm run server\" \"npm run client\"",
     "server": "babel-watch ./server/server.js",
-    "client": "node ./server/start-client.js"
+    "client": "node ./server/start-client.js",
+    "test": "mocha"
   },
   "dependencies": {
     "dotenv": "^5.0.1",
@@ -22,6 +23,7 @@
     "concurrently": "^3.5.1",
     "husky": "^0.14.3",
     "lint-staged": "^7.0.0",
+    "mocha": "^5.0.5",
     "prettier": "^1.11.1"
   },
   "lint-staged": {
