@@ -16,7 +16,7 @@ class Pricing extends Component {
   render() {
     return (
       <main style={styles}>
-        <Loader />
+        <Loader message="Searching for the best offers..." />
         <h2>{this.state.serverMsg}</h2>
       </main>
     );
