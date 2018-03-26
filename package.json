@@ -2,15 +2,17 @@
   "name": "grillber",
   "version": "1.0.0",
   "description": "an uber for grilling. Chingu Voyage 4 team app. ",
-  "main": "server.js",
+  "main": "./server/server.js",
   "scripts": {
     "precommit": "lint-staged",
     "start": "concurrently \"npm run server\" \"npm run client\"",
-    "server": "babel-watch server.js",
-    "client": "node start-client.js"
+    "server": "babel-watch ./server/server.js",
+    "client": "node ./server/start-client.js"
   },
   "dependencies": {
-    "express": "^4.16.3"
+    "dotenv": "^5.0.1",
+    "express": "^4.16.3",
+    "mongoose": "^5.0.11"
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",
