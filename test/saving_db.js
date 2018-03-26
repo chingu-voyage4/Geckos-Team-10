@@ -5,7 +5,7 @@ const UserModel = require("../server/models/User");
 mongoose.Promise = global.Promise;
 
 // test
-describe("tests for mongo db: CRUD", function() {
+describe("saving records", function() {
   // save a record to the db
   it("saves a record to db", function(done) {
     var Han = new UserModel({
@@ -22,6 +22,4 @@ describe("tests for mongo db: CRUD", function() {
 
     done();
   });
-
-  // next test
 });
