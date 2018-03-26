@@ -20,7 +20,7 @@ const Card = ({
       <p>{text}</p>
     </div>
     <form action="/example/">
-      <button type="submit">{price}$</button>
+      <button type="submit">${price}</button>
     </form>
   </div>
 );
