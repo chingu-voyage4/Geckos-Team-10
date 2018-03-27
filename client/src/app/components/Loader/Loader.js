@@ -7,6 +7,5 @@ const Loader = ({ message }) => (
     <div className="loader" />
   </div>
 );
-//Add message Later <h1>{message}</h1>
 
 export default Loader;
