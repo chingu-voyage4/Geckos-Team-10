@@ -9,6 +9,14 @@ const typeDefs = [
         password: String
     }
 
+    input UserInput {
+        first_name: String, 
+        last_name: String, 
+        mobile_number: Int, 
+        email: String, 
+        password: String
+    }
+
     type Grill {
         _id: String, 
         image: String, 
