@@ -15,6 +15,18 @@ const resolvers = {
     grill: (parent, { name }, { GrillModel }) => {
       return GrillModel.findOne({ name });
     }
+  },
+  Mutation: {
+    createUser: (parent, args, { UserModel }) => {
+      const { input } = args;
+      const newUser = new UserModel(input);
+      return new Promise((resolve, reject) => {
+        newUser.save(err => {
+          if (err) reject(err);
+          else resolve(newUser);
+        });
+      });
+    }
   }
 };
 
