@@ -16,9 +16,14 @@ const typeDefs = [
         grill_racks: Int, 
         fuel: String, 
         rating: Int, 
-        features: Feature,
+        features: [Feature],
         max_avail_hours: Int, 
         owner: Owner
+    }
+
+    type Feature {
+        main: String, 
+        description: String
     }
 
     type Query {
