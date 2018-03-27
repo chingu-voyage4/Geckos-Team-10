@@ -28,6 +28,4 @@ app.use(
 // GraphiQL, a visual editor for queries
 app.use("/graphiql", graphiqlExpress({ endpointURL: "/graphql" }));
 
-// debuggin use
-
 app.listen(port, () => console.log(`Listening on port ${port}`));
