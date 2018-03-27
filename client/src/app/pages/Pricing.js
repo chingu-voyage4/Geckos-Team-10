@@ -14,8 +14,7 @@ const styles = {
   display: "flex",
   flexDirection: "column",
   alignItems: "center",
-  justifyContent: "center",
-  marginTop: "120px"
+  justifyContent: "center"
 };
 
 export default Pricing;
