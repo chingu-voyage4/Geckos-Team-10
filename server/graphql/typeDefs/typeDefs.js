@@ -26,6 +26,14 @@ const typeDefs = [
         description: String
     }
 
+    type Owner {
+        name: String, 
+        age: Int, 
+        mobile_number: Int, 
+        rating: Int, 
+        image: String
+    }
+    
     type Query {
         users: [User]
     }
