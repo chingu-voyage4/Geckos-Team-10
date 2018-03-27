@@ -5,7 +5,6 @@ class Pricing extends Component {
     return (
       <main style={styles}>
         <h1>this is the pricing page</h1>
-        <h2>{this.state.serverMsg}</h2>
       </main>
     );
   }
