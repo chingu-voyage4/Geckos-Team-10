@@ -29,8 +29,5 @@ app.use(
 app.use("/graphiql", graphiqlExpress({ endpointURL: "/graphql" }));
 
 // debuggin use
-app.get("/api/hello", (req, res) => {
-  res.send({ express: "This is the server, Express. How are you?" });
-});
 
 app.listen(port, () => console.log(`Listening on port ${port}`));
