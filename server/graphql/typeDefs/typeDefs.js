@@ -39,6 +39,10 @@ const typeDefs = [
         grills: [Grill],
         grill(name: String!): Grill
     }
+
+    type Mutation {
+        createUser(input: UserInput): User
+    }
 `
 ];
 
