@@ -8,6 +8,9 @@ const resolvers = {
   Query: {
     users: async (parent, args, { UserModel }) => {
       return (await UserModel.find({})).map(id_string);
+    },
+    grills: async (parent, args, { GrillModel }) => {
+      return (await GrillModel.find({})).map(id_string);
     }
   }
 };
