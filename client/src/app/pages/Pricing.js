@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import Price from "../components/Price/Price";
 
 class Pricing extends Component {
   state = {
@@ -17,6 +18,7 @@ class Pricing extends Component {
       <main style={styles}>
         <h1>this is the pricing page</h1>
         <h2>{this.state.serverMsg}</h2>
+        <Price />
       </main>
     );
   }

@@ -8,7 +8,6 @@ import agenda from "../../images/agenda.svg";
 import barbecue from "../../images/barbecue.svg";
 import screen from "../../images/screen.svg";
 
-
 const HowItWorks = () => (
   <section className="hiw-section">
     <SubHeader h1="How it Works" h2="3 simple steps to use Grillber" />
