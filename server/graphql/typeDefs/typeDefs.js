@@ -44,6 +44,7 @@ const typeDefs = [
     
     type Query {
         users: [User],
+        user(_id: String!): User,
         grills: [Grill],
         grill(name: String!): Grill
     }
