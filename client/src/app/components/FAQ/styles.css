@@ -1,0 +1,29 @@
+.faq-container {
+  list-style: none;
+  padding: 25px;
+}
+
+.faq-item {
+  border-bottom: 1px solid var(--darkSienna);
+  padding: 7px 0;
+}
+
+.faq-item h3 {
+  font-family: "Indie Flower";
+  font-size: 1.2em;
+}
+
+.faq-item p {
+  color: var(--prune);
+  font-size: 1.1em;
+}
+
+@media screen and (min-width: 1024px) {
+  .faq-item h3 {
+    font-size: 1.3em;
+  }
+
+  .faq-item p {
+    font-size: 1.2em;
+  }
+}
