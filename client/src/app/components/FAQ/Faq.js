@@ -3,9 +3,9 @@ import "./styles.css";
 
 const FAQ = () => {
   return (
-    <ul>
+    <ul className="faq-container">
       {faqs.map((faq, i) => (
-        <li key={i}>
+        <li key={i} className="faq-item">
           <h3>{faq.question}</h3>
           <p>{faq.answer}</p>
         </li>
