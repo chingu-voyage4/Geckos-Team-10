@@ -46,7 +46,7 @@ const typeDefs = [
         users: [User],
         user(_id: String!): User,
         grills: [Grill],
-        grill(name: String!): Grill
+        grill(_id: String!): Grill
     }
 
     type Mutation {
