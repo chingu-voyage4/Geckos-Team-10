@@ -1,7 +1,7 @@
 import React from "react";
 
 import SubHeader from "../SubHeader/SubHeader";
-import Card from "../PriceCard/PriceCard";
+import Card from "../Card/Card";
 import "./styles.css";
 // Card images
 import student from "../../images/student.svg";
@@ -9,9 +9,9 @@ import personal from "../../images/personal.svg";
 import office from "../../images/office.svg";
 
 // class name variables
-const card_wrap = "card-wrap";
-const image_wrap = "img-wrap";
-const text_wrap = "text-wrap";
+const card_wrap = "price-card-wrap";
+const image_wrap = "price-img-wrap";
+const text_wrap = "price-text-wrap";
 
 const HowItWorks = () => (
   <section className="hiw-section">
