@@ -15,8 +15,8 @@ const resolvers = {
     grills: async (parent, args, { GrillModel }) => {
       return (await GrillModel.find({})).map(id_string);
     },
-    grill: (parent, { name }, { GrillModel }) => {
-      return GrillModel.findOne({ name });
+    grill: (parent, { _id }, { GrillModel }) => {
+      return GrillModel.findOne({ _id });
     }
   },
   Mutation: {
