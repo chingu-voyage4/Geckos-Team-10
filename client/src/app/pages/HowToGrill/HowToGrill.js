@@ -32,6 +32,7 @@ const HowToGrill = () => (
       images={images}
       heading="How does GrillBer work?"
       subheading={subheading}
+      wrapperClass="htg-slide-header"
     />
 
     <section className="htg-section">
