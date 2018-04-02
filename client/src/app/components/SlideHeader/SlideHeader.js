@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import PropTypes from "prop-types";
 import { Link } from "react-router-dom";
 import { CSSTransitionGroup } from "react-transition-group";
 import "./carousel.css";
@@ -72,6 +73,13 @@ SlideHeader.defaultProps = {
   loop: true,
   heading: "Grillber lorem ipsum",
   subheading: "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+};
+
+SlideHeader.propTypes = {
+  images: PropTypes.arrayOf(PropTypes.string.isRequired),
+  loop: PropTypes.bool.isRequired,
+  heading: PropTypes.string.isRequired,
+  subheading: PropTypes.string.isRequired
 };
 
 export default SlideHeader;
