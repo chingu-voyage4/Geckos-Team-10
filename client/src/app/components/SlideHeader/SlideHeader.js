@@ -48,7 +48,7 @@ class SlideHeader extends Component {
     let images = this.props.images || [];
     let currImage = images[this.state.currentId];
     return (
-      <div className={`slide-header ${wrapperClass}`}>
+      <div className={`slide-header ${this.props.wrapperClass}`}>
         <div className="overlay-header">
           <h1>{this.props.heading}</h1>
           <span className="sub-heading">{this.props.subheading}</span>
@@ -72,14 +72,16 @@ SlideHeader.defaultProps = {
   images: images,
   loop: true,
   heading: "Grillber lorem ipsum",
-  subheading: "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+  subheading: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+  wrapperClass: ""
 };
 
 SlideHeader.propTypes = {
   images: PropTypes.arrayOf(PropTypes.string.isRequired),
   loop: PropTypes.bool.isRequired,
   heading: PropTypes.string.isRequired,
-  subheading: PropTypes.string.isRequired
+  subheading: PropTypes.string.isRequired,
+  wrapperClass: PropTypes.string
 };
 
 export default SlideHeader;
