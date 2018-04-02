@@ -1,5 +1,6 @@
 import React from "react";
 import "./styles.css";
+import PropTypes from "prop-types";
 
 const SubHeader = ({ className, h1, h2 }) => (
   <header className={`sub-header ${className}`}>
@@ -7,5 +8,11 @@ const SubHeader = ({ className, h1, h2 }) => (
     <h2>{h2}</h2>
   </header>
 );
+
+SubHeader.PropTypes = {
+  className: PropTypes.string,
+  h1: PropTypes.string,
+  h2: PropTypes.string
+};
 
 export default SubHeader;
