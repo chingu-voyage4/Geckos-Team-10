@@ -52,6 +52,18 @@ span {
   transition: all 500ms ease-in-out;
 }
 
+/* added className for How to Grill page for iphone5/SE */
+@media screen and (max-width: 375px) {
+  .htg-slide-header {
+    font-size: 14px;
+  }
+  /* targets the overlay-header class */
+  .htg-slide-header > div {
+    border-radius: 0;
+    padding: 0;
+  }
+}
+
 @media screen and (min-width: 1024px) {
   h1 {
     font-size: 45px;
