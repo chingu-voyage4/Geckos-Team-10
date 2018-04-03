@@ -1,0 +1,101 @@
+.grill-name,
+.cost {
+  font-size: 45px;
+  color: var(--green);
+}
+
+.grill {
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid grey;
+  border-radius: 15px;
+  padding: 10px;
+  margin-bottom: 25px;
+  box-shadow: 0 5px 10px #bbb;
+  font-size: 25px;
+}
+
+.grill * {
+  padding: 5px;
+}
+
+.grill:hover {
+  cursor: pointer;
+  border: 2px solid var(--green);
+}
+
+.grill-overview {
+  display: flex;
+  align-items: center;
+}
+
+.cost {
+  text-align: right;
+  padding-right: 25px;
+  color: var(--darkSienna);
+}
+
+.grill-detail {
+  border-left: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 0 1 500px;
+}
+
+span {
+  display: block;
+  text-align: right;
+  font-size: 18px;
+  color: var(--trolleyGrey);
+}
+
+ul {
+  display: flex;
+  list-style: none;
+  color: var(--darkSienna);
+  margin: 0;
+}
+
+.star-rating {
+  display: flex;
+  align-items: center;
+}
+
+.star-fill {
+  color: #cccc11;
+  font-size: 20px;
+}
+
+img {
+  width: 100px;
+}
+
+@media screen and (max-width: 768px) {
+  .grill {
+    flex-direction: column;
+    border: 1px solid grey;
+    align-items: center;
+  }
+  .grill-detail {
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid grey;
+    border-top: 1px solid grey;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 0 1 auto;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .grill {
+    font-size: 20px;
+  }
+  .grill-name,
+  .cost {
+    font-size: 35px;
+  }
+}

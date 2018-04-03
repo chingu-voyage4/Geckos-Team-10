@@ -1,0 +1,12 @@
+#grill-results {
+  display: flex;
+  flex-direction: column;
+  padding: 50px;
+  margin: auto;
+}
+
+#total-results {
+  font-size: 45px;
+  padding-bottom: 10px;
+  color: var(--green);
+}

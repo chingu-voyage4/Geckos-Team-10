@@ -1,4 +1,5 @@
 import React from "react";
+import GrillList from "../components/GrillList/GrillList";
 
 const styles = {
   display: "flex",
@@ -8,7 +9,7 @@ const styles = {
 
 const BookGrill = () => (
   <main style={styles}>
-    <h1>This is the Book a Grill page</h1>
+    <h1>this is the book a grill page</h1>
   </main>
 );
 
