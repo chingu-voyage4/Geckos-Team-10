@@ -1,171 +1,36 @@
-.buttomItem {
-  background-color: #00a651; /* Green */
-  border: none;
-  color: white;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  font-family: "Indie Flower", "Nanun Pen Script", Arial, Helvetica, sans-serif;
-  font-size: 1.75em;
-  line-height: 25px;
-  margin-bottom: 20px;
-}
-
-.hiw-section {
+.price-section {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   background: white;
 }
-.div-card-button-container {
-  margin-right: 20px;
-  border: 1px solid green;
-}
-.hiw-card-container {
+.price-card-container {
   display: flex;
   flex-direction: column;
-  padding: 25px;
-}
-.card-wrap {
-  margin: 20px;
-  display: flex;
-  padding: 10px;
-  max-width: 30%;
-  border-radius: 30px;
-  background: #dce0d9;
-}
-.img-wrap {
-  margin-right: 10px;
-  max-width: 33%;
-  max-height: 300px;
-}
-.img-wrap img {
-  margin-top: 20px;
-  object-fit: fill;
-  height: 100%;
-  width: 100%;
-}
-.text-wrap {
-  display: flex;
-  flex-direction: column;
-  flex: 1;
-}
-.text-wrap > h3 {
-  color: #00a651;
-  font-family: "Indie Flower", "Nanun Pen Script", Arial, Helvetica, sans-serif;
-  font-size: 1.75em;
-  line-height: 25px;
-}
-.text-wrap > p {
-  color: var(--darkSienna);
-  font-size: 1.2em;
-  line-height: 17px;
-}
-.price-text-wrap {
-  display: flex;
-  flex-direction: column;
-  flex: 1;
-}
-.price-text-wrap > h3 {
-  color: #00a651;
-  font-family: "Indie Flower", "Nanun Pen Script", Arial, Helvetica, sans-serif;
-  font-size: 1.75em;
-  line-height: 25px;
 }
 .price-card-wrap {
-  margin: 20px;
-  display: flex;
-  padding: 10px;
-  max-width: 30%;
+  margin: 10px;
   border-radius: 30px;
   background: #dce0d9;
+  flex: 1;
+}
+.price-text-wrap {
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }
 .price-img-wrap {
-  margin-right: 10px;
-  max-width: 33%;
+  min-width: 33%;
   max-height: 300px;
-}
-.price-img-wrap img {
-  margin-top: 20px;
-  object-fit: fill;
-  height: 100%;
-  width: 100%;
-}
-
-/* smartphones */
-@media screen and (min-width: 425px) {
-  .text-wrap > p {
-    font-size: 1.5em;
-  }
-  .price-text-wrap > p {
-    font-size: 1.5em;
-  }
-  .buttomItem {
-    padding: 2px 2px;
-    font-size: 14px;
-    font-family: "Indie Flower", "Nanun Pen Script", Arial, Helvetica,
-      sans-serif;
-  }
 }
 /* tablets */
 @media screen and (min-width: 600px) {
-  .hiw-card-container {
+  .price-card-container {
     flex-direction: row;
   }
-  .card-wrap {
-    flex-direction: column;
-    align-items: center;
-  }
-  .price-card-wrap {
-    flex-direction: column;
-    align-items: center;
-  }
-  .img-wrap {
-    max-width: 40%;
-    margin-bottom: 20px;
-  }
   .price-img-wrap {
-    max-width: 40%;
-    margin-bottom: 20px;
-  }
-  .text-wrap {
-    text-align: center;
-    margin: 10px;
-  }
-  .price-text-wrap {
-    text-align: center;
-    margin: 10px;
-  }
-  .text-wrap > * {
-    margin: 15px 0;
-  }
-  .price-text-wrap > * {
-    margin: 15px 0;
-  }
-  .text-wrap > h3 {
-    font-size: 1.9em;
-  }
-  .price-text-wrap > h3 {
-    font-size: 1.9em;
-  }
-}
-/* laptops, desktops */
-@media screen and (min-width: 1024px) {
-  .img-wrap {
-    max-width: 25%;
-    max-height: 300px;
-  }
-  .price-img-wrap {
-    max-width: 25%;
-    max-height: 300px;
-  }
-  .text-wrap > * {
-    margin: 20px 0;
-  }
-  .price-text-wrap > * {
-    margin: 20px 0;
+    max-hight: none;
+    height: 150px;
   }
 }

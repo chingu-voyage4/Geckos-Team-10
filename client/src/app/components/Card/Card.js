@@ -18,9 +18,9 @@ const Card = ({
     <div className={`card-text-wrap ${textWrap}`}>
       <h3>{title}</h3>
       <p>{text}</p>
-    </div>
-    <div>
-      {price === null ? null : <div className="buttomItem">$ {price}</div>}
+      <div>
+        {price === null ? null : <div className="card-button">$ {price}</div>}
+      </div>
     </div>
   </div>
 );

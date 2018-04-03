@@ -13,10 +13,10 @@ const card_wrap = "price-card-wrap";
 const image_wrap = "price-img-wrap";
 const text_wrap = "price-text-wrap";
 
-const HowItWorks = () => (
-  <section className="hiw-section">
+const Price = () => (
+  <section className="price-section">
     <SubHeader h1="Pricing" h2="What can we suggest you" />
-    <div className="hiw-card-container">
+    <div className="price-card-container">
       <Card
         cardWrap={card_wrap}
         imgWrap={image_wrap}
@@ -51,4 +51,4 @@ const HowItWorks = () => (
   </section>
 );
 
-export default HowItWorks;
+export default Price;
