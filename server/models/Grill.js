@@ -11,7 +11,7 @@ const GrillSchema = new Schema({
   features: Array,
   max_avail_hours: Number,
   owner: Object,
-  price_per_hour: String
+  price_per_hour: Number
 });
 
 const GrillModel = mongoose.model("grill", GrillSchema);
