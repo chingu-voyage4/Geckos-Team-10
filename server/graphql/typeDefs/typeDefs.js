@@ -26,7 +26,8 @@ const typeDefs = [
         rating: Int, 
         features: [Feature],
         max_avail_hours: Int, 
-        owner: Owner
+        owner: Owner, 
+        price_per_hour: Int
     }
 
     type Feature {
