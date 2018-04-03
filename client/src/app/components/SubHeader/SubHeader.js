@@ -9,7 +9,7 @@ const SubHeader = ({ className, h1, h2 }) => (
   </header>
 );
 
-SubHeader.PropTypes = {
+SubHeader.propTypes = {
   className: PropTypes.string,
   h1: PropTypes.string,
   h2: PropTypes.string
