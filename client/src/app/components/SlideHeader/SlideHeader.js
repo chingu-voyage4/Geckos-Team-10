@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import PropTypes from "prop-types";
 import { Link } from "react-router-dom";
 import { CSSTransitionGroup } from "react-transition-group";
 import "./carousel.css";
@@ -48,7 +47,7 @@ class SlideHeader extends Component {
     let images = this.props.images || [];
     let currImage = images[this.state.currentId];
     return (
-      <div className={`slide-header ${this.props.wrapperClass}`}>
+      <div className="slide-header">
         <div className="overlay-header">
           <h1>{this.props.heading}</h1>
           <span className="sub-heading">{this.props.subheading}</span>
@@ -72,16 +71,9 @@ SlideHeader.defaultProps = {
   images: images,
   loop: true,
   heading: "Grillber lorem ipsum",
-  subheading: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-  wrapperClass: ""
-};
-
-SlideHeader.propTypes = {
-  images: PropTypes.arrayOf(PropTypes.string.isRequired),
-  loop: PropTypes.bool.isRequired,
-  heading: PropTypes.string.isRequired,
-  subheading: PropTypes.string.isRequired,
-  wrapperClass: PropTypes.string
+  subheading: "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
 };
 
 export default SlideHeader;
+
+//Why does the text blink when the image changes? - ReactJS, CSS Transition

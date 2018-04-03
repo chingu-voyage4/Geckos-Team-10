@@ -9,7 +9,6 @@ import BookGrill from "../pages/BookGrill";
 import HowToGrill from "../pages/HowToGrill/HowToGrill";
 import Pricing from "../pages/Pricing";
 import SignUp from "../pages/SignUp";
-import NoMatch from "../pages/NoMatch";
 
 const PrimaryLayout = () => (
   <div>
@@ -20,7 +19,6 @@ const PrimaryLayout = () => (
       <Route path="/pricing" component={Pricing} />
       <Route path="/book-a-grill" component={BookGrill} />
       <Route path="/sign-up" component={SignUp} />
-      <Route component={NoMatch} />
     </Switch>
     <Footer />
   </div>
