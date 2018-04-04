@@ -21,7 +21,7 @@
   text-align: center;
 }
 .price-img-wrap {
-  min-width: 33%;
+  max-width: 33%;
   max-height: 300px;
 }
 /* tablets */
