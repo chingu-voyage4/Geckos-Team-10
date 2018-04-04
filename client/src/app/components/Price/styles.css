@@ -12,7 +12,7 @@
 .price-card-wrap {
   margin: 10px;
   border-radius: 30px;
-  background: #dce0d9;
+  background: var(--gainsboro);
   flex: 1;
 }
 .price-text-wrap {
@@ -21,7 +21,7 @@
   text-align: center;
 }
 .price-img-wrap {
-  min-width: 33%;
+  max-width: 33%;
   max-height: 300px;
 }
 /* tablets */
