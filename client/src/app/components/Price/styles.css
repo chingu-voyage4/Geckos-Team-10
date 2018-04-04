@@ -30,7 +30,6 @@
     flex-direction: row;
   }
   .price-img-wrap {
-    max-hight: none;
     height: 150px;
   }
 }
