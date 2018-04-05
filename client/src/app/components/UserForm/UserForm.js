@@ -24,8 +24,8 @@ class UserForm extends Component {
 
   render() {
     return (
-      <form style={styles.form} onSubmit={this.onSubmit}>
-        <div style={styles.full_name_wrap}>
+      <form onSubmit={this.onSubmit}>
+        <div>
           <Input
             label="First Name"
             inputType="text"
