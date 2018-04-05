@@ -3,11 +3,13 @@ import Import from "../Input/Input";
 
 class UserForm extends Component {
   state = {
-    first_name: "",
-    last_name: "",
-    mobile_number: "",
-    email: "",
-    password: ""
+    user: {
+      first_name: "",
+      last_name: "",
+      mobile_number: "",
+      email: "",
+      password: ""
+    }
   };
 
   handleChange = e => {
@@ -32,7 +34,7 @@ class UserForm extends Component {
             placeholder="First Name"
             name="first_name"
             onChange={this.handleChange}
-            value={this.state.first_name}
+            value={this.state.user.first_name}
           />
           <Input
             label="Last Name"
@@ -40,7 +42,7 @@ class UserForm extends Component {
             placeholder="Last Name"
             name="last_name"
             onChange={this.handleChange}
-            value={this.state.last_name}
+            value={this.state.user.last_name}
           />
         </div>
         <Input
@@ -50,7 +52,7 @@ class UserForm extends Component {
           icon="fas fa-mobile-alt"
           name="mobile_number"
           onChange={this.handleChange}
-          value={this.state.mobile_number}
+          value={this.state.user.mobile_number}
         />
         <Input
           label="Email"
@@ -59,7 +61,7 @@ class UserForm extends Component {
           icon="fas fa-envelope"
           name="email"
           onChange={this.handleChange}
-          value={this.state.email}
+          value={this.state.user.email}
         />
         <Input
           label="Password"
@@ -68,7 +70,7 @@ class UserForm extends Component {
           icon="fas fa-lock"
           name="password"
           onChange={this.handleChange}
-          value={this.state.password}
+          value={this.state.user.password}
         />
         <button type="submit" className="cta-join cta-sign-up">
           <span>SIGN UP</span>
