@@ -29,6 +29,10 @@ const styles = {
   logo: {
     margin: "40px 0 20px 0",
     maxWidth: "100%"
+  },
+  terms: {
+    fontSize: "13px",
+    color: "black"
   }
 };
 
