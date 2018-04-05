@@ -1,3 +1,5 @@
+import { gql } from "apollo-boost";
+
 // add new user mutation:... user sign up form
 export const NEW_USER = gql`
   mutation createUser($input: UserInput!) {
