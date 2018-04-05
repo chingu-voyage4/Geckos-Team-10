@@ -1,5 +1,4 @@
 import React from "react";
-import Input from "../components/Input/Input";
 import UserForm from "../components/UserForm/UserForm";
 import signupLogo from "../images/signup_logo.svg";
 
