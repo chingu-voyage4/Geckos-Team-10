@@ -22,10 +22,21 @@ class UserForm extends Component {
     this.setState({ user: newUser });
   };
 
-  // todo: onSubmit handler
   onSubmit = e => {
-    alert("hello");
     e.preventDefault();
+    this.clearForm();
+  };
+
+  clearForm = () => {
+    this.setState({
+      user: {
+        first_name: "",
+        last_name: "",
+        mobile_number: "",
+        email: "",
+        password: ""
+      }
+    });
   };
 
   render() {
