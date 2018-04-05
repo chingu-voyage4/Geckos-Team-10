@@ -16,10 +16,10 @@ const PrimaryLayout = () => (
     <Navbar />
     <Switch>
       <Route exact path="/" component={LandingPage} />
-      <Route path="/how-to-grill" component={HowToGrill} />
-      <Route path="/pricing" component={Pricing} />
-      <Route path="/book-a-grill" component={BookGrill} />
-      <Route path="/sign-up" component={SignUp} />
+      <Route exact path="/how-to-grill" component={HowToGrill} />
+      <Route exact path="/pricing" component={Pricing} />
+      <Route exact path="/book-a-grill" component={BookGrill} />
+      <Route exact path="/sign-up" component={SignUp} />
       <Route component={NoMatch} />
     </Switch>
     <Footer />
