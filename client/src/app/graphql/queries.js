@@ -10,3 +10,18 @@ export const NEW_USER = gql`
     }
   }
 `;
+
+// grills query...list of grills
+export const GET_GRILLS = gql`
+  query {
+    grills {
+      image
+      name
+      rating
+      price_per_hour
+      features {
+        main
+      }
+    }
+  }
+`;
