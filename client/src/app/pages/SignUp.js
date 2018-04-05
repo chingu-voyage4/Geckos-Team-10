@@ -3,7 +3,7 @@ import UserForm from "../components/UserForm/UserForm";
 import signupLogo from "../images/signup_logo.svg";
 
 const SignUp = () => (
-  <main styles={styles.main}>
+  <main style={styles.main}>
     <img
       src={signupLogo}
       style={styles.logo}
