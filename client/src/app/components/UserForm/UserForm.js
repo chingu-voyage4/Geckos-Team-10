@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import Import from "../Input/Input";
+import Input from "../Input/Input";
 
 class UserForm extends Component {
   state = {
@@ -12,10 +12,13 @@ class UserForm extends Component {
     }
   };
 
-  handleChange = e => {
-    this.setState({
-      [e.target.name]: e.target.value
-    });
+  handleChange = propertyName => e => {
+    const { user } = this.state;
+    const newUser = {
+      ...user,
+      [propertyName]: e.target.value
+    };
+    this.setState({ user: newUser });
   };
 
   // todo: onSubmit handler
@@ -33,7 +36,7 @@ class UserForm extends Component {
             inputType="text"
             placeholder="First Name"
             name="first_name"
-            onChange={this.handleChange}
+            onChange={this.handleChange("first_name")}
             value={this.state.user.first_name}
           />
           <Input
@@ -41,7 +44,7 @@ class UserForm extends Component {
             inputType="text"
             placeholder="Last Name"
             name="last_name"
-            onChange={this.handleChange}
+            onChange={this.handleChange("last_name")}
             value={this.state.user.last_name}
           />
         </div>
@@ -51,7 +54,7 @@ class UserForm extends Component {
           placeholder="01-123-555-1234"
           icon="fas fa-mobile-alt"
           name="mobile_number"
-          onChange={this.handleChange}
+          onChange={this.handleChange("mobile_number")}
           value={this.state.user.mobile_number}
         />
         <Input
@@ -60,7 +63,7 @@ class UserForm extends Component {
           placeholder="email@example.com"
           icon="fas fa-envelope"
           name="email"
-          onChange={this.handleChange}
+          onChange={this.handleChange("email")}
           value={this.state.user.email}
         />
         <Input
@@ -69,7 +72,7 @@ class UserForm extends Component {
           placeholder="Use Fake Password"
           icon="fas fa-lock"
           name="password"
-          onChange={this.handleChange}
+          onChange={this.handleChange("password")}
           value={this.state.user.password}
         />
         <button type="submit" className="cta-join cta-sign-up">
