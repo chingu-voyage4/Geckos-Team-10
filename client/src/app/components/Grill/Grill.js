@@ -15,7 +15,10 @@ const Grill = ({
   <div className="grill">
     <div className="grill-overview">
       <div className="grill-image">
-        <img src="http://pngimg.com/uploads/grill/grill_PNG13965.png" />
+        <img
+          className="grill-img"
+          src="http://pngimg.com/uploads/grill/grill_PNG13965.png"
+        />
       </div>
       <div className="star-rating">
         {starImg} {stars}/5
@@ -24,7 +27,7 @@ const Grill = ({
     <div className="grill-detail">
       <div className="grill-name">{grillName}</div>
       <div className="grill-features">
-        <ul>
+        <ul className="features-list">
           <li className="feature">{feature1}</li>
           <li className="feature">{feature2}</li>
         </ul>
@@ -32,7 +35,7 @@ const Grill = ({
     </div>
     <div className="cost">
       {cost}
-      <span>per day</span>
+      <span className="timeframe">per day</span>
     </div>
   </div>
 );

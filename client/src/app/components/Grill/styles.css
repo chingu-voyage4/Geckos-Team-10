@@ -44,14 +44,14 @@
   flex: 0 1 500px;
 }
 
-span {
+.timeframe {
   display: block;
   text-align: right;
   font-size: 18px;
   color: var(--trolleyGrey);
 }
 
-ul {
+.features-list {
   display: flex;
   list-style: none;
   color: var(--darkSienna);
@@ -68,7 +68,7 @@ ul {
   font-size: 20px;
 }
 
-img {
+.grill-img {
   width: 100px;
 }
 
