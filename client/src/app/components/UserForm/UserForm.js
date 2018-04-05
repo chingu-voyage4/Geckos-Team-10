@@ -79,32 +79,4 @@ class UserForm extends Component {
   }
 }
 
-// transfer to own css file
-const styles = {
-  main: {
-    display: "flex",
-    flexDirection: "column",
-    alignItems: "center",
-    justifyContent: "center",
-    marginBottom: "50px"
-  },
-  form: {
-    display: "flex",
-    flexDirection: "column"
-  },
-  full_name_wrap: {
-    display: "flex",
-    flexDirection: "row",
-    marginBottom: "10px"
-  },
-  terms: {
-    fontSize: "13px",
-    color: "black"
-  },
-  logo: {
-    margin: "40px 0 20px 0",
-    maxWidth: "100%"
-  }
-};
-
 export default UserForm;

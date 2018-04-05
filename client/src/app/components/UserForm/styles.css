@@ -1,0 +1,10 @@
+.user-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.full-name-wrapper {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 10px;
+}
