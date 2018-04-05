@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import Input from "../Input/Input";
+import "./styles.css";
 
 class UserForm extends Component {
   state = {
@@ -29,8 +30,8 @@ class UserForm extends Component {
 
   render() {
     return (
-      <form onSubmit={this.onSubmit}>
-        <div>
+      <form onSubmit={this.onSubmit} className="user-form">
+        <div className="full-name-wrapper">
           <Input
             label="First Name"
             inputType="text"
