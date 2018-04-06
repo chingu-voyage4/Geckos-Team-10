@@ -63,7 +63,7 @@
   align-items: center;
 }
 
-.star-fill {
+.star-rating .star-fill {
   color: #cccc11;
   font-size: 20px;
 }
