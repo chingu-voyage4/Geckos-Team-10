@@ -9,7 +9,11 @@ const Grill = ({ grill }) => (
   <div className="grill">
     <div className="grill-overview">
       <div className="grill-image">
-        <img className="grill-img" src={grill.image} />
+        <img
+          className="grill-img"
+          src={grill.image}
+          alt={`thumbnail of ${grill.name}`}
+        />
       </div>
       <div className="star-rating">{numberOfStars(grill.rating)}</div>
     </div>
