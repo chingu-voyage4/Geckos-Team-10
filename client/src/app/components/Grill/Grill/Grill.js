@@ -2,6 +2,8 @@ import React from "react";
 import "./styles.css";
 
 const starImg = <i className="fas fa-star star-fill" />;
+// determine the number of stars to render
+const numberOfStars = rating => Array.from({ length: rating }, () => starImg);
 
 const Grill = ({ grill }) => (
   <div className="grill">
@@ -9,9 +11,7 @@ const Grill = ({ grill }) => (
       <div className="grill-image">
         <img className="grill-img" src={grill.image} />
       </div>
-      <div className="star-rating">
-        {starImg} {grill.rating}/5
-      </div>
+      <div className="star-rating">{numberOfStars(grill.rating)}</div>
     </div>
     <div className="grill-detail">
       <div className="grill-name">{grill.name}</div>
