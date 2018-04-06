@@ -1,6 +1,8 @@
 import React from "react";
 import UserForm from "../components/UserForm/UserForm";
 import signupLogo from "../images/signup_logo.svg";
+import Mutation from "react-apollo";
+import { NEW_USER } from "../graphql/queries";
 
 const SignUp = () => (
   <main style={styles.main}>
