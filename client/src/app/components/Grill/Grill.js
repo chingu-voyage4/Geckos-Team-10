@@ -15,15 +15,13 @@ const Grill = ({ grill }) => (
     </div>
     <div className="grill-detail">
       <div className="grill-name">{grill.name}</div>
-      <div className="grill-features">
-        <ul className="features-list">
-          {grill.features.map(feature => (
-            <li className="feature" key={feature.main}>
-              {feature.main}
-            </li>
-          ))}
-        </ul>
-      </div>
+      <ul className="features-list">
+        {grill.features.map(feature => (
+          <li className="feature" key={feature.main}>
+            {feature.main}
+          </li>
+        ))}
+      </ul>
     </div>
     <div className="cost">
       {grill.price_per_hour}
