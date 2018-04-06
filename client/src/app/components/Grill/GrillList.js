@@ -1,5 +1,5 @@
 import React from "react";
-import Grill from "../Grill/Grill";
+import Grill from "./Grill/Grill";
 
 const GrillList = ({ grills }) => (
   <section style={styles.results}>
