@@ -16,7 +16,7 @@ const Grill = ({ grill }) => (
     <div className="grill-detail">
       <div className="grill-name">{grill.name}</div>
       <ul className="features-list">
-        {grills.features.map(feature => (
+        {grill.features.map(feature => (
           <li className="feature" key={feature.main}>
             {feature.main}
           </li>
