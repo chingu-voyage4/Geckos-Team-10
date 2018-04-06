@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import Input from "../Input/Input";
+import { Redirect } from "react-router-dom";
 import "./styles.css";
 
 class UserForm extends Component {
@@ -10,7 +11,8 @@ class UserForm extends Component {
       mobile_number: "",
       email: "",
       password: ""
-    }
+    },
+    fireRedirect: false
   };
 
   handleChange = propertyName => e => {
