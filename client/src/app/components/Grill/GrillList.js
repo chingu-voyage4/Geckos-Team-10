@@ -1,9 +1,9 @@
 import React from "react";
-import Grill from "./Grill/Grill";
+import Grill_Item from "./Grill_Item/Grill_Item";
 
 const GrillList = ({ grills }) => (
   <section style={styles.results}>
-    <div>{grills.map(grill => <Grill grill={grill} />)}</div>
+    <div>{grills.map(grill => <Grill_Item grill={grill} />)}</div>
   </section>
 );
 
