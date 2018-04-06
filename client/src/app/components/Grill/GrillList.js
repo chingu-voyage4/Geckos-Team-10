@@ -2,10 +2,9 @@ import React from "react";
 import Grill from "../Grill/Grill";
 import "./styles.css";
 
-const GrillList = ({ noGrills }) => (
-  <section id="grill-results">
-    <div id="total-results">{noGrills}</div>
-    <div id="results-container">
+const GrillList = ({ grills }) => (
+  <section style={styles.results}>
+    <div>
       <Grill
         grillImage="Grill Image"
         grillName="THE MINI"
@@ -20,4 +19,12 @@ const GrillList = ({ noGrills }) => (
   </section>
 );
 
+const styles = {
+  results: {
+    display: "flex",
+    flexDirection: "column",
+    padding: "50px",
+    margin: "auto"
+  }
+};
 export default GrillList;
