@@ -13,7 +13,7 @@ import ThankYouUser from "../pages/ThankYouUser";
 import NoMatch from "../pages/NoMatch";
 
 const PrimaryLayout = () => (
-  <div>
+  <React.Fragment>
     <Navbar />
     <Switch>
       <Route exact path="/" component={LandingPage} />
@@ -22,10 +22,10 @@ const PrimaryLayout = () => (
       <Route exact path="/book-a-grill" component={BookGrill} />
       <Route exact path="/sign-up" component={SignUp} />
       <Route exact path="/thank-you" component={ThankYouUser} />
-      <Route component={NoMatch} />
+      <Route comp onent={NoMatch} />
     </Switch>
     <Footer />
-  </div>
+  </React.Fragment>
 );
 
 export default PrimaryLayout;
