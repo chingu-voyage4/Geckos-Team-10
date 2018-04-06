@@ -29,11 +29,11 @@ class UserForm extends Component {
     const { mutate } = this.props;
     const { user } = this.state;
     mutate({ variables: { input: user } }).then(() => {
-      this.clearForm();
+      this.clearForm_RedirectRoute();
     });
   };
 
-  clearForm = () => {
+  clearForm_RedirectRoute = () => {
     this.setState({
       user: {
         first_name: "",
@@ -41,7 +41,8 @@ class UserForm extends Component {
         mobile_number: "",
         email: "",
         password: ""
-      }
+      },
+      fireRedirect: true
     });
   };
 
@@ -97,6 +98,7 @@ class UserForm extends Component {
           <span>SIGN UP</span>
           <i className="fas fa-arrow-right" />
         </button>
+        {this.state.fireRedirect && <Redirect to="/thank-you" />}
       </form>
     );
   }
