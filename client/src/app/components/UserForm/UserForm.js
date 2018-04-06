@@ -24,7 +24,11 @@ class UserForm extends Component {
 
   onSubmit = e => {
     e.preventDefault();
-    this.clearForm();
+    const { mutate } = this.props;
+    const { user } = this.state;
+    mutate({ variables: { input: user } }).then(() => {
+      this.clearForm();
+    });
   };
 
   clearForm = () => {
