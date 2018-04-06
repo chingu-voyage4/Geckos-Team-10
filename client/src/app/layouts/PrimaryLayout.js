@@ -21,7 +21,7 @@ const PrimaryLayout = () => (
       <Route exact path="/pricing" component={Pricing} />
       <Route exact path="/book-a-grill" component={BookGrill} />
       <Route exact path="/sign-up" component={SignUp} />
-      <Route exact path="thank-you" component={ThankYouUser} />
+      <Route exact path="/thank-you" component={ThankYouUser} />
       <Route component={NoMatch} />
     </Switch>
     <Footer />
