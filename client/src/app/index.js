@@ -10,9 +10,9 @@ const client = new ApolloClient({});
 const App = () => (
   <ApolloProvider client={client}>
     <BrowserRouter>
-      <div>
+      <React.Fragment>
         <PrimaryLayout />
-      </div>
+      </React.Fragment>
     </BrowserRouter>
   </ApolloProvider>
 );
