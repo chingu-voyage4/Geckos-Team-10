@@ -7,8 +7,8 @@ class Pricing extends Component {
   render() {
     return (
       <main style={styles}>
-        <SubHeader />
         <Price />
+        <SubHeader h1="Frequently Asked Questions" />
         <FAQ />
       </main>
     );
