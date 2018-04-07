@@ -78,11 +78,13 @@ const UserForm = withFormik({
     password: ""
   }),
   handleSubmit: (values, { props, resetForm }) => {
-    const { mutate } = props;
+    const { mutate, history } = props;
     // apollo mutate function
     mutate({ variables: { input: values } }).then(() => {
       // clear form of input values
       resetForm();
+      // go to thank-you page
+      history.push("/thank-you");
     });
   }
 })(InnerUser);
