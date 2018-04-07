@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React from "react";
 import SubHeader from "../components/SubHeader/SubHeader";
 import Price from "../components/Price/Price";
 import FAQ from "../components/FAQ/Faq";
