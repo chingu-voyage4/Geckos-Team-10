@@ -4,6 +4,7 @@ import { withFormik, Form } from "formik";
 import "./styles.css";
 
 const InnerUser = ({
+  // these are props passed from withFormik HOC
   values,
   handleChange,
   handleBlur,
