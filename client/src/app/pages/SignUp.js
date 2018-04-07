@@ -4,7 +4,7 @@ import signupLogo from "../images/signup_logo.svg";
 import { Mutation } from "react-apollo";
 import { NEW_USER } from "../graphql/queries";
 
-const SignUp = () => (
+const SignUp = ({ history }) => (
   <main style={styles.main}>
     <img
       src={signupLogo}
@@ -12,7 +12,7 @@ const SignUp = () => (
       alt="grill with vegetables and pork"
     />
     <Mutation mutation={NEW_USER}>
-      {createUser => <UserForm mutate={createUser} />}
+      {createUser => <UserForm mutate={createUser} history={history} />}
     </Mutation>
     <p style={styles.terms}>
       By clicking "Sign Up", you agree to Grillber's Terms and Conditions and
