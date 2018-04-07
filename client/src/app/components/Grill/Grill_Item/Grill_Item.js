@@ -5,7 +5,7 @@ const starImg = <i className="fas fa-star star-fill" />;
 // determine the number of stars to render
 const numberOfStars = rating => Array.from({ length: rating }, () => starImg);
 
-const Grill_Item = ({ grill }) => (
+const GrillItem = ({ grill }) => (
   <div className="grill">
     <div className="grill-overview">
       <div className="grill-image">
@@ -34,4 +34,4 @@ const Grill_Item = ({ grill }) => (
   </div>
 );
 
-export default Grill_Item;
+export default GrillItem;
