@@ -1,107 +1,89 @@
 import React, { Component } from "react";
 import Input from "../Input/Input";
-import { Redirect } from "react-router-dom";
+import { withFormik, Form } from "formik";
 import "./styles.css";
 
-class UserForm extends Component {
-  state = {
-    user: {
-      first_name: "",
-      last_name: "",
-      mobile_number: "",
-      email: "",
-      password: ""
-    },
-    fireRedirect: false
-  };
+const InnerUser = ({
+  values,
+  handleChange,
+  handleBlur,
+  handleSubmit,
+  isSubmitting
+}) => (
+  <Form onSubmit={handleSubmit} className="user-form">
+    <div className="full-name-wrapper">
+      <Input
+        label="First Name"
+        inputType="text"
+        placeholder="First Name"
+        name="first_name"
+        onChange={handleChange}
+        value={values.first_name}
+      />
+      <Input
+        label="Last Name"
+        inputType="text"
+        placeholder="Last Name"
+        name="last_name"
+        onChange={handleChange}
+        value={values.last_name}
+      />
+    </div>
+    <Input
+      label="Mobile Number"
+      type="tel"
+      placeholder="01-305-215-1234"
+      icon="fas fa-mobile-alt"
+      name="mobile_number"
+      onChange={handleChange}
+      value={values.mobile_number}
+    />
+    <Input
+      label="Email"
+      type="email"
+      placeholder="email@example.com"
+      icon="fas fa-envelope"
+      name="email"
+      onChange={handleChange}
+      value={values.email}
+    />
+    <Input
+      label="Password"
+      type="password"
+      placeholder="Use Fake Password"
+      icon="fas fa-lock"
+      name="password"
+      onChange={handleChange}
+      value={values.password}
+    />
+    <button
+      type="submit"
+      className="cta-join cta-sign-up"
+      disabled={isSubmitting}
+    >
+      <span>SIGN UP</span>
+      <i className="fas fa-arrow-right" />
+    </button>
+  </Form>
+);
 
-  handleChange = propertyName => e => {
-    const { user } = this.state;
-    const newUser = {
-      ...user,
-      [propertyName]: e.target.value
-    };
-    this.setState({ user: newUser });
-  };
-
-  onSubmit = e => {
-    e.preventDefault();
-    const { mutate } = this.props;
-    const { user } = this.state;
-    mutate({ variables: { input: user } }).then(() => {
-      this.clearForm_RedirectRoute();
+// withFormik HOC
+const UserForm = withFormik({
+  mapPropsToValues: props => ({
+    first_name: "",
+    last_name: "",
+    mobile_number: "",
+    email: "",
+    password: ""
+  }),
+  handleSubmit: (values, { props, resetForm }) => {
+    const { mutate } = props;
+    // apollo mutate function
+    mutate({ variables: { input: values } }).then(() => {
+      // clear form of input values
+      resetForm();
     });
-  };
-
-  clearForm_RedirectRoute = () => {
-    this.setState({
-      user: {
-        first_name: "",
-        last_name: "",
-        mobile_number: "",
-        email: "",
-        password: ""
-      },
-      fireRedirect: true
-    });
-  };
-
-  render() {
-    return (
-      <form onSubmit={this.onSubmit} className="user-form">
-        <div className="full-name-wrapper">
-          <Input
-            label="First Name"
-            inputType="text"
-            placeholder="First Name"
-            name="first_name"
-            onChange={this.handleChange("first_name")}
-            value={this.state.user.first_name}
-          />
-          <Input
-            label="Last Name"
-            inputType="text"
-            placeholder="Last Name"
-            name="last_name"
-            onChange={this.handleChange("last_name")}
-            value={this.state.user.last_name}
-          />
-        </div>
-        <Input
-          label="Mobile Number"
-          type="tel"
-          placeholder="01-123-555-1234"
-          icon="fas fa-mobile-alt"
-          name="mobile_number"
-          onChange={this.handleChange("mobile_number")}
-          value={this.state.user.mobile_number}
-        />
-        <Input
-          label="Email"
-          type="email"
-          placeholder="email@example.com"
-          icon="fas fa-envelope"
-          name="email"
-          onChange={this.handleChange("email")}
-          value={this.state.user.email}
-        />
-        <Input
-          label="Password"
-          type="password"
-          placeholder="Use Fake Password"
-          icon="fas fa-lock"
-          name="password"
-          onChange={this.handleChange("password")}
-          value={this.state.user.password}
-        />
-        <button type="submit" className="cta-join cta-sign-up">
-          <span>SIGN UP</span>
-          <i className="fas fa-arrow-right" />
-        </button>
-        {this.state.fireRedirect && <Redirect to="/thank-you" />}
-      </form>
-    );
   }
-}
+})(InnerUser);
 
 export default UserForm;
