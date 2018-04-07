@@ -1,14 +1,15 @@
 import React, { Component } from "react";
+import SubHeader from "../components/SubHeader/SubHeader";
+import Price from "../components/Price/Price";
+import FAQ from "../components/FAQ/Faq";
 
-class Pricing extends Component {
-  render() {
-    return (
-      <main style={styles}>
-        <h1>this is the pricing page</h1>
-      </main>
-    );
-  }
-}
+const Pricing = () => (
+  <main style={styles}>
+    <Price />
+    <SubHeader h1="Frequently Asked Questions" />
+    <FAQ />
+  </main>
+);
 
 const styles = {
   display: "flex",
