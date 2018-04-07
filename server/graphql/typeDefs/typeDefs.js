@@ -4,7 +4,7 @@ const typeDefs = [
         _id: String, 
         first_name: String, 
         last_name: String, 
-        mobile_number: Int, 
+        mobile_number: String, 
         email: String, 
         password: String
     }
@@ -12,7 +12,7 @@ const typeDefs = [
     input UserInput {
         first_name: String, 
         last_name: String, 
-        mobile_number: Int, 
+        mobile_number: String, 
         email: String, 
         password: String
     }
