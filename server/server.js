@@ -10,7 +10,13 @@ import GrillModel from "./models/Grill";
 const app = express();
 const port = 4001;
 
-mongoose.connect(process.env.MONGO_URI, { dbName: "grillber" });
+mongoose.connect(process.env.MONGO_URI, { dbName: "grillber" }, function(
+  error
+) {
+  error
+    ? console.log("abort...no fireworks with mongo.", error)
+    : console.log("no error on mongo connection");
+});
 mongoose.connection.once("open", () => {
   console.log("connected to mongo....fireworks!");
 });
