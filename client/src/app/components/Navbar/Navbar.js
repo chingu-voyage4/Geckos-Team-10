@@ -7,11 +7,14 @@ class Navbar extends React.Component {
   state = {
     menuOpen: false
   };
-
   // This keeps your state in sync with the opening/closing of the menu
   // via the default means, e.g. clicking the X, pressing the ESC key etc.
   handleStateChange(state) {
     this.setState({ menuOpen: state.isOpen });
+  }
+  // This can be used to close the menu, e.g. when a user clicks a menu item
+  closeMenu() {
+    this.setState({ menuOpen: false });
   }
 
   render() {
@@ -22,13 +25,19 @@ class Navbar extends React.Component {
           onStateChange={state => this.handleStateChange(state)}
         >
           <li>
-            <Link to="/how-to-grill">How to Grill</Link>
+            <Link to="/how-to-grill" onClick={() => this.closeMenu()}>
+              How to Grill
+            </Link>
           </li>
           <li>
-            <Link to="/pricing">Pricing</Link>
+            <Link to="/pricing" onClick={() => this.closeMenu()}>
+              Pricing
+            </Link>
           </li>
           <li>
-            <Link to="/book-a-grill">Book a Grill</Link>
+            <Link to="/book-a-grill" onClick={() => this.closeMenu()}>
+              Book a Grill
+            </Link>
           </li>
         </Menu>
         <nav className="nav-item-list">
