@@ -11,7 +11,6 @@ const InnerUser = ({
   handleBlur,
   handleSubmit,
   isSubmitting,
-  //
   touched,
   errors
 }) => (
@@ -40,7 +39,7 @@ const InnerUser = ({
     </div>
     <Input
       label="Mobile Number"
-      type="tel"
+      inputType="tel"
       placeholder="013052151234"
       icon="fas fa-mobile-alt"
       name="mobile_number"
@@ -51,7 +50,7 @@ const InnerUser = ({
     />
     <Input
       label="Email"
-      type="email"
+      inputType="email"
       placeholder="email@example.com"
       icon="fas fa-envelope"
       name="email"
@@ -62,7 +61,7 @@ const InnerUser = ({
     />
     <Input
       label="Password"
-      type="password"
+      inputType="password"
       placeholder="Use Fake Password"
       icon="fas fa-lock"
       name="password"
@@ -98,7 +97,7 @@ const UserForm = withFormik({
       .required("your number..please?")
       .min(10, "you need at least 10 digits")
       .max(12, "you can't have more than 12 digits")
-      .matches(/[0-9]/, "only numbers please"),
+      .matches(/^\d+$/, "only numbers please"),
     email: Yup.string()
       .email("Invalid email address")
       .required("Email is required!"),
