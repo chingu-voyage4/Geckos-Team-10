@@ -97,7 +97,7 @@ const UserForm = withFormik({
       .required("your number..please?")
       .min(10, "you need at least 10 digits")
       .max(12, "you can't have more than 12 digits")
-      .matches(/[0-9]/, "only numbers please"),
+      .matches(/^\d+$/, "only numbers please"),
     email: Yup.string()
       .email("Invalid email address")
       .required("Email is required!"),
