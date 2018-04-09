@@ -41,7 +41,7 @@ const InnerUser = ({
     <Input
       label="Mobile Number"
       type="tel"
-      placeholder="01-305-215-1234"
+      placeholder="013052151234"
       icon="fas fa-mobile-alt"
       name="mobile_number"
       onChange={handleChange}
