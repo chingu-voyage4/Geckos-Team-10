@@ -1,6 +1,7 @@
 import React from "react";
 import Input from "../Input/Input";
 import { withFormik, Form } from "formik";
+import Yup from "yup";
 import "./styles.css";
 
 const InnerUser = ({
@@ -76,6 +77,21 @@ const UserForm = withFormik({
     mobile_number: "",
     email: "",
     password: ""
+  }),
+  validationSchema: Yup.object().shape({
+    first_name: Yup.string().required("your first name please"),
+    last_name: Yup.string().required("your last name, please"),
+    mobile_number: Yup.string()
+      .required("your number..please?")
+      .min(10, "you need at least 10 digits")
+      .max(12, "you can't have more than 12 digits")
+      .matches(/[0-9]/),
+    email: Yup.string()
+      .email("Invalid email address")
+      .required("Email is required!"),
+    password: Yup.string()
+      .min(8, "you need 8 characters..please")
+      .required("you need a password")
   }),
   handleSubmit: (values, { props, resetForm }) => {
     const { mutate, history } = props;
