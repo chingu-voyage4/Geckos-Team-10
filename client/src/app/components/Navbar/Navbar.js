@@ -8,10 +8,19 @@ class Navbar extends React.Component {
     menuOpen: false
   };
 
+  // This keeps your state in sync with the opening/closing of the menu
+  // via the default means, e.g. clicking the X, pressing the ESC key etc.
+  handleStateChange(state) {
+    this.setState({ menuOpen: state.isOpen });
+  }
+
   render() {
     return (
       <header className="nav">
-        <Menu>
+        <Menu
+          isOpen={this.state.menuOpen}
+          onStateChange={state => this.handleStateChange(state)}
+        >
           <li>
             <Link to="/how-to-grill">How to Grill</Link>
           </li>
