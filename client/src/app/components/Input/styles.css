@@ -34,7 +34,6 @@ label {
   opacity: 1;
   color: var(--green);
 }
-
 /* font-awesome icons become svgs */
 .input-container svg {
   font-size: 16px;
@@ -42,4 +41,8 @@ label {
   line-height: 1;
   top: 25px;
   right: 15px;
+}
+.error-input {
+  color: red;
+  font-size: 16px;
 }

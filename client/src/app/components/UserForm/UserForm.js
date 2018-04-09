@@ -1,6 +1,7 @@
 import React from "react";
 import Input from "../Input/Input";
 import { withFormik, Form } from "formik";
+import Yup from "yup";
 import "./styles.css";
 
 const InnerUser = ({
@@ -9,7 +10,10 @@ const InnerUser = ({
   handleChange,
   handleBlur,
   handleSubmit,
-  isSubmitting
+  isSubmitting,
+  //
+  touched,
+  errors
 }) => (
   <Form onSubmit={handleSubmit} className="user-form">
     <div className="full-name-wrapper">
@@ -20,6 +24,8 @@ const InnerUser = ({
         name="first_name"
         onChange={handleChange}
         value={values.first_name}
+        error={errors.first_name}
+        touch={touched.first_name}
       />
       <Input
         label="Last Name"
@@ -28,6 +34,8 @@ const InnerUser = ({
         name="last_name"
         onChange={handleChange}
         value={values.last_name}
+        error={errors.last_name}
+        touch={touched.last_name}
       />
     </div>
     <Input
@@ -38,6 +46,8 @@ const InnerUser = ({
       name="mobile_number"
       onChange={handleChange}
       value={values.mobile_number}
+      error={errors.mobile_number}
+      touch={touched.mobile_number}
     />
     <Input
       label="Email"
@@ -47,6 +57,8 @@ const InnerUser = ({
       name="email"
       onChange={handleChange}
       value={values.email}
+      error={errors.email}
+      touch={touched.email}
     />
     <Input
       label="Password"
@@ -56,6 +68,8 @@ const InnerUser = ({
       name="password"
       onChange={handleChange}
       value={values.password}
+      error={errors.password}
+      touch={touched.password}
     />
     <button
       type="submit"
@@ -76,6 +90,21 @@ const UserForm = withFormik({
     mobile_number: "",
     email: "",
     password: ""
+  }),
+  validationSchema: Yup.object().shape({
+    first_name: Yup.string().required("your first name please"),
+    last_name: Yup.string().required("your last name, please"),
+    mobile_number: Yup.string()
+      .required("your number..please?")
+      .min(10, "you need at least 10 digits")
+      .max(12, "you can't have more than 12 digits")
+      .matches(/[0-9]/, "only numbers please"),
+    email: Yup.string()
+      .email("Invalid email address")
+      .required("Email is required!"),
+    password: Yup.string()
+      .min(8, "you need 8 characters..please")
+      .required("you need a password")
   }),
   handleSubmit: (values, { props, resetForm }) => {
     const { mutate, history } = props;
