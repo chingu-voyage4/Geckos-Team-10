@@ -9,7 +9,9 @@ const Input = ({
   placeholder,
   onChange,
   value,
-  icon = null //font-awesome icons
+  icon = null, //font-awesome icons
+  touch,
+  error
 }) => {
   let label_on = "";
   if (value !== "") label_on = "show-label";
@@ -26,9 +28,9 @@ const Input = ({
         placeholder={placeholder}
         onChange={onChange}
         value={value}
-        required
       />
       {icon === null ? null : <i className={icon} />}
+      {touch && error && <p className="error-input">{error}</p>}
     </div>
   );
 };
