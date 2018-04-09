@@ -1,5 +1,6 @@
 import React from "react";
 import "./styles.css";
+import PropTypes from "prop-types";
 
 const Card = ({
   cardWrap,
@@ -24,5 +25,16 @@ const Card = ({
     </div>
   </div>
 );
+
+Card.propTypes = {
+  cardWrap: PropTypes.string,
+  imgWrap: PropTypes.string,
+  src: PropTypes.string,
+  alt: PropTypes.string,
+  textWrap: PropTypes.string,
+  title: PropTypes.string,
+  text: PropTypes.string,
+  price: PropTypes.number
+};
 
 export default Card;
