@@ -35,7 +35,8 @@ const styles = {
   },
   terms: {
     fontSize: "13px",
-    color: "black"
+    color: "black",
+    textAlign: "center"
   }
 };
 
