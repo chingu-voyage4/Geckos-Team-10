@@ -21,16 +21,12 @@ const Card = ({
     <div className={`card-text-wrap ${textWrap}`}>
       <h3>{title}</h3>
       <p>{text}</p>
-      <div>
-        {price === null ? null : <div className="card-button">$ {price}</div>}
-      </div>
-      <div>
-        {pageLink === null ? null : (
-          <div className="card-button">
-            <a href={path}>{pageLink}</a>
-          </div>
-        )}
-      </div>
+      {price === null ? null : <div className="card-button">$ {price}</div>}
+      {pageLink === null ? null : (
+        <div className="card-button">
+          <a href={path}>{pageLink}</a>
+        </div>
+      )}
     </div>
   </div>
 );
