@@ -17,6 +17,7 @@ export const NEW_USER = gql`
 export const GET_GRILLS = gql`
   query {
     grills {
+      _id
       image
       name
       rating
