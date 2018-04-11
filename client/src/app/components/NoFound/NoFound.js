@@ -3,28 +3,30 @@ import SubHeader from "../SubHeader/SubHeader";
 import Card from "../Card/Card";
 import "./style.css";
 
-const HowItWorks = () => (
+const NoFound = () => (
   <section className="nf-section">
     <SubHeader h1="Something went wrong" h2="404: Page not found" />
     <div className="nf-container">
-      <SubHeader h2="You can find this on our service" />
       <div className="nf-card-container">
         <Card
-          title="How to Grill"
+          cardWrap="nf-card-wrap"
+          title="What is Grillber?"
           text="Pellentesque in ipsum id orci porta dapibus. Proin eget tortor risus."
-          pageLink={"How to Grill"}
+          pageLink="Learn about Grillber"
           path={"/how-to-grill"}
         />
         <Card
-          title="Pricing"
+          cardWrap="nf-card-wrap"
+          title="Looking for Plans?"
           text="Pellentesque in ipsum id orci porta dapibus. Proin eget tortor risus."
-          pageLink={"Pricing"}
+          pageLink="See Pricing Plans"
           path={"/pricing"}
         />
         <Card
-          title="Book a grill"
+          cardWrap="nf-card-wrap"
+          title="Looking for Grills?"
           text="Pellentesque in ipsum id orci porta dapibus. Proin eget tortor risus."
-          pageLink={"Book Grill"}
+          pageLink="Reserve a Grill"
           path={"/book-a-grill"}
         />
       </div>
@@ -32,4 +34,4 @@ const HowItWorks = () => (
   </section>
 );
 
-export default HowItWorks;
+export default NoFound;
