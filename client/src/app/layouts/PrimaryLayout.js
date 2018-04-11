@@ -22,7 +22,7 @@ const PrimaryLayout = () => (
       <Route exact path="/book-a-grill" component={BookGrill} />
       <Route exact path="/sign-up" component={SignUp} />
       <Route exact path="/thank-you" component={ThankYouUser} />
-      <Route comp onent={NoMatch} />
+      <Route component={NoMatch} />
     </Switch>
     <Footer />
   </React.Fragment>
