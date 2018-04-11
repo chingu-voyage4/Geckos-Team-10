@@ -27,7 +27,7 @@ const Card = ({
       <div>
         {pageLink === null ? null : (
           <div className="card-button">
-            <a href={path}>Go to {pageLink}</a>
+            <a href={path}>{pageLink}</a>
           </div>
         )}
       </div>
