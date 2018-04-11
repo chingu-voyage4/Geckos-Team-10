@@ -1,8 +1,9 @@
 import React from "react";
+import NoFound from "../components/NoFound/NoFound";
 
 const NoMatch = () => (
   <div>
-    <h1>404 this page doesn't exist</h1>
+    <NoFound />
   </div>
 );
 
