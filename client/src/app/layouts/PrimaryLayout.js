@@ -6,6 +6,7 @@ import Footer from "../components/Footer/Footer";
 
 import LandingPage from "../pages/LandingPage";
 import BookGrill from "../pages/BookGrill";
+import SingleGrill from "../pages/SingleGrill";
 import HowToGrill from "../pages/HowToGrill/HowToGrill";
 import Pricing from "../pages/Pricing";
 import SignUp from "../pages/SignUp";
@@ -20,6 +21,7 @@ const PrimaryLayout = () => (
       <Route exact path="/how-to-grill" component={HowToGrill} />
       <Route exact path="/pricing" component={Pricing} />
       <Route exact path="/book-a-grill" component={BookGrill} />
+      <Route exact path="/book-a-grill/:_id" component={SingleGrill} />
       <Route exact path="/sign-up" component={SignUp} />
       <Route exact path="/thank-you" component={ThankYouUser} />
       <Route component={NoMatch} />
