@@ -2,9 +2,9 @@ import React from "react";
 import NoFound from "../components/NoFound/NoFound";
 
 const NoMatch = () => (
-  <div>
+  <main>
     <NoFound />
-  </div>
+  </main>
 );
 
 export default NoMatch;
