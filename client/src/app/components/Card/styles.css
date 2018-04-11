@@ -67,6 +67,22 @@
     font-size: 1.9em;
   }
 }
+
+/* this media query is for <NoFound />  */
+@media screen and (min-width: 600px) and (max-width: 1300px) {
+  .nf-card-wrap {
+    max-width: 33%;
+  }
+  .nf-card-wrap h3 {
+    height: 50px;
+  }
+  .nf-card-wrap .card-button {
+    white-space: normal;
+    word-wrap: break-word;
+    height: 100px;
+  }
+}
+
 @media screen and (min-width: 1024px) {
   .card-img-wrap {
     max-width: 50%; /*last value was:  25%; */
