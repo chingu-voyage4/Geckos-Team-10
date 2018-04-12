@@ -1,5 +1,5 @@
-.grill-name,
-.cost {
+.gi-grill-name,
+.gi-cost {
   font-size: 45px;
   color: var(--green);
 }
@@ -29,13 +29,13 @@
   align-items: center;
 }
 
-.cost {
+.gi-cost {
   text-align: right;
   padding-right: 25px;
   color: var(--darkSienna);
 }
 
-.grill-detail {
+.gi-grill-detail {
   border-left: 1px solid #ccc;
   border-right: 1px solid #ccc;
   display: flex;
@@ -44,14 +44,14 @@
   flex: 0 1 500px;
 }
 
-.timeframe {
+.gi-timeframe {
   display: block;
   text-align: right;
   font-size: 18px;
   color: var(--trolleyGrey);
 }
 
-.features-list {
+.gi-features-list {
   display: flex;
   flex-direction: column;
   list-style-image: url("../../../images/lists.svg");
@@ -80,7 +80,7 @@
     border: 1px solid grey;
     align-items: center;
   }
-  .grill-detail {
+  .gi-grill-detail {
     border-left: none;
     border-right: none;
     border-bottom: 1px solid grey;
@@ -96,8 +96,8 @@
   .gi-grill {
     font-size: 20px;
   }
-  .grill-name,
-  .cost {
+  .gi-grill-name,
+  .gi-cost {
     font-size: 35px;
   }
 }

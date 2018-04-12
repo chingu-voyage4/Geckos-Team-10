@@ -17,19 +17,17 @@ const GrillItem = ({ grill }) => (
         </div>
         <div className="gi-star-rating">{numberOfStars(grill.rating)}</div>
       </div>
-      <div className="grill-detail">
-        <div className="grill-name">{grill.name}</div>
-        <ul className="features-list">
+      <div className="gi-grill-detail">
+        <div className="gi-grill-name">{grill.name}</div>
+        <ul className="gi-features-list">
           {grill.features.map(feature => (
-            <li className="feature" key={feature.main}>
-              {feature.main}
-            </li>
+            <li key={feature.main}>{feature.main}</li>
           ))}
         </ul>
       </div>
-      <div className="cost">
+      <div className="gi-cost">
         {grill.price_per_hour}
-        <span className="timeframe">per hour</span>
+        <span className="gi-timeframe">per hour</span>
       </div>
     </div>
   </Link>
