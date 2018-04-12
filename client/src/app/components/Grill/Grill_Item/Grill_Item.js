@@ -2,9 +2,11 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "./styles.css";
 
-const starImg = <i className="fas fa-star star-fill" />;
 // determine the number of stars to render
-const numberOfStars = rating => Array.from({ length: rating }, () => starImg);
+const numberOfStars = rating =>
+  Array.from({ length: rating }, (rating, index) => (
+    <i key={index} className="fas fa-star star-fill" />
+  ));
 
 const GrillItem = ({ grill }) => (
   <Link to={`book-a-grill/${grill._id}`}>
