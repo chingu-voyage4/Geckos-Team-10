@@ -47,6 +47,10 @@
   width: 100%;
 }
 
+.gi-grill-name {
+  text-align: center;
+}
+
 .gi-timeframe {
   display: block;
   text-align: right;
