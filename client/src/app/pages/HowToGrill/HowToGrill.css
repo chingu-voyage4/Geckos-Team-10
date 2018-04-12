@@ -1,0 +1,25 @@
+/*  .htg-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: var(--gainsboro);
+  padding: 50px;
+} */
+.htg-card-container {
+  display: flex;
+  flex-direction: column;
+  padding: 25px;
+}
+/* tablets */
+@media screen and (min-width: 600px) {
+  .htg-card-container {
+    flex-direction: row;
+  }
+}
+
+@media screen and (max-width: 880px) {
+  .htg-card-container {
+    flex-direction: column;
+  }
+}
