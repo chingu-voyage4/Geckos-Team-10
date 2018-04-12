@@ -5,23 +5,28 @@ import PropTypes from "prop-types";
 const Card = ({
   cardWrap,
   imgWrap,
-  src,
+  src = null,
   alt,
   textWrap,
   title,
   text,
-  price = null
+  price = null,
+  pageLink = null,
+  path = "/"
 }) => (
   <div className={`card-wrap ${cardWrap}`}>
     <div className={`card-img-wrap ${imgWrap}`}>
-      <img src={src} alt={alt} />
+      {src === null ? null : <img src={src} alt={alt} />}
     </div>
     <div className={`card-text-wrap ${textWrap}`}>
       <h3>{title}</h3>
       <p>{text}</p>
-      <div>
-        {price === null ? null : <div className="card-button">$ {price}</div>}
-      </div>
+      {price === null ? null : <div className="card-button">$ {price}</div>}
+      {pageLink === null ? null : (
+        <div className="card-button">
+          <a href={path}>{pageLink}</a>
+        </div>
+      )}
     </div>
   </div>
 );
