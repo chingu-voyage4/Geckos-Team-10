@@ -26,7 +26,7 @@ const GrillItem = ({ grill }) => (
         </ul>
       </div>
       <div className="gi-cost">
-        {grill.price_per_hour}
+        £{grill.price_per_hour}
         <span className="gi-timeframe">per hour</span>
       </div>
     </div>
