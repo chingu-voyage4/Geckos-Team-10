@@ -10,7 +10,7 @@ const numberOfStars = rating =>
 
 const GrillItem = ({ grill }) => (
   <Link to={`book-a-grill/${grill._id}`}>
-    <div className="grill">
+    <div className="gi-grill">
       <div className="grill-overview">
         <div className="grill-image">
           <img

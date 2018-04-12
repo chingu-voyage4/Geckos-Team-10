@@ -4,7 +4,7 @@
   color: var(--green);
 }
 
-.grill {
+.gi-grill {
   display: flex;
   justify-content: space-between;
   border: 1px solid grey;
@@ -15,11 +15,11 @@
   font-size: 25px;
 }
 
-.grill * {
+.gi-grill * {
   padding: 5px;
 }
 
-.grill:hover {
+.gi-grill:hover {
   cursor: pointer;
   border: 2px solid var(--green);
 }
@@ -75,7 +75,7 @@
 }
 
 @media screen and (max-width: 768px) {
-  .grill {
+  .gi-grill {
     flex-direction: column;
     border: 1px solid grey;
     align-items: center;
@@ -93,7 +93,7 @@
 }
 
 @media screen and (max-width: 375px) {
-  .grill {
+  .gi-grill {
     font-size: 20px;
   }
   .grill-name,
