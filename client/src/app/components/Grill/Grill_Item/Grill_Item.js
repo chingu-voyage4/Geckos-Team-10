@@ -10,30 +10,24 @@ const numberOfStars = rating =>
 
 const GrillItem = ({ grill }) => (
   <Link to={`book-a-grill/${grill._id}`}>
-    <div className="grill">
-      <div className="grill-overview">
-        <div className="grill-image">
-          <img
-            className="grill-img"
-            src={grill.image}
-            alt={`thumbnail of ${grill.name}`}
-          />
+    <div className="gi-grill">
+      <div className="gi-grill-overview">
+        <div className="gi-grill-img-wrapper">
+          <img src={grill.image} alt={`thumbnail of ${grill.name}`} />
         </div>
-        <div className="star-rating">{numberOfStars(grill.rating)}</div>
+        <div className="gi-star-rating">{numberOfStars(grill.rating)}</div>
       </div>
-      <div className="grill-detail">
-        <div className="grill-name">{grill.name}</div>
-        <ul className="features-list">
+      <div className="gi-grill-detail">
+        <div className="gi-grill-name">{grill.name}</div>
+        <ul className="gi-features-list">
           {grill.features.map(feature => (
-            <li className="feature" key={feature.main}>
-              {feature.main}
-            </li>
+            <li key={feature.main}>{feature.main}</li>
           ))}
         </ul>
       </div>
-      <div className="cost">
+      <div className="gi-cost">
         {grill.price_per_hour}
-        <span className="timeframe">per hour</span>
+        <span className="gi-timeframe">per hour</span>
       </div>
     </div>
   </Link>
