@@ -24,7 +24,7 @@
   border: 2px solid var(--green);
 }
 
-.grill-overview {
+.gi-grill-overview {
   display: flex;
   align-items: center;
 }
@@ -60,17 +60,17 @@
   margin-left: 35px;
 }
 
-.star-rating {
+.gi-star-rating {
   display: flex;
   align-items: center;
 }
 
-.star-rating .star-fill {
+.gi-star-rating .star-fill {
   color: #cccc11;
   font-size: 20px;
 }
 
-.grill-img {
+.gi-grill-img-wrapper img {
   width: 100px;
 }
 
