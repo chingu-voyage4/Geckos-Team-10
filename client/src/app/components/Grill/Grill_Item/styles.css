@@ -53,9 +53,11 @@
 
 .features-list {
   display: flex;
-  list-style: none;
+  flex-direction: column;
+  list-style-image: url("../../../images/lists.svg");
   color: var(--darkSienna);
-  margin: 0;
+  padding: 0;
+  margin-left: 35px;
 }
 
 .star-rating {
