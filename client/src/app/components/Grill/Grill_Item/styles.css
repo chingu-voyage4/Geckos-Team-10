@@ -66,6 +66,7 @@
   color: var(--darkSienna);
   padding: 0;
   margin-left: 35px;
+  width: 85%;
 }
 
 .gi-star-rating {
