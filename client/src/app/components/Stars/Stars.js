@@ -7,4 +7,10 @@ const Stars = ({ className, iconClassName, rating }) => (
   </ul>
 );
 
+Stars.propTypes = {
+  className: PropTypes.string,
+  iconClassName: PropTypes.string,
+  rating: PropTypes.number.isRequired
+};
+
 export default Stars;
