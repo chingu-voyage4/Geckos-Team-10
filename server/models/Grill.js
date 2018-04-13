@@ -3,6 +3,7 @@ const Schema = mongoose.Schema;
 
 const GrillSchema = new Schema({
   image: String,
+  allImages: Array,
   name: String,
   description: String,
   grill_racks: Number,
