@@ -20,6 +20,7 @@ const typeDefs = [
     type Grill {
         _id: String, 
         image: String, 
+        allImages: [String]
         name: String, 
         grill_racks: Int, 
         fuel: String, 
