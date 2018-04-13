@@ -1,5 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
+import "./styles.css";
 
 // determine the number of stars to render
 const numberOfStars = (rating, iconClass) =>
