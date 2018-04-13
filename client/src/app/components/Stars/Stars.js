@@ -12,7 +12,7 @@ const numberOfStars = (rating, iconClass) =>
     />
   ));
 
-const Stars = ({ className, iconClassName, rating }) => (
+const Stars = ({ className = "", iconClassName = "", rating }) => (
   <ul className={`stars-list  ${className}`}>
     {numberOfStars(rating, iconClassName)}
   </ul>
