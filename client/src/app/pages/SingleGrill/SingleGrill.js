@@ -1,8 +1,8 @@
 import React from "react";
-import { GET_GRILL } from "../graphql/queries";
+import { GET_GRILL } from "../../graphql/queries";
 import { Query } from "react-apollo";
-import Loader from "../components/Loader/Loader";
-import GrillDetail from "../components/Grill/GrillDetail/GrillDetail";
+import Loader from "../../components/Loader/Loader";
+import GrillDetail from "../../components/Grill/GrillDetail/GrillDetail";
 import "./styles.css";
 
 const SingleGrill = ({ match: { params: { _id } } }) => (
