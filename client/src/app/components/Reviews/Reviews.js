@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import SubHeader from "../SubHeader/SubHeader";
+import Stars from "../Stars/Stars";
 import "./Reviews.css";
 
 class Reviews extends Component {
@@ -14,13 +15,7 @@ class Reviews extends Component {
             <blockquote className="talk-bubble tri-right round right-in">
               Lorem ipsum dolar Lorem ipsum dolar Lorem ipsum dolar Lorem ipsum
               dolar Lorem ipsum dolar Lorem ipsum dolar Lorem ipsum dolar
-              <div id="star-rating">
-                <i className="fas fa-star star-fill" />
-                <i className="fas fa-star star-fill" />
-                <i className="fas fa-star star-fill" />
-                <i className="fas fa-star star-fill" />
-                <i className="fas fa-star star-fill" />
-              </div>
+              <Stars rating={5} />
             </blockquote>
           </div>
           <div className="review-column">
@@ -29,13 +24,7 @@ class Reviews extends Component {
             <blockquote className="talk-bubble tri-right round right-in">
               Lorem ipsum dolar Lorem ipsum dolar Lorem ipsum dolar Lorem ipsum
               dolar Lorem ipsum dolar Lorem ipsum dolar Lorem ipsum dolar
-              <div id="star-rating">
-                <i className="fas fa-star star-fill" />
-                <i className="fas fa-star star-fill" />
-                <i className="fas fa-star star-fill" />
-                <i className="fas fa-star star-fill" />
-                <i className="fas fa-star star-fill" />
-              </div>
+              <Stars rating={5} />
             </blockquote>
           </div>
           <div className="review-column">
@@ -44,13 +33,7 @@ class Reviews extends Component {
             <blockquote className="talk-bubble tri-right round right-in">
               Lorem ipsum dolar Lorem ipsum dolar Lorem ipsum dolar Lorem ipsum
               dolar Lorem ipsum dolar Lorem ipsum dolar Lorem ipsum dolar
-              <div id="star-rating">
-                <i className="fas fa-star star-fill" />
-                <i className="fas fa-star star-fill" />
-                <i className="fas fa-star star-fill" />
-                <i className="fas fa-star star-fill" />
-                <i className="fas fa-star star-no-fill" />
-              </div>
+              <Stars rating={4} />
             </blockquote>
           </div>
         </div>
