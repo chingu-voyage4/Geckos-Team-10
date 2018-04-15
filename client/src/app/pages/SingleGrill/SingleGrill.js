@@ -3,9 +3,10 @@ import { GET_GRILL } from "../graphql/queries";
 import { Query } from "react-apollo";
 import Loader from "../components/Loader/Loader";
 import GrillDetail from "../components/Grill/GrillDetail/GrillDetail";
+import "./styles.css";
 
 const SingleGrill = ({ match: { params: { _id } } }) => (
-  <main style={styles}>
+  <main className="sg-main">
     <Query query={GET_GRILL} variables={{ _id }}>
       {({ data, loading, error }) => {
         if (loading) return <Loader message="Your Grill is loading..." />;
@@ -18,12 +19,5 @@ const SingleGrill = ({ match: { params: { _id } } }) => (
     </Query>
   </main>
 );
-
-const styles = {
-  display: "flex",
-  alignItems: "center",
-  justifyContent: "center",
-  margin: "15vh 0"
-};
 
 export default SingleGrill;
