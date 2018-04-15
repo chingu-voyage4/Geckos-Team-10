@@ -75,12 +75,8 @@
 
 .gi-star-rating {
   display: flex;
+  flex-direction: row;
   align-items: center;
-}
-
-.gi-star-rating .star-fill {
-  color: #cccc11;
-  font-size: 25px;
 }
 
 .gi-grill-img-wrapper img {

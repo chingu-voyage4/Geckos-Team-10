@@ -10,7 +10,7 @@ const GrillItem = ({ grill }) => (
         <div className="gi-grill-img-wrapper">
           <img src={grill.image} alt={`thumbnail of ${grill.name}`} />
         </div>
-        <Stars rating={grill.rating} />
+        <Stars rating={grill.rating} className="gi-star-rating" />
       </div>
       <div className="gi-grill-detail">
         <div className="gi-grill-name">{grill.name}</div>
