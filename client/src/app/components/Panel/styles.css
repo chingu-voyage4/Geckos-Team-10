@@ -9,4 +9,5 @@
 .panel-title {
   border-bottom: 1px solid var(--trolleyGrey);
   font-size: 1.4em;
+  font-family: "Indie Flower", "Nanum Pen Script", Arial, sans-serif;
 }
