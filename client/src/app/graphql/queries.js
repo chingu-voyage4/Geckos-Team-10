@@ -28,3 +28,26 @@ export const GET_GRILLS = gql`
     }
   }
 `;
+
+// grill query for the single grill page
+export const GET_GRILL = gql`
+  query grill($_id: String!) {
+    grill(_id: $_id) {
+      name
+      allImages
+      rating
+      description
+      price_per_hour
+      features {
+        main
+        description
+      }
+      owner {
+        name
+        age
+        rating
+        image
+      }
+    }
+  }
+`;
