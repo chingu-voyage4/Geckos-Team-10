@@ -1,12 +1,7 @@
 import React from "react";
+import Stars from "../../Stars/Stars";
 import { Link } from "react-router-dom";
 import "./styles.css";
-
-// determine the number of stars to render
-const numberOfStars = rating =>
-  Array.from({ length: rating }, (rating, index) => (
-    <i key={index} className="fas fa-star star-fill" />
-  ));
 
 const GrillItem = ({ grill }) => (
   <Link to={`book-a-grill/${grill._id}`}>
@@ -15,7 +10,7 @@ const GrillItem = ({ grill }) => (
         <div className="gi-grill-img-wrapper">
           <img src={grill.image} alt={`thumbnail of ${grill.name}`} />
         </div>
-        <div className="gi-star-rating">{numberOfStars(grill.rating)}</div>
+        <Stars rating={grill.rating} className="gi-star-rating" />
       </div>
       <div className="gi-grill-detail">
         <div className="gi-grill-name">{grill.name}</div>

@@ -64,16 +64,6 @@
   margin-top: 15px;
 }
 
-.star-fill {
-  color: #ffff11;
-  font-size: 20px;
-}
-
-.star-no-fill {
-  color: #bbb;
-  font-size: 20px;
-}
-
 blockquote {
   color: var(--darkSienna);
   font-size: 18px;
