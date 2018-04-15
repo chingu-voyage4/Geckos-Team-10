@@ -23,7 +23,7 @@ const GrillDetail = ({ grill }) => (
                   <img
                     key={idx}
                     src={image}
-                    alt={`This is an image of ${grill.name}`}
+                    alt={`This is a thumbnail of ${grill.name}`}
                   />
                 ))}
               </Carousel>
