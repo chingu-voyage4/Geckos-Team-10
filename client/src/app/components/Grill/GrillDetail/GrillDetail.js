@@ -36,6 +36,53 @@ const GrillDetail = ({ grill }) => (
         </Panel>
       </div>
     </div>
+    <div className="gd-info-section">
+      <Panel className="gd-cta-atc" title="Book Now">
+        <div className="gd-cta-atc-wrap">
+          <div className="gd-cost">
+            {grill.price_per_hour}
+            <span>per hour</span>
+          </div>
+          <button>Add to Cart</button>
+        </div>
+      </Panel>
+      <Panel className="gd-features" title="Features">
+        <div className="gd-features-wrap">
+          {grill.features.map((feature, idx) => (
+            <div key={idx} className="gd-feature-item">
+              <h4>{feature.main}</h4>
+              <p>{feature.description}</p>
+            </div>
+          ))}
+        </div>
+      </Panel>
+      <Panel className="gd-owner" title="Owner">
+        <div className="gd-owner-wrap">
+          <div className="owner-img-age-section">
+            <div className="owner-img-age-wrap">
+              <img
+                src={grill.owner.image}
+                alt={`Profile of grill owner: ${grill.owner.name} `}
+              />
+              <div className="owner-age">
+                {grill.owner.age}
+                <span>y/o</span>
+              </div>
+            </div>
+          </div>
+          <div className="owner-overview">
+            <div className="name-rating-wrap">
+              <h4>{grill.owner.name}</h4>
+              <Stars rating={grill.owner.rating} />
+            </div>
+            <div className="owner-phone-wrap">
+              <i className="far fa-check-circle owner-check" />
+              <h5>Mobile Phone Verified</h5>
+            </div>
+          </div>
+        </div>
+      </Panel>
+    </div>
   </section>
 );
 
