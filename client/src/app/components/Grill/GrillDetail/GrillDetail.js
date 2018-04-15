@@ -41,7 +41,7 @@ const GrillDetail = ({ grill }) => (
       <Panel className="gd-cta-atc" title="Book Now">
         <div className="gd-cta-atc-wrap">
           <div className="gd-cost">
-            {grill.price_per_hour}
+            £{grill.price_per_hour}
             <span>per hour</span>
           </div>
           <button>Add to Cart</button>
