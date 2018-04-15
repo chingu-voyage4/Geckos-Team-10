@@ -3,6 +3,7 @@ import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import Panel from "../../Panel/Panel";
 import Stars from "../../Stars/Stars";
+import "./styles.css";
 
 const GrillDetail = ({ grill }) => (
   <section className="gd-container">
