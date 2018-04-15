@@ -22,6 +22,7 @@ const typeDefs = [
         image: String, 
         allImages: [String]
         name: String, 
+        description: String
         grill_racks: Int, 
         fuel: String, 
         rating: Int, 
