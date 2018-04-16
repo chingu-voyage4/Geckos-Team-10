@@ -1,0 +1,12 @@
+.bg-main-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 15vh;
+}
+
+.bg-main-container header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
