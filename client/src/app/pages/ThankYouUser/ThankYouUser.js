@@ -1,15 +1,10 @@
 import React from "react";
+import "./styles.css";
 
 const ThankYouUser = () => (
-  <main style={styles}>
+  <main className="tyu-main-container">
     <h1>Thank you for signing up with us</h1>
   </main>
 );
-
-const styles = {
-  display: "flex",
-  justifyContent: "center",
-  marginTop: "20vh"
-};
 
 export default ThankYouUser;

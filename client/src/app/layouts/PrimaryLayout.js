@@ -10,7 +10,7 @@ import SingleGrill from "../pages/SingleGrill/SingleGrill";
 import HowToGrill from "../pages/HowToGrill/HowToGrill";
 import Pricing from "../pages/Pricing/Pricing";
 import SignUp from "../pages/SignUp/SignUp";
-import ThankYouUser from "../pages/ThankYouUser";
+import ThankYouUser from "../pages/ThankYouUser/ThankYouUser";
 import NoMatch from "../pages/NoMatch";
 
 const PrimaryLayout = () => (
