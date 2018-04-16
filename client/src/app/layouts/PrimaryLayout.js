@@ -8,7 +8,7 @@ import LandingPage from "../pages/LandingPage";
 import BookGrill from "../pages/BookGrill/BookGrill";
 import SingleGrill from "../pages/SingleGrill/SingleGrill";
 import HowToGrill from "../pages/HowToGrill/HowToGrill";
-import Pricing from "../pages/Pricing";
+import Pricing from "../pages/Pricing/Pricing";
 import SignUp from "../pages/SignUp";
 import ThankYouUser from "../pages/ThankYouUser";
 import NoMatch from "../pages/NoMatch";
