@@ -42,7 +42,12 @@ const resolvers = {
       parent,
       { email, password },
       { UserModel, SECRET, SECRET_2 }
-    ) => tryLogin(email, password, UserModel, SECRET, SECRET_2)
+    ) => tryLogin(email, password, UserModel, SECRET, SECRET_2),
+    refreshTokens: (
+      parent,
+      { token, refreshToken },
+      { UserModel, SECRET, SECRET_2 }
+    ) => refreshTokens(token, refreshToken, UserModel, SECRET, SECRET_2)
   }
 };
 
