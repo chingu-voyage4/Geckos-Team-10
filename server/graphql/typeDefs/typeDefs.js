@@ -44,16 +44,24 @@ const typeDefs = [
         rating: Int, 
         image: String
     }
+     
+    type AuthPayload {
+        token: String!
+        refreshToken: String!
+    }
     
     type Query {
         users: [User],
         user(_id: String!): User,
+        me: User,
         grills: [Grill],
         grill(_id: String!): Grill
     }
 
     type Mutation {
-        createUser(input: UserInput): User
+        createUser(input: UserInput): User, 
+        login(email: String!, password: String!): AuthPayload!,
+        refreshTokens(token: String!, refreshToken: String!): AuthPayload!,        
     }
 `
 ];
