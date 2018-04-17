@@ -1,3 +1,5 @@
+import { refreshTokens, tryLogin } from "../../auth/auth";
+
 // prepare mongo's _id to a string type
 const id_string = o => {
   o._id = o._id.toString();
@@ -11,6 +13,12 @@ const resolvers = {
     },
     user: (parent, { _id }, { UserModel }) => {
       return UserModel.findOne({ _id });
+    },
+    me: (parent, { _id }, { UserModel, user }) => {
+      if (user) {
+        return UserModel.findOne({ _id: user._id });
+      }
+      return null;
     },
     grills: async (parent, args, { GrillModel }) => {
       return (await GrillModel.find({})).map(id_string);
@@ -29,7 +37,17 @@ const resolvers = {
           else resolve(newUser);
         });
       });
-    }
+    },
+    login: async (
+      parent,
+      { email, password },
+      { UserModel, SECRET, SECRET_2 }
+    ) => tryLogin(email, password, UserModel, SECRET, SECRET_2),
+    refreshTokens: (
+      parent,
+      { token, refreshToken },
+      { UserModel, SECRET, SECRET_2 }
+    ) => refreshTokens(token, refreshToken, UserModel, SECRET, SECRET_2)
   }
 };
 
