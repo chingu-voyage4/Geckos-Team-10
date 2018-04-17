@@ -1,3 +1,5 @@
+import { refreshTokens, tryLogin } from "../../auth/auth";
+
 // prepare mongo's _id to a string type
 const id_string = o => {
   o._id = o._id.toString();
@@ -35,7 +37,12 @@ const resolvers = {
           else resolve(newUser);
         });
       });
-    }
+    },
+    login: async (
+      parent,
+      { email, password },
+      { UserModel, SECRET, SECRET_2 }
+    ) => tryLogin(email, password, UserModel, SECRET, SECRET_2)
   }
 };
 
