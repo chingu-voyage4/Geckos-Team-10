@@ -70,3 +70,35 @@ export const refreshTokens = async (
     user
   };
 };
+
+export const tryLogin = async (
+  email,
+  password,
+  user_model,
+  SECRET,
+  SECRET_2
+) => {
+  const user = await user_model.findOne({ email });
+
+  if (!user) {
+    // user with provided email not found
+    throw new Error("Invalid login");
+  }
+
+  const valid = await bcrypt.compare(password, user.password);
+  if (!valid) {
+    // bad password
+    throw new Error("Invalid login");
+  }
+
+  const [token, refreshToken] = await createTokens(
+    user,
+    SECRET,
+    SECRET_2 + user.password
+  );
+
+  return {
+    token,
+    refreshToken
+  };
+};
