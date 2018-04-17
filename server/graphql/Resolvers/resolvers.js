@@ -12,6 +12,12 @@ const resolvers = {
     user: (parent, { _id }, { UserModel }) => {
       return UserModel.findOne({ _id });
     },
+    me: (parent, { _id }, { UserModel, user }) => {
+      if (user) {
+        return UserModel.findOne({ _id: user._id });
+      }
+      return null;
+    },
     grills: async (parent, args, { GrillModel }) => {
       return (await GrillModel.find({})).map(id_string);
     },
