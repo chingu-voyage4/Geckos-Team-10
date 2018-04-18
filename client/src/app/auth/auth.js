@@ -1,4 +1,5 @@
 import decode from "jwt-decode";
+import { Route, Redirect } from "react-router-dom";
 
 export const checkAuth = () => {
   const token = localStorage.getItem("token");
@@ -19,3 +20,16 @@ export const checkAuth = () => {
 
   return true;
 };
+
+export const AuthRoute = ({ component: Component, ...rest }) => (
+  <Route
+    {...rest}
+    render={props =>
+      checkAuth() ? (
+        <Component {...props} />
+      ) : (
+        <Redirect to={{ pathname: "/sorry-not-auth" }} />
+      )
+    }
+  />
+);
