@@ -36,12 +36,7 @@ const resolvers = {
         ...input,
         password: hashedPassword
       });
-      return new Promise((resolve, reject) => {
-        newUser.save(err => {
-          if (err) reject(err);
-          else resolve(newUser);
-        });
-      });
+      return newUser.save();
     },
     login: async (
       parent,
