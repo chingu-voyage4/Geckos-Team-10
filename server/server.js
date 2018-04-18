@@ -64,7 +64,10 @@ app.use(addUser);
 app.use(
   "/graphql",
   bodyParser.json(),
-  graphqlExpress({ schema, context: { UserModel, GrillModel } })
+  graphqlExpress({
+    schema,
+    context: { UserModel, GrillModel, SECRET, SECRET_2, user: req.user }
+  })
 );
 // GraphiQL, a visual editor for queries
 app.use("/graphiql", graphiqlExpress({ endpointURL: "/graphql" }));
