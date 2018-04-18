@@ -3,9 +3,15 @@ import mongoose from "mongoose";
 import bodyParser from "body-parser";
 import { graphqlExpress, graphiqlExpress } from "apollo-server-express";
 require("dotenv").config();
+import jwt from "jsonwebtoken";
+import cors from "cors";
+import { refreshTokens } from "./auth/auth";
 import schema from "./graphql/schema";
 import UserModel from "./models/User";
 import GrillModel from "./models/Grill";
+
+const SECRET = process.env.SECRET;
+const SECRET_2 = process.env.SECRET_2;
 
 const app = express();
 const port = 4001;
