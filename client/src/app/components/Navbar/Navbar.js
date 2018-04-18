@@ -1,6 +1,7 @@
 import React from "react";
 import { slide as Menu } from "react-burger-menu";
 import { Link } from "react-router-dom";
+import { checkAuth, removeAuth } from "../../auth/auth";
 import "./styles.css";
 
 class Navbar extends React.Component {
@@ -55,9 +56,15 @@ class Navbar extends React.Component {
           <li className="nav-brand">
             <Link to="/">Grillber</Link>
           </li>
-          <li className="btn-cta">
-            <Link to="/sign-up">Sign Up</Link>
-          </li>
+          {checkAuth() ? (
+            <li className="btn-cta" onClick={() => removeAuth()}>
+              <Link to="/">Logout</Link>
+            </li>
+          ) : (
+            <li className="btn-cta">
+              <Link to="/login">Login</Link>
+            </li>
+          )}
         </nav>
       </header>
     );
