@@ -1,3 +1,4 @@
+import bcrypt from "bcrypt";
 import { refreshTokens, tryLogin } from "../../auth/auth";
 
 // prepare mongo's _id to a string type
@@ -28,9 +29,13 @@ const resolvers = {
     }
   },
   Mutation: {
-    createUser: (parent, args, { UserModel }) => {
+    createUser: async (parent, args, { UserModel }) => {
       const { input } = args;
-      const newUser = new UserModel(input);
+      const hashedPassword = await bcrypt.hash(input.password, 12);
+      const newUser = new UserModel({
+        ...input,
+        password: hashedPassword
+      });
       return new Promise((resolve, reject) => {
         newUser.save(err => {
           if (err) reject(err);
