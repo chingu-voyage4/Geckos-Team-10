@@ -111,6 +111,7 @@ const UserForm = withFormik({
     mutate({ variables: { input: values } }).then(() => {
       // clear form of input values
       resetForm();
+      history.push("/login");
     });
   }
 })(InnerUser);

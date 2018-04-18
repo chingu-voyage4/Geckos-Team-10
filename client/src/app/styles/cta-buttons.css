@@ -35,3 +35,16 @@
   right: 15px;
   position: absolute;
 }
+
+/* loginSignUP page */
+
+.cta-login-su {
+  display: flex;
+  align-items: center;
+  font-size: 19px;
+}
+
+.cta-login-su > a {
+  color: var(--darkSienna);
+  font-weight: bold;
+}
