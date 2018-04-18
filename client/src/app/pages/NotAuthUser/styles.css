@@ -1,9 +1,9 @@
-.tyu-main-container {
+.nau-main-container {
   display: flex;
   justify-content: center;
   margin-top: 10vh;
   height: 70vh;
 }
-.tyu-main-container h1 {
+.nau-main-container h1 {
   text-align: center;
 }

@@ -10,7 +10,7 @@ import SingleGrill from "../pages/SingleGrill/SingleGrill";
 import HowToGrill from "../pages/HowToGrill/HowToGrill";
 import Pricing from "../pages/Pricing/Pricing";
 import SignUp from "../pages/SignUp/SignUp";
-import ThankYouUser from "../pages/ThankYouUser/ThankYouUser";
+import NotAuthUser from "../pages/NotAuthUser/NotAuthUser";
 import NoMatch from "../pages/NoMatch";
 
 const PrimaryLayout = () => (
@@ -23,7 +23,7 @@ const PrimaryLayout = () => (
       <Route exact path="/book-a-grill" component={BookGrill} />
       <Route exact path="/book-a-grill/:_id" component={SingleGrill} />
       <Route exact path="/sign-up" component={SignUp} />
-      <Route exact path="/thank-you" component={ThankYouUser} />
+      <Route exact path="/sorry-not-auth" component={NotAuthUser} />
       <Route component={NoMatch} />
     </Switch>
     <Footer />
