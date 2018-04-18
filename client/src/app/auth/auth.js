@@ -22,6 +22,11 @@ export const checkAuth = () => {
   return true;
 };
 
+export const removeAuth = () => {
+  localStorage.removeItem("token");
+  localStorage.removeItem("refreshToken");
+};
+
 export const AuthRoute = ({ component: Component, ...rest }) => (
   <Route
     {...rest}
