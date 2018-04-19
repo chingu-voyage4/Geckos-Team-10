@@ -15,7 +15,7 @@
     "test": "mocha",
     "start": "nodemon server/index.js --exec babel-node",
     "build": "babel server -d dist",
-    "serve": "npm run build && node dist/index.js",
+    "serve": "node dist/index.js",
     "heroku-postbuild":
       "cd client/ && npm install && npm install --only=dev --no-shrinkwrap && npm run build"
   },
