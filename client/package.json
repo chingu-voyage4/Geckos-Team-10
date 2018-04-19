@@ -13,12 +13,12 @@
     "react-dom": "^16.2.0",
     "react-responsive-carousel": "^3.1.36",
     "react-router-dom": "^4.2.2",
+    "react-scripts": "1.1.2",
     "react-transition-group": "^1.2.1",
     "yup": "^0.24.1"
   },
   "devDependencies": {
-    "cross-env": "^5.1.4",
-    "react-scripts": "1.1.1"
+    "cross-env": "^5.1.4"
   },
   "scripts": {
     "start": "cross-env PORT=4000 react-scripts start",
