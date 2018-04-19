@@ -6,10 +6,10 @@ import { graphqlExpress, graphiqlExpress } from "apollo-server-express";
 require("dotenv").config();
 import jwt from "jsonwebtoken";
 import cors from "cors";
-import { refreshTokens } from "./auth/auth";
-import schema from "./graphql/schema";
-import UserModel from "./models/User";
-import GrillModel from "./models/Grill";
+import { refreshTokens } from "./server/auth/auth";
+import schema from "./server/graphql/schema";
+import UserModel from "./server/models/User";
+import GrillModel from "./server/models/Grill";
 
 const SECRET = process.env.SECRET;
 const SECRET_2 = process.env.SECRET_2;
@@ -18,11 +18,11 @@ const app = express();
 const port = 4001;
 
 // serve static assets from
-app.use(express.static(path.join(__dirname, "../client/build")));
+app.use(express.static(path.join(__dirname, "client/build")));
 
 // Always return the main index.html, so react-router render the route in the client
 app.get("/", (req, res) => {
-  res.sendFile(path.resolve(__dirname, "../client/build", "index.html"));
+  res.sendFile(path.resolve(__dirname, "client/build", "index.html"));
 });
 
 mongoose.connect(process.env.MONGO_URI, { dbName: "grillber" }, function(

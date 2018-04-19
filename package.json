@@ -2,12 +2,12 @@
   "name": "grillber",
   "version": "1.0.0",
   "description": "an uber for grilling. Chingu Voyage 4 team app. ",
-  "main": "./server/server.js",
+  "main": "server.js",
   "scripts": {
     "precommit": "lint-staged",
     "start": "concurrently \"npm run server\" \"npm run client\"",
-    "server": "babel-watch ./server/server.js",
-    "client": "node ./server/start-client.js",
+    "server": "babel-watch server.js",
+    "client": "node start-client.js",
     "test": "mocha",
     "heroku-postbuild":
       "cd client && npm install --only=dev && npm install && npm run build"
