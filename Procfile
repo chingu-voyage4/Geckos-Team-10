@@ -1,1 +1,1 @@
-web: npm run proServer
+web: npm run server
