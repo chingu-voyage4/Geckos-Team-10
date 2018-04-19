@@ -1,18 +1,35 @@
 #social-icons div {
-  color: #dce0d9;
+  color: var(--gainsboro);
 }
 
 #social-icons div:hover,
 #footer-items div:hover,
-#download-stores div:hover {
+#download-stores div:hover,
+.gh-chingu-links a:hover {
+  color: var(--darkSienna);
   cursor: pointer;
-  color: #31081f;
+}
+
+.gh-chingu-links {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  font-size: 25px;
+  justify-content: center;
+  padding: 0;
+  width: 350px;
+}
+
+.gh-chingu-links a {
+  color: var(--gainsboro);
+  margin: 10px;
+  padding: 0;
 }
 
 @media screen and (max-width: 700px) {
   #footer-items {
-    flex-direction: column;
     align-items: center;
+    flex-direction: column;
   }
   #footer-items div {
     padding: 5px;
