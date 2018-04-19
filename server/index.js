@@ -1,6 +1,7 @@
 import express from "express";
 import mongoose from "mongoose";
 import bodyParser from "body-parser";
+import path from "path";
 import { graphqlExpress, graphiqlExpress } from "apollo-server-express";
 require("dotenv").config();
 import jwt from "jsonwebtoken";
@@ -15,6 +16,18 @@ const SECRET_2 = process.env.SECRET_2;
 
 const app = express();
 const port = 4001;
+
+// "heroku-postbuild":
+//   "cd client && npm install --only=dev && npm install && npm run build",
+
+// Serve static files from the React app
+app.use(express.static(path.join(__dirname, "../client/build")));
+
+// The "catchall" handler: for any request that doesn't
+// match one above, send back React's index.html file.
+app.get("*", function(request, response) {
+  response.sendFile(path.resolve(__dirname, "../client/build", "index.html"));
+});
 
 mongoose.connect(process.env.MONGO_URI, { dbName: "grillber" }, function(
   error
