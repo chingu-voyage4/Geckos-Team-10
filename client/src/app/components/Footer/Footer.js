@@ -93,6 +93,22 @@ class Footer extends Component {
               <i className="fab fa-youtube" data-fa-transform="grow-15" />
             </div>
           </div>
+          <ul className="gh-chingu-links">
+            <a
+              href="https://github.com/chingu-voyage4/Geckos-Team-10"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Github
+            </a>
+            <a
+              href="https://chingu.io/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Chingu
+            </a>
+          </ul>
         </div>
       </footer>
     );
