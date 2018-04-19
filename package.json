@@ -13,6 +13,7 @@
     "server": "babel-watch server.js",
     "client": "node start-client.js",
     "test": "mocha",
+    "build": "cd client && npm run build",
     "heroku-postbuild":
       "cd client && npm install --only=dev && npm install && npm run build"
   },
