@@ -14,18 +14,21 @@ import GrillModel from "./models/Grill";
 const SECRET = process.env.SECRET;
 const SECRET_2 = process.env.SECRET_2;
 
-const app = express();
-const port = 4001;
+// Log env vars
+console.log("process.env.NODE_ENV", process.env.NODE_ENV);
+console.log("process.env.PORT", process.env.PORT);
 
-// "heroku-postbuild":
-//   "cd client && npm install --only=dev && npm install && npm run build",
+// Initialize Express server. Port is set by Heroku when the app is deployed or
+// when running locally using the 'heroku local' command.
+const app = express();
+app.set("port", process.env.PORT || 5001);
 
 // Serve static files from the React app
 app.use(express.static(path.join(__dirname, "../client/build")));
 
 // The "catchall" handler: for any request that doesn't
 // match one above, send back React's index.html file.
-app.get("*", function(request, response) {
+app.get("/*", function(request, response) {
   response.sendFile(path.resolve(__dirname, "../client/build", "index.html"));
 });
 
@@ -73,6 +76,11 @@ const addUser = async (req, res, next) => {
 app.use(cors("*"));
 app.use(addUser);
 
+// Respond with "server is running" when a GET request is made to the index page.
+app.get("/", (req, res) => {
+  res.send("server is running");
+});
+
 // The GraphQL endpoint
 app.use(
   "/graphql",
@@ -85,4 +93,6 @@ app.use(
 // GraphiQL, a visual editor for queries
 app.use("/graphiql", graphiqlExpress({ endpointURL: "/graphql" }));
 
-app.listen(port, () => console.log(`Listening on port ${port}`));
+app.listen(app.get("port"), () =>
+  console.log(`Listening on port ${app.get("port")}`)
+);
