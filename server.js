@@ -17,6 +17,9 @@ const SECRET_2 = process.env.SECRET_2;
 const app = express();
 const port = 4001;
 
+// "heroku-postbuild":
+//   "cd client && npm install --only=dev && npm install && npm run build",
+
 // Serve static files from the React app
 app.use(express.static(path.join(__dirname, "client/build")));
 
