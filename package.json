@@ -14,8 +14,9 @@
     "client": "node start-client.js",
     "test": "mocha",
     "heroku-postbuild":
-      "cd client/ && npm install && npm install --only=dev --no-shrinkwrap && npm run build"
+      "cd client && npm install && npm install --only=dev --no-shrinkwrap && npm run build"
   },
+  "cacheDirectories": ["node_modules", "client/node_modules"],
   "dependencies": {
     "apollo-server-express": "^1.3.2",
     "bcrypt": "^2.0.0",
