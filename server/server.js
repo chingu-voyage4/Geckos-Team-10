@@ -18,11 +18,11 @@ const app = express();
 const port = 4001;
 
 // serve static assets from
-app.use(express.static(path.join(__dirname, "client/build")));
+app.use(express.static(path.join(__dirname, "../client/build")));
 
 // Always return the main index.html, so react-router render the route in the client
 app.get("/", (req, res) => {
-  res.sendFile(path.resolve(__dirname, "client/build", "index.html"));
+  res.sendFile(path.resolve(__dirname, "../client/build", "index.html"));
 });
 
 mongoose.connect(process.env.MONGO_URI, { dbName: "grillber" }, function(
