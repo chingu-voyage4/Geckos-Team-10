@@ -26,8 +26,8 @@ const NoFound = () => (
           cardWrap="nf-card-wrap"
           title="Looking for Grills?"
           text="Pellentesque in ipsum id orci porta dapibus. Proin eget tortor risus."
-          pageLink="Reserve a Grill"
-          path={"/book-a-grill"}
+          pageLink="Sign Up Here"
+          path={"/sign-up"}
         />
       </div>
     </div>
