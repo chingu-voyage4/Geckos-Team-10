@@ -22,7 +22,8 @@
   },
   "scripts": {
     "start": "cross-env PORT=4000 react-scripts start",
-    "build": "react-scripts build",
+    "fix-react-apollo": "rimraf ./node_modules/react-apollo/*.mjs",
+    "build": "npm run fix-react-apollo && react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
   },
