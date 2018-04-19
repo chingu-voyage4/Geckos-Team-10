@@ -26,6 +26,18 @@ app.set("port", process.env.PORT || 5001);
 // Serve static files from the React app
 app.use(express.static(path.join(__dirname, "../client/build")));
 
+// The GraphQL endpoint
+app.use(
+  "/graphql",
+  bodyParser.json(),
+  graphqlExpress(req => ({
+    schema,
+    context: { UserModel, GrillModel, SECRET, SECRET_2, user: req.user }
+  }))
+);
+// GraphiQL, a visual editor for queries
+app.use("/graphiql", graphiqlExpress({ endpointURL: "/graphql" }));
+
 // The "catchall" handler: for any request that doesn't
 // match one above, send back React's index.html file.
 app.get("/*", function(request, response) {
@@ -80,18 +92,6 @@ app.use(addUser);
 app.get("/", (req, res) => {
   res.send("server is running");
 });
-
-// The GraphQL endpoint
-app.use(
-  "/graphql",
-  bodyParser.json(),
-  graphqlExpress(req => ({
-    schema,
-    context: { UserModel, GrillModel, SECRET, SECRET_2, user: req.user }
-  }))
-);
-// GraphiQL, a visual editor for queries
-app.use("/graphiql", graphiqlExpress({ endpointURL: "/graphql" }));
 
 app.listen(app.get("port"), () =>
   console.log(`Listening on port ${app.get("port")}`)
