@@ -15,7 +15,7 @@ const SECRET = process.env.SECRET;
 const SECRET_2 = process.env.SECRET_2;
 
 const app = express();
-const port = process.env.PORT || 4001;
+const port = 4001;
 
 // "heroku-postbuild":
 //   "cd client && npm install --only=dev && npm install && npm run build",

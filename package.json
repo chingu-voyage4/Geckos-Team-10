@@ -10,7 +10,7 @@
   "scripts": {
     "precommit": "lint-staged",
     "start": "concurrently \"npm run server\" \"npm run client\"",
-    "server": "babel-watch server",
+    "server": "babel-watch ./server/index.js",
     "client": "node start-client.js",
     "test": "mocha",
     "heroku-postbuild":
