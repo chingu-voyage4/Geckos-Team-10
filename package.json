@@ -8,7 +8,9 @@
     "start": "concurrently \"npm run server\" \"npm run client\"",
     "server": "babel-watch ./server/server.js",
     "client": "node ./server/start-client.js",
-    "test": "mocha"
+    "test": "mocha",
+    "heroku-postbuild":
+      "cd client && npm install --only=dev && npm install && npm run build"
   },
   "dependencies": {
     "apollo-server-express": "^1.3.2",
