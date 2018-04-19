@@ -17,12 +17,13 @@ const SECRET_2 = process.env.SECRET_2;
 const app = express();
 const port = 4001;
 
-// serve static assets from
-app.use(express.static(path.join(__dirname, "client", "build")));
+// Serve static files from the React app
+app.use(express.static(path.join(__dirname, "client/build")));
 
-// Always return the main index.html, so react-router render the route in the client
-app.get("/", (req, res) => {
-  res.sendFile(path.resolve(__dirname, "client", "build", "index.html"));
+// The "catchall" handler: for any request that doesn't
+// match one above, send back React's index.html file.
+app.get("*", (req, res) => {
+  res.sendFile(path.join(__dirname + "/client/build/index.html"));
 });
 
 mongoose.connect(process.env.MONGO_URI, { dbName: "grillber" }, function(
