@@ -11,6 +11,7 @@
     "precommit": "lint-staged",
     "start": "concurrently \"npm run server\" \"npm run client\"",
     "server": "babel-watch server.js",
+    "proServer": "node server.js",
     "client": "node start-client.js",
     "test": "mocha",
     "build": "cd client && npm run build",
