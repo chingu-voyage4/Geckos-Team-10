@@ -3,6 +3,10 @@
   "version": "1.0.0",
   "description": "an uber for grilling. Chingu Voyage 4 team app. ",
   "main": "server.js",
+  "engines": {
+    "npm": "5.6.0",
+    "node": "8.11.1"
+  },
   "scripts": {
     "precommit": "lint-staged",
     "start": "concurrently \"npm run server\" \"npm run client\"",
