@@ -1,6 +1,7 @@
 import express from "express";
 import mongoose from "mongoose";
 import bodyParser from "body-parser";
+import path from "path";
 import { graphqlExpress, graphiqlExpress } from "apollo-server-express";
 require("dotenv").config();
 import jwt from "jsonwebtoken";
