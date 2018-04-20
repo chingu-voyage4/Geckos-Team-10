@@ -16,7 +16,7 @@ const SECRET_2 = process.env.SECRET_2;
 // Initialize Express server. Port is set by Heroku when the app is deployed or
 // when running locally using the 'heroku local' command.
 const app = express();
-app.set("port", process.env.PORT || 5001);
+app.set("port", process.env.PORT || 4001);
 
 mongoose.connect(process.env.MONGO_URI, { dbName: "grillber" }, function(
   error
