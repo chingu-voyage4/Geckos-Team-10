@@ -11,7 +11,9 @@
     "test": "mocha",
     "start": "nodemon server/server.js --exec babel-node",
     "build": "babel server -d dist",
-    "serve": "node dist/server.js"
+    "serve": "node dist/server.js",
+    "heroku-postbuild":
+      "cd client && npm install && npm install --only=dev --no-shrinkwrap && npm run build && cd .. && npm run build"
   },
   "repository": {
     "type": "git",
