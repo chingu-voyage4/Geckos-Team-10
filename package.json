@@ -8,7 +8,10 @@
     "dev": "concurrently \"npm run server\" \"npm run client\"",
     "server": "babel-watch ./server/server.js",
     "client": "node start-client.js",
-    "test": "mocha"
+    "test": "mocha",
+    "start": "nodemon server/server.js --exec babel-node",
+    "build": "babel server -d dist",
+    "serve": "node dist/server.js"
   },
   "repository": {
     "type": "git",
