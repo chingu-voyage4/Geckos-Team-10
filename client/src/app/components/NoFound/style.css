@@ -1,0 +1,34 @@
+.nf-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: var(--gainsboro);
+  padding: 50px;
+  background: white;
+}
+
+.nf-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 25px;
+  background: var(--gainsboro);
+}
+.nf-card-container {
+  display: flex;
+  flex-direction: row;
+  padding: 25px;
+}
+.card-button > a {
+  color: #fff;
+}
+.card-button > a:hover {
+  color: #fff;
+}
+/* tablets */
+@media screen and (max-width: 600px) {
+  .nf-card-container {
+    flex-direction: column;
+  }
+}

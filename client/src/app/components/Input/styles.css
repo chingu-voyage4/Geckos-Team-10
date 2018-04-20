@@ -1,0 +1,48 @@
+.input-container {
+  padding: 5px;
+  position: relative;
+}
+input {
+  text-indent: 5px;
+  background: white;
+  border-radius: 0;
+  border: 1px solid var(--gainsboro);
+  outline: 0;
+  color: black;
+  height: 52px;
+  width: 100%;
+}
+input::placeholder {
+  color: var(--trolleyGrey);
+}
+input:focus {
+  border: 1px solid var(--prune);
+}
+label {
+  position: absolute;
+  top: 6px;
+  left: 18px;
+  opacity: 0;
+  font-size: 18px;
+  color: var(--prune);
+  z-index: 1;
+}
+.input-container:focus-within > label {
+  color: var(--prune);
+}
+.show-label {
+  opacity: 1;
+  color: var(--green);
+}
+/* font-awesome icons become svgs */
+.input-container svg {
+  font-size: 16px;
+  position: absolute;
+  line-height: 1;
+  top: 25px;
+  right: 15px;
+}
+.error-input {
+  color: red;
+  font-size: 16px;
+}

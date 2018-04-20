@@ -1,0 +1,128 @@
+#reviews-component {
+  margin: 0;
+  padding: 50px;
+  width: 100%;
+  background: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#reviews-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.review-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.review-image-1 {
+  border-radius: 100%;
+  border: 4px solid white;
+  width: 175px;
+  min-height: 175px;
+  background-image: URL(
+    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRmj7PGfGYOE0psFgouGFAgGshOZb_OGMAJsdy6jO84WTsPpCJN"
+  );
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.review-image-2 {
+  border-radius: 100%;
+  border: 4px solid white;
+  width: 175px;
+  min-height: 175px;
+  background-image: URL(
+    "https://vz.cnwimg.com/wp-content/uploads/2016/08/george2.jpg"
+  );
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.review-image-3 {
+  border-radius: 100%;
+  border: 4px solid white;
+  width: 175px;
+  min-height: 175px;
+  background-image: URL("https://i.imgur.com/Wy7vv.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.reviewPerson {
+  color: var(--prune);
+  font-weight: bold;
+  font-size: 1.7em;
+  margin-top: 15px;
+}
+
+blockquote {
+  color: var(--darkSienna);
+  font-size: 18px;
+  text-align: center;
+  padding: 15px;
+}
+
+/* General CSS Setup */
+/* container */
+.container {
+  padding: 5% 5%;
+}
+
+/* CSS talk bubble */
+.talk-bubble {
+  margin: 25px;
+  display: inline-block;
+  position: relative;
+  width: 200px;
+  background-color: var(--gainsboro);
+}
+.border {
+  border: 8px solid #666;
+}
+.round {
+  border-radius: 30px;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+}
+
+/* Right triangle, right side slightly down*/
+
+.tri-right.right-in:after {
+  content: " ";
+  position: absolute;
+  width: 0;
+  height: 0;
+  left: auto;
+  right: -20px;
+  top: 38px;
+  bottom: auto;
+  border: 12px solid;
+  border-color: var(--gainsboro) transparent transparent var(--gainsboro);
+}
+
+/* talk bubble contents */
+.talktext {
+  padding: 1em;
+  text-align: left;
+  line-height: 1.5em;
+}
+.talktext p {
+  /* remove webkit p margins */
+  -webkit-margin-before: 0em;
+  -webkit-margin-after: 0em;
+}
+
+@media screen and (max-width: 940px) {
+  #reviews-component {
+    height: auto;
+  }
+}

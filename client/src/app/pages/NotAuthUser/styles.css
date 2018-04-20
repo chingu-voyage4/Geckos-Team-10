@@ -1,0 +1,9 @@
+.nau-main-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 10vh;
+  height: 70vh;
+}
+.nau-main-container h1 {
+  text-align: center;
+}

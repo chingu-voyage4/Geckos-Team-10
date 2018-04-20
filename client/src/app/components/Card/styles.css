@@ -1,0 +1,126 @@
+.card-button {
+  background-color: var(--green); /* Green */
+  color: white;
+  padding: 15px 32px;
+  font-family: "Indie Flower", "Nanun Pen Script", Arial, Helvetica, sans-serif;
+  font-size: 1.75em;
+  line-height: 25px;
+  margin-bottom: 20px;
+}
+
+.card-wrap {
+  display: flex;
+  padding: 10px;
+}
+
+.card-img-wrap img {
+  object-fit: fill;
+  height: 100%;
+  width: 100%;
+}
+.card-text-wrap {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+.card-text-wrap > h3 {
+  color: var(--green);
+  font-family: "Indie Flower", "Nanun Pen Script", Arial, Helvetica, sans-serif;
+  font-size: 1.75em;
+  line-height: 25px;
+}
+.card-text-wrap > p {
+  color: var(--darkSienna);
+  font-size: 1.2em;
+  line-height: 17px;
+}
+@media screen and (min-width: 425px) {
+  .card-text-wrap > p {
+    font-size: 1.5em;
+  }
+
+  .cardWrap,
+  .imgWrap,
+  .textWrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media screen and (min-width: 600px) {
+  .card-wrap {
+    flex-direction: column;
+    align-items: center;
+  }
+  .card-img-wrap {
+    max-width: 40%;
+    margin-bottom: 20px;
+  }
+  .card-text-wrap {
+    text-align: center;
+    margin: 10px;
+  }
+  .card-text-wrap > * {
+    margin: 15px 0;
+  }
+  .card-text-wrap > h3 {
+    font-size: 1.9em;
+  }
+}
+
+/* this media query is for <NoFound />  */
+@media screen and (min-width: 600px) and (max-width: 1300px) {
+  .nf-card-wrap {
+    max-width: 33%;
+  }
+  .nf-card-wrap h3 {
+    height: 50px;
+  }
+  .nf-card-wrap .card-button {
+    white-space: normal;
+    word-wrap: break-word;
+    height: 100px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .card-img-wrap {
+    max-width: 50%; /*last value was:  25%; */
+    max-height: 300px;
+  }
+  .card-text-wrap > * {
+    margin: 20px 0;
+  }
+}
+
+.cardWrap {
+  display: flex;
+  flex-direction: column;
+  padding: 25px;
+  width: 250px;
+  height: 250px;
+  border: 1px solid grey;
+  border-radius: 5px;
+  margin: 12px;
+  box-shadow: 0 5px 10px #bbb;
+  background: white;
+}
+
+.cardWrap,
+.imgWrap,
+.textWrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.imgWrap img {
+  max-width: 100px;
+}
+
+.textWrap > p {
+  color: var(--darkSienna);
+  font-size: 1em;
+  margin: 0;
+}

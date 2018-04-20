@@ -1,0 +1,19 @@
+.hiw-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: var(--gainsboro);
+  padding: 50px;
+}
+.hiw-card-container {
+  display: flex;
+  flex-direction: column;
+  padding: 25px;
+}
+/* tablets */
+@media screen and (min-width: 600px) {
+  .hiw-card-container {
+    flex-direction: row;
+  }
+}

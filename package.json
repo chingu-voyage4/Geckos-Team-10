@@ -1,0 +1,55 @@
+{
+  "name": "grillber",
+  "version": "1.0.0",
+  "description": "an uber for grilling. Chingu Voyage 4 team app. ",
+  "main": "./server/index.js",
+  "scripts": {
+    "precommit": "lint-staged",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "server": "babel-watch server/index.js",
+    "client": "node start-client.js",
+    "test": "mocha",
+    "start": "nodemon server/index.js --exec babel-node",
+    "build": "babel server -d dist",
+    "serve": "node dist/index.js",
+    "heroku-postbuild":
+      "cd client && npm install && npm install --only=dev --no-shrinkwrap && npm run build && cd .. && npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/chingu-voyage4/Geckos-Team-10.git"
+  },
+  "author": "chingu voyage-4, geckos-team-10",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/chingu-voyage4/geckos-team-10/issues"
+  },
+  "homepage": "https://github.com/chingu-voyage4/geckos-team-10#readme",
+  "dependencies": {
+    "apollo-server-express": "^1.3.2",
+    "bcrypt": "^2.0.0",
+    "body-parser": "^1.18.2",
+    "cors": "^2.8.4",
+    "dotenv": "^5.0.1",
+    "express": "^4.16.3",
+    "graphql": "^0.13.2",
+    "graphql-tools": "^2.23.1",
+    "jsonwebtoken": "^8.2.1",
+    "lodash": "^4.17.5",
+    "mongoose": "^5.0.11"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-stage-3": "^6.24.1",
+    "babel-watch": "^2.0.7",
+    "concurrently": "^3.5.1",
+    "husky": "^0.14.3",
+    "lint-staged": "^7.0.0",
+    "mocha": "^5.0.5",
+    "prettier": "^1.11.1"
+  },
+  "lint-staged": {
+    "*.{js,json,css,md}": ["prettier --write", "git add"]
+  }
+}

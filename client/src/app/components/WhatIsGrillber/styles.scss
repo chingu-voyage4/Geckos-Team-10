@@ -1,0 +1,34 @@
+.whatIs-section {
+  padding-bottom: 50px;
+}
+
+.whatIs-information {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  ul {
+    list-style-image: url(../../images/lists.svg);
+    margin-left: 10px;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .whatIs-information {
+    ul {
+      font-size: 1.5em;
+    }
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .whatIs-information {
+    ul {
+      font-size: 1.7em;
+    }
+  }
+}

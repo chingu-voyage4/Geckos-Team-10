@@ -1,0 +1,36 @@
+.login-su-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.grillber-logo {
+  margin: 40px 0 20px 0;
+  max-width: 100%;
+}
+
+.login-su-cta-text-wrap {
+  display: flex;
+  flex-direction: row;
+}
+
+.login-su-cta-text-wrap p {
+  font-size: 15px;
+  color: black;
+  text-align: center;
+}
+
+.terms-conditions {
+  font-size: 13px;
+  color: black;
+  text-align: center;
+}
+
+.login-su-user-note {
+  font-size: 18px;
+  color: red;
+  text-align: center;
+  padding: 10px;
+}

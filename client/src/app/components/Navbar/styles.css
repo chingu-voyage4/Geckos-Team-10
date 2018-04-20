@@ -1,0 +1,132 @@
+.nav {
+  height: 60px;
+  position: relative;
+}
+.nav-item-list {
+  list-style: none;
+  padding: 15px;
+  display: flex;
+  margin: 0;
+}
+.nav-item-list a {
+  color: var(--green);
+}
+.nav-item-list a:hover {
+  opacity: 0.7;
+}
+/* hide this in mobile*/
+.nav-link {
+  display: none;
+}
+.nav-brand {
+  font-size: 1.45em;
+  margin-left: auto;
+  margin-right: auto;
+}
+.nav-brand > a {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+.btn-cta {
+  background: transparent;
+  align-self: center;
+  color: var(--green);
+  font-size: 1.3em;
+}
+
+/* Hamburger Menu */
+/* Position and sizing of burger button */
+.bm-burger-button {
+  position: absolute;
+  width: 36px;
+  height: 30px;
+  left: 20px;
+  top: 15px;
+}
+/* Color/shape of burger icon bars */
+.bm-burger-bars {
+  background: var(--darkSienna);
+}
+/* Position and sizing of clickable cross button */
+.bm-cross-button {
+  height: 24px;
+  width: 24px;
+  margin-right: 18px;
+}
+
+div.bm-cross-button > span {
+  right: -10px !important;
+}
+
+/* Color/shape of close button cross */
+.bm-cross {
+  background: var(--darkSienna);
+}
+/* General sidebar styles */
+.bm-menu {
+  background: white;
+  padding: 2.5em 1.5em 0;
+  font-size: 1.15em;
+  overflow: hidden !important;
+  margin-right: 7px;
+}
+/* Wrapper for item list */
+.bm-item-list {
+  padding: 0.8em;
+}
+.bm-item-list > li {
+  padding: 0.7em 0.7em 1.3em;
+}
+.bm-item-list a {
+  color: var(--green);
+  font-size: 2em;
+}
+.bm-item-list a:hover {
+  opacity: 0.6;
+}
+/* Styling of overlay */
+.bm-overlay {
+  background: rgba(0, 0, 0, 0.3);
+}
+.bm-menu-wrap {
+  bottom: 0;
+  left: 0;
+}
+
+/* 
+  ##Device = Laptops, Desktops
+*/
+@media (min-width: 1025px) {
+  /* hide the burger menu */
+  .bm-burger-button {
+    display: none;
+  }
+  .nav-item-list {
+    align-items: center;
+    justify-content: space-around;
+  }
+  /* display this menu, because burger menu is gone */
+  .nav-link-list {
+    display: flex;
+    padding: 5px;
+    order: -1;
+  }
+  .nav-link {
+    display: flex;
+    padding: 5px 15px;
+    font-weight: bold;
+    font-size: 1.6em;
+    line-height: 0.8;
+  }
+  .nav-link-list .nav-link a {
+    color: var(--trolleyGrey);
+  }
+  .nav-brand {
+    margin: 0;
+    order: -2;
+    font-size: 1.8em;
+  }
+  .btn-cta {
+    font-size: 2em;
+  }
+}

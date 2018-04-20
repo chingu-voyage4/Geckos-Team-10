@@ -1,0 +1,35 @@
+.price-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: white;
+}
+.price-card-container {
+  display: flex;
+  flex-direction: column;
+}
+.price-card-wrap {
+  margin: 10px;
+  border-radius: 30px;
+  background: var(--gainsboro);
+  flex: 1;
+}
+.price-text-wrap {
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.price-img-wrap {
+  max-width: 33%;
+  max-height: 300px;
+}
+/* tablets */
+@media screen and (min-width: 600px) {
+  .price-card-container {
+    flex-direction: row;
+  }
+  .price-img-wrap {
+    height: 150px;
+  }
+}
