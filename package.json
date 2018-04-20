@@ -5,9 +5,9 @@
   "main": "./server/server.js",
   "scripts": {
     "precommit": "lint-staged",
-    "start": "concurrently \"npm run server\" \"npm run client\"",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
     "server": "babel-watch ./server/server.js",
-    "client": "node ./server/start-client.js",
+    "client": "node start-client.js",
     "test": "mocha"
   },
   "dependencies": {
