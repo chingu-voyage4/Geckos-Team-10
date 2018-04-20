@@ -28,6 +28,9 @@
 }
 .cta-sign-up span {
   width: 40%;
+  display: flex;
+  align-self: center;
+  margin-left: 10px;
 }
 .cta-sign-up svg {
   font-size: 25px;
