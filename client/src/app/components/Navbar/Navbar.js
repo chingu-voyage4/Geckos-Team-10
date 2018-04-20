@@ -36,7 +36,7 @@ class Navbar extends React.Component {
             </Link>
           </li>
           <li>
-            <Link to="auth/book-a-grill" onClick={() => this.closeMenu()}>
+            <Link to="/auth/book-a-grill" onClick={() => this.closeMenu()}>
               Book a Grill
             </Link>
           </li>
@@ -50,7 +50,7 @@ class Navbar extends React.Component {
               <Link to="/pricing">Pricing</Link>
             </li>
             <li className="nav-link">
-              <Link to="auth/book-a-grill">Book a Grill</Link>
+              <Link to="/auth/book-a-grill">Book a Grill</Link>
             </li>
           </ul>
           <li className="nav-brand">
